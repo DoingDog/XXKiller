@@ -4,4 +4,4 @@
 全部由其他规则合并产生<br/>
 规则：170000+<br/>
 地址：<br/>
-https://raw.githubusercontent.com/DoingDog/XXKiller/main/what.txt
+https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
