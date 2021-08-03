@@ -27,8 +27,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Update paper list
         run: |
-          cd RMaker
-          start /wait .\aadown.bat
+          cd .\RMaker&start /wait aadown.bat
       - name: Run a multi-line script
         run: |
           git config --global user.name "dd"
