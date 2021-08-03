@@ -1,9 +1,9 @@
 # XXKiller 广告拦截规则
 XXKiller去广告规则<br/>
 适用AdGuard,AG HOME,ADAWAY等等<br/>
-全部由其他规则合并产生<br/>
+全部由其他规则合并产生<br/><br/>
 规则：170000+<br/>
-<strong>每天0点更新</strong><br/>
+<strong>每天0点更新</strong><br/><br/>
 更新地址：<br/>
 中国国内（有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>copy</a><br/>
 中国香港 <a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>copy</a><br/>
