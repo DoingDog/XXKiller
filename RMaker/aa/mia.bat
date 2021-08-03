@@ -21,6 +21,6 @@ ren lit* i6.txt
 wget https://anti-ad.net/easylist.txt
 del /f /q *hsts
 ren easylist.txt i7.txt
-：：co
+::co
 ren wget.exe get.bat
 call mic.bat
