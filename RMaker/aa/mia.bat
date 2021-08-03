@@ -1,4 +1,5 @@
 ren get.bat wget.exe
+::start
 wget https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 del /f /q *hsts
 del /f /q *.html
@@ -21,6 +22,6 @@ ren lit* i6.txt
 wget https://anti-ad.net/easylist.txt
 del /f /q *hsts
 ren easylist.txt i7.txt
-::co
+::新的规则
 ren wget.exe get.bat
 call mic.bat
