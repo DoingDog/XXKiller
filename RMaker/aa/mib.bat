@@ -1,3 +1,3 @@
-! Title: XXK通杀广告规则
-! Homepage: https://github.com/
-! by: XXK
+! Title: XXKillAds
+! Homepage: https://github.com/DoingDog/XXKiller
+! by: XXKiller
