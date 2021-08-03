@@ -23,14 +23,20 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
+      - uses: actions/checkout@main
       # Runs a set of commands using the runners shell
+      - name: Update paper list
+        run: |
+          cd RMaker
+          aadown.bat
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git config --global user.name "dd"
+          git config --global user.email "aqvm@qq.com"
+          git add .
+          git commit -m "update" -a
+  		
+      - name: Push changes
+        uses: ad-m/github-push-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
