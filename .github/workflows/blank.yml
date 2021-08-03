@@ -28,8 +28,9 @@ jobs:
       - name: Update paper list
         run: |
           cmd
+          cd RMaker
           dir
-          echo cd
+          echo %cd%
       - name: Run a multi-line script
         run: |
           git config --global user.name "dd"
