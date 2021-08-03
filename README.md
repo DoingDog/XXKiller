@@ -1,4 +1,5 @@
-# XXKiller 广告拦截规则
+# 暂时别用，出了点问题
+XXKiller 广告拦截规则
 XXKiller去广告规则<br/>
 适用AdGuard,AG HOME,ADAWAY等等<br/>
 全部由其他规则合并产生<br/>
