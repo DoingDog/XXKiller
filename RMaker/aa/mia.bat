@@ -1,5 +1,6 @@
 ren get.bat wget.exe
 ::start
+@echo off
 wget https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 del /f /q *hsts
 del /f /q *.html
