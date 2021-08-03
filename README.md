@@ -3,6 +3,7 @@
 适用AdGuard,AG HOME,ADAWAY等等<br/>
 全部由其他规则合并产生<br/>
 规则：170000+<br/>
+每天中午12点更新<br/>
 地址：<br/>
 中国 https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt<br/>
 中国香港 https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt<br/>
