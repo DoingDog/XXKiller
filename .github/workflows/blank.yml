@@ -30,7 +30,7 @@ jobs:
           cmd
           cd RMaker
           dir
-          cmd aadown.bat
+          start .\aadown.bat /wait
           echo %cd%
       - name: Run a multi-line script
         run: |
