@@ -5,7 +5,7 @@ XXKiller去广告规则<br/>
 规则：170000+<br/>
 <strong>每天0点更新</strong><br/>
 更新地址：<br/>
-中国国内（最快） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>copy</a><br/>
+中国国内（有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>copy</a><br/>
 中国香港 <a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>copy</a><br/>
 日本 <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>copy</a><br/>
 韩国 <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>copy</a><br/>
