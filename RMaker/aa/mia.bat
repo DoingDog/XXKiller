@@ -1,6 +1,3 @@
-@echo off
-mode con cols=14 lines=1
-cls
 ren get.bat wget.exe
 wget https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 del /f /q *hsts
