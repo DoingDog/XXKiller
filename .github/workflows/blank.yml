@@ -2,7 +2,7 @@ name: make w.txt
 
 on:
   schedule:
-    - cron: '32 * * * *'
+    - cron: '50 15 * * *'
 
   workflow_dispatch:
 
