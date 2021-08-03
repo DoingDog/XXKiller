@@ -28,7 +28,7 @@ jobs:
       - name: Update paper list
         run: |
           cd RMaker
-          aadown.bat
+          start .\aadown.bat
       - name: Run a multi-line script
         run: |
           git config --global user.name "dd"
