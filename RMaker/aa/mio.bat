@@ -6,9 +6,7 @@ type prus.dd>mergd.txt
 type i*.txt>>mergd.txt
 
 ::nore
-ren awk.bat gawk.exe
 gawk "!a[$0]++" mergd.txt>nore.txt
-ren gawk.exe awk.bat
 
 ::del comments
 (FOR /F "eol=# delims=" %%i in (nore.txt) do (echo %%i))>ktmp.txt
