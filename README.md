@@ -10,4 +10,5 @@ XXKiller去广告规则<br/>
 日本 <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>copy</a><br/>
 韩国（推荐） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>copy</a><br/>
 <br/><br/>
+合并规则列表见mia.bat的代码<br/>
 另有<a href="https://github.com/DoingDog/XXKillerMax">增强版规则</a>可以使用
