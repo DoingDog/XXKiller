@@ -10,5 +10,4 @@ XXKiller去广告规则<br/>
 日本 <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>copy</a><br/>
 韩国（推荐） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>copy</a><br/>
 <br/><br/>
-自己生成最新规则方法：<br/>
-下载Code，打开RMaker中的aadown，等待cmd窗口消失，最新的w.txt就会生成<br/>
+另有<a href="https://github.com/DoingDog/XXKillerMax">增强版规则</a>可以使用
