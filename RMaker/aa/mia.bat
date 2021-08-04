@@ -1,7 +1,7 @@
 ren get.bat wget.exe
-::start download
 @echo off
 
+::start download
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 wget -O i2.txt https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
@@ -16,9 +16,11 @@ wget -O i10.txt https://adaway.org/hosts.txt
 wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 
 ::new rules
-::wget -O fn url
+::wget -O i+number url
+
+::end download
 
 del /f /q *.html
 del /f /q *hsts
 ren wget.exe get.bat
-call mic.bat
+call mio.bat
