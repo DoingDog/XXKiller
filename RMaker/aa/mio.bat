@@ -1,4 +1,4 @@
-type crls.bat>mgd.txt
+type prus.bat>mgd.txt
 type i*.txt>>mgd.txt
 del /f /q i*.txt
 ren awk.bat gawk.exe
