@@ -18,7 +18,7 @@ set link9=https://anti-ad.net/easylist.txt
 
 set lp=1
 :downloop
-wget -O i%lp% !link%lp%!
+wget -O i%lp%.txt !link%lp%!
 del /f /q *hsts
 del /f /q *.html
 if %lp%==%rnum% goto :enddownloop
