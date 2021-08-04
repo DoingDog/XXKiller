@@ -1,5 +1,5 @@
-ren get.bat wget.exe
 @echo off
+ren get.bat wget.exe
 
 ::start download
 
@@ -15,11 +15,12 @@ wget -O i9.txt https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/mast
 wget -O i10.txt https://adaway.org/hosts.txt
 wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 
-::new rules
+::add new rules
 ::wget -O i+number url
 
 ::end download
 
+::no need to change
 del /f /q *.html
 del /f /q *hsts
 ren wget.exe get.bat
