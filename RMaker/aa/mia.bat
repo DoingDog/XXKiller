@@ -1,33 +1,47 @@
 ren get.bat wget.exe
 ::start don
-setlocal enabledelayedexpansion
 @echo off
-
-
-
-::此处修改规则总数
-set rnum=9
-::此处添加链接
-set link1=https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-set link2=https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
-set link3=https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-set link4=https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt
-set link5=https://hacamer.coding.net/p/lite/d/AdBlock-Rules-Mirror/git/raw/master/AdGuard-Simplified-Domain-Names-Filter.txt
-set link6=https://neodev.team/lite_adblocker
-set link7=http://file.trli.club/dns/hosts.txt
-set link8=https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/manhua.txt
-set link9=https://anti-ad.net/easylist.txt
-
-
-
-set lp=1
-:downloop
-wget -O i%lp%.txt !link%lp%!
+::p
+wget https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 del /f /q *hsts
 del /f /q *.html
-if %lp%==%rnum% goto :enddownloop
-set/a lp=%lp%+1
-goto :downloop
-:enddownloop
+ren filter.txt i1.txt
+::p
+wget https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
+del /f /q *hsts
+ren ad-pc.txt i2.txt
+::p
+wget https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
+del /f /q *hsts
+ren mv.txt i3.txt
+::p
+wget https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt
+ren ADgk.txt i4.txt
+del /f /q *hsts
+::p
+wget https://hacamer.coding.net/p/lite/d/AdBlock-Rules-Mirror/git/raw/master/AdGuard-Simplified-Domain-Names-Filter.txt
+del /f /q *hsts
+ren Ad*.txt i5.txt
+::p
+wget https://neodev.team/lite_adblocker
+del /f /q *hsts
+ren lit* i6.txt
+::p
+wget http://file.trli.club/dns/hosts.txt
+del /f /q *hsts
+ren hos*.txt i9.txt
+::p
+wget https://anti-ad.net/easylist.txt
+del /f /q *hsts
+ren easylist.txt i7.txt
+::p
+wget https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/manhua.txt
+del /f /q *hsts
+ren man*.txt i8.txt
+::p
+::新的规则
+::wget url
+::del /f /q *hsts
+::ren filename.txt inumber.txt
 ren wget.exe get.bat
 call mic.bat
