@@ -15,14 +15,13 @@ jobs:
       - name: run aadown.bat
         run: |
           cmd
-          cd RMaker
-          .\aadown.bat
+          .\RMaker\mio.bat
       - name: commit
         run: |
           git config --global user.name "dd"
           git config --global user.email "aqvm@qq.com"
           git add .
-          git commit -m "规则文件，每天更新" -a
+          git commit -m "规则文件,已在$(date)更新" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
