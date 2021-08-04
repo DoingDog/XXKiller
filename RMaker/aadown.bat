@@ -1,3 +1,2 @@
 cd /d %~dp0
-cd aa
-call mia.bat
+cd aa&call maindl.bat
