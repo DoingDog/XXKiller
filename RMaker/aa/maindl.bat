@@ -1,5 +1,4 @@
 @echo off
-ren get.bat wget.exe
 
 ::start download
 
@@ -23,5 +22,4 @@ wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 ::no need to change
 del /f /q *.html
 del /f /q *hsts
-ren wget.exe get.bat
 call mio.bat
