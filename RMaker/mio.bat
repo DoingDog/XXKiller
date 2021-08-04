@@ -45,5 +45,5 @@ echo ! Last modified: %date%T%time%Z>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end
-copy /y final.txt ..\..\
+copy /y final.txt ..\..\w.txt
 del /f /q *.txt&exit
