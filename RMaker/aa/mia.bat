@@ -27,6 +27,10 @@ wget https://neodev.team/lite_adblocker
 del /f /q *hsts
 ren lit* i6.txt
 ::p
+wget http://file.trli.club/dns/hosts.txt
+del /f /q *hsts
+ren hos*.txt i9.txt
+::p
 wget https://anti-ad.net/easylist.txt
 del /f /q *hsts
 ren easylist.txt i7.txt
