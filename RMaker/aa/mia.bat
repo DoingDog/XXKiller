@@ -1,5 +1,5 @@
 ren get.bat wget.exe
-::start don
+::start download
 @echo off
 
 
@@ -12,8 +12,10 @@ wget -O i6.txt https://neodev.team/lite_adblocker
 wget -O i7.txt http://file.trli.club/dns/hosts.txt
 wget -O i8.txt https://anti-ad.net/easylist.txt
 wget -O i9.txt https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/manhua.txt
+wget -O i10.txt https://adaway.org/hosts.txt
+wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 
-::新的规则
+::new rules
 ::wget -O fn url
 
 del /f /q *.html
