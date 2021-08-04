@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-      - name: run aadown.bat
+      - name: run mio.bat
         run: |
           cmd
           .\RMaker\mio.bat
