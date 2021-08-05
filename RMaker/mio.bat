@@ -39,7 +39,8 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::del comments
 (FOR /F "eol=# delims=" %%i in (nore.txt) do (echo %%i))>ktmp.txt
-(FOR /F "eol=! delims=" %%i in (ktmp.txt) do (echo %%i))>nord.txt
+(FOR /F "eol=[ delims=" %%i in (ktmp.txt) do (echo %%i))>stmp.txt
+(FOR /F "eol=! delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
 
 ::add title and date
 echo ! Version: %date%>>tpdate.txt
