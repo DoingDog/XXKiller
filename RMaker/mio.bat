@@ -15,6 +15,7 @@ wget -O i8.txt https://anti-ad.net/easylist.txt
 wget -O i9.txt https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/manhua.txt
 wget -O i10.txt https://adaway.org/hosts.txt
 wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
+wget -O i12.txt https://anti-ad.net/adguard.txt
 
 ::add new rules
 ::wget -O i+number url
