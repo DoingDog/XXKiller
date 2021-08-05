@@ -16,6 +16,7 @@ wget -O i9.txt https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/mast
 wget -O i10.txt https://adaway.org/hosts.txt
 wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 wget -O i12.txt https://anti-ad.net/adguard.txt
+wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 
 ::add new rules
 ::wget -O i+number url
