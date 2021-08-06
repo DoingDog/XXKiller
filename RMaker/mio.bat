@@ -43,10 +43,6 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (FOR /F "eol=[ delims=" %%i in (ktmp.txt) do (echo %%i))>stmp.txt
 (FOR /F "eol=! delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
 
-:count rules
-set rulect=0
-for /f %%i in (nord.txt) do set /a rulect+=1
-
 ::add title and date
 echo ! Version: %date% - %rulect%>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
