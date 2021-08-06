@@ -1,8 +1,7 @@
-cd /d %~dp0
-cd aa
 @echo off
+cd /d %~dp0\aa
 
-::start download
+::start download files
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 wget -O i2.txt https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
@@ -21,32 +20,34 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 ::add new rules
 ::wget -O i+number url
 
-::end download
+::download finished
+::Process rules
 
-::no need to change
-del /f /q *.html
+::del rubbish
+::del /f /q *.html
 del /f /q *hsts
-
-::TheRuleMaker
-::No need to change
 
 ::Merge
 type frules.dd>mergd.txt
 type i*.txt>>mergd.txt
 
-::nore
+::delete repeated rules
 gawk "!a[$0]++" mergd.txt>nore.txt
 
-::del comments
+::delete comments
+
+::if using element blocking then disable this
 (FOR /F "eol=# delims=" %%i in (nore.txt) do (echo %%i))>ktmp.txt
+
+::if using element blocking then change ktmp-->nore
 (FOR /F "eol=[ delims=" %%i in (ktmp.txt) do (echo %%i))>stmp.txt
 (FOR /F "eol=! delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
 
 ::add title and date
-echo ! Version: %date%>>tpdate.txt
+echo ! Version: %date%>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
-::end
+::end cleanup
 copy /y final.txt ..\..\w.txt
 del /f /q *.txt&exit
