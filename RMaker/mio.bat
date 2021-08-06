@@ -45,7 +45,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::count rules
 set rulect=0
-for /f %%i in (nord.txt) do set /a rulect+=1
+for /f %%i in (nord.txt) do set /a rulect=%rulect%+1
 
 ::add title and date
 echo ! Version: %date% - %rulect%>tpdate.txt
