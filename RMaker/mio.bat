@@ -43,11 +43,10 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (FOR /F "eol=[ delims=" %%i in (ktmp.txt) do (echo %%i))>stmp.txt
 (FOR /F "eol=! delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
 
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+0
-echo guizeshu：%rnum%
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
 
 ::add title and date
-echo ! Version: %date%>tpdate.txt
+echo ! Version: %date%(rc:%rnum%)>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
