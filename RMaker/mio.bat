@@ -48,9 +48,6 @@ for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
 ::error
 set/a rnum+=1
 
-::save count
-echo %rnum%>..\rc.txt
-
 ::add title and date
 echo ! Version: %date%-count=%rnum%>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
