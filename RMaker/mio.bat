@@ -1,5 +1,5 @@
 @echo off
-cd/d %~dp0\aa
+cd /d %~dp0\aa
 
 ::start download files
 
@@ -28,24 +28,24 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 del /f /q *hsts
 
 ::Merge
-type frules.dd>mergd.txt
+type frules.dd>>mergd.txt
 type i*.txt>>mergd.txt
 
 ::delete repeated rules
 gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::delete comments
-(findstr /bev "#[^#]*" nore.txt)>ntpf.txt
+(findstr /vbe "#[^#]*" nore.txt)>ntpf.txt
 (for /f "eol=! delims=" %%i in (ntpf.txt) do (echo %%i))>ntps.txt
 (for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set/a rnum=%%i
+for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set /a rnum=%%i
 ::error
-set/a rnum+=1
+set /a rnum+=1
 
 ::add title and date
-echo ! Version: %date%-count=%rnum%>tpdate.txt
+echo ! Version: %date%-count=%rnum%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
