@@ -1,5 +1,5 @@
 @echo off
-cd /d %~dp0\aa
+cd/d %~dp0\aa
 
 ::start download files
 
@@ -24,8 +24,8 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 ::Process rules
 
 ::del rubbish
-::del /fq *.html
-del /fq *hsts
+::del /f /q *.html
+del /f /q *hsts
 
 ::Merge
 type frules.dd>mergd.txt
@@ -52,4 +52,4 @@ copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end cleanup
 copy /y final.txt ..\..\w.txt
-del /fq *.txt&exit
+del /f /q *.txt&exit
