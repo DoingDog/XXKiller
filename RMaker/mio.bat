@@ -24,8 +24,8 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 ::Process rules
 
 ::del rubbish
-::del /f /q *.html
-del /f /q *hsts
+::del /fq *.html
+del /fq *hsts
 
 ::Merge
 type frules.dd>mergd.txt
@@ -35,9 +35,9 @@ type i*.txt>>mergd.txt
 gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::delete comments
-(findstr /bev "![^!]*" nore.txt)>ktmp.txt
-(findstr /bev "#[^#]*" ktmp.txt)>stmp.txt
-(FOR /F "eol=[ delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
+(findstr /bev "#[^#]*" nore.txt)>ntpf.txt
+(for /f "eol=! delims=" %%i in (ntpf.txt) do (echo %%i))>ntps.txt
+(for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set/a rnum=%%i
@@ -52,4 +52,4 @@ copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end cleanup
 copy /y final.txt ..\..\w.txt
-del /f /q *.txt&exit
+del /fq *.txt&exit
