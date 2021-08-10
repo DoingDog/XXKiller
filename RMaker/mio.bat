@@ -9,7 +9,7 @@ wget -O i3.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
 wget -O i4.txt https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt
 wget -O i5.txt https://hacamer.coding.net/p/lite/d/AdBlock-Rules-Mirror/git/raw/master/AdGuard-Simplified-Domain-Names-Filter.txt
 wget -O i6.txt https://neodev.team/lite_adblocker
-wget -O i7.txt http://file.trli.club/dns/hosts.txt
+wget -O i7.txt https://file.trli.club/dns/hosts.txt
 wget -O i8.txt https://anti-ad.net/easylist.txt
 wget -O i9.txt https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/manhua.txt
 wget -O i10.txt https://adaway.org/hosts.txt
@@ -35,12 +35,18 @@ type i*.txt>>mergd.txt
 gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::delete comments
-(findstr /r /b "^/." nore.txt)>ntpa.txt
-(findstr /r /v /b "^/." nore.txt)>ntpq.txt
-(findstr /v /b /e "#[^#]*" ntpq.txt)>ntpf.txt
-(for /f "eol=! delims=" %%i in (ntpf.txt) do (echo %%i))>ntps.txt
-(for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
-type ntpa.txt>>nord.txt
+
+::extract and move lines with "/"
+(findstr /r /b "^/." nore.txt)>ntp1.txt
+(findstr /r /v /b "^/." nore.txt)>ntpa.txt
+
+::process other lines
+(findstr /v /b /e "#[^#]*" ntpa.txt)>ntpb.txt
+(for /f "eol=! delims=" %%i in (ntpb.txt) do (echo %%i))>ntpc.txt
+(for /f "eol=[ delims=" %%i in (ntpc.txt) do (echo %%i))>nord.txt
+
+::merge lines
+type ntp1.txt>>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
