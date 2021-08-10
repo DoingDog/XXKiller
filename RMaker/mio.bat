@@ -43,7 +43,9 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 type ntpa.txt>>nord.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set /a rnum=%%i+1
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
+::error
+set/a rnum+=1
 
 ::add title and date
 echo ! Version: %date%-count=%rnum%>>tpdate.txt
