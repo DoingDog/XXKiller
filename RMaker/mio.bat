@@ -37,13 +37,10 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 ::delete comments
 (findstr /vbe "#[^#]*" nore.txt)>ntpf.txt
 (for /f "eol=! delims=" %%i in (ntpf.txt) do (echo "%%i"))>ntps.txt
-(for /f "eol=[ delims=" %%i in (ntps.txt) do (echo "%%i"))>ntpt.txt
-gawk "!a[$0]++" ntpt.txt>nord.txt
+(for /f "eol=[ delims=" %%i in (ntps.txt) do (echo "%%i"))>nord.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set /a rnum=%%i
-::error
-set /a rnum+=1
+for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set /a rnum=%%i+1
 
 ::add title and date
 echo ! Version: %date%-count=%rnum%>>tpdate.txt
