@@ -40,7 +40,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (for /f "eol=[ delims=" %%i in (ntps.txt) do (echo %%i))>nord.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set /a rnum=%%i
+for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set /a rnum=%%i+0
 ::error
 set /a rnum+=1
 
