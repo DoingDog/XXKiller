@@ -35,16 +35,12 @@ type i*.txt>>mergd.txt
 gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::delete comments
-
-::if using element blocking then disable this
-(FOR /F "eol=# delims=" %%i in (nore.txt) do (echo %%i))>ktmp.txt
-
-::if using element blocking then change ktmp-->nore
-(FOR /F "eol=[ delims=" %%i in (ktmp.txt) do (echo %%i))>stmp.txt
-(FOR /F "eol=! delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
+(findstr /bev "![^!]*" nore.txt)>ktmp.txt
+(findstr /bev "#[^#]*" ktmp.txt)>stmp.txt
+(FOR /F "eol=[ delims=" %%i in (stmp.txt) do (echo %%i))>nord.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
+for /f "tokens=2 delims=:" %%i in ('find /c /v "" nord.txt')do set/a rnum=%%i
 ::error
 set/a rnum+=1
 
