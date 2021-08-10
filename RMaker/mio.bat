@@ -27,6 +27,9 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 ::del /f /q *.html
 del /f /q *hsts
 
+::add blank line
+for %%i in (i*.txt) do type blank.dd>>%%i
+
 ::Merge
 type frules.dd>>mergd.txt
 type i*.txt>>mergd.txt
