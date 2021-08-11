@@ -56,7 +56,7 @@ for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
 ::error
 set/a rnum+=1
 ::save
-echo "<center><h1>%rnum</h1></center>">..\..\ct.html
+echo #%rnum%>..\..\ct.md
 
 ::add title and date
 echo ! Version: %date%>>tpdate.txt
