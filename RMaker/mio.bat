@@ -55,9 +55,11 @@ type ntp1.txt>>nord.txt
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
 ::error
 set/a rnum+=1
+::save
+echo "<center><h1>%rnum</h1></center>">..\..\ct.html
 
 ::add title and date
-echo ! Version: %date%-count=%rnum%>>tpdate.txt
+echo ! Version: %date%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
