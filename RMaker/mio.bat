@@ -55,8 +55,8 @@ type ntp1.txt>>nord.txt
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
 ::error
 set/a rnum+=1
-::save
-echo %rnum%>..\ct.txt
+::save ct
+echo %rnum%>..\..\ct.txt
 
 ::add title and date
 echo ! Version: %date%>>tpdate.txt
