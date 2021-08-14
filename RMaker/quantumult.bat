@@ -7,6 +7,7 @@ cd /d %~dp0\aa
 wget -O u1.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list
 wget -O u2.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list
 wget -O u3.txt https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list
+wget -O u5.txt https://anti-ad.net/surge.txt
 wget -O u4.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
 ::fine
 wget -O i5.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block.txt
@@ -15,7 +16,6 @@ wget -O i6.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX
 wget -O u7.txt https://limbopro.com/Adblock4limbo.list
 ::all
 wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
-
 ::add new rules
 ::wget -O i+number url
 
@@ -33,6 +33,7 @@ for /f "delims=" %%i in ('type "u7.txt"') do (
    echo !str!>>i7.txt
 )
 endlocal
+(for /f "eol=# delims=" %%i in (u5.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u1.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u2.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u3.txt) do (echo %%i,REJECT))>>ia1.txt
