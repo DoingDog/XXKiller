@@ -71,9 +71,17 @@ endlocal
 
 ::delete repeated rules
 gawk "!a[$0]++" mergd1.txt>nore.txt
+setlocal enabledelayedexpansion
+(for /f "delims=" %%i in ('findstr "^\." nore.txt') do (
+        set line=%%i
+        echo;DOMAIN-SUFFIX,!line:~1!
+))>nbst.txt
+
+endlocal
+gawk "!a[$0]++" nbst.txt>norec.txt
 
 ::process other lines
-(findstr /v /b /e "#[^#]*" nore.txt)>final.txt
+(findstr /v /b /e "#[^#]*" norec.txt)>final.txt
 
 ::end cleanup
 copy /y final.txt ..\..\quantumult.list
