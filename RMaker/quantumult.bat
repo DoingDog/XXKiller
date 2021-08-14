@@ -39,6 +39,18 @@ endlocal
 (for /f "eol=# delims=" %%i in (u4.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u8.txt) do (echo %%i,REJECT))>>ut.txt
 
+
+(for /f "eol=. delims=" %%i in (ut.txt) do (echo DOMAIN,%%i))>>ix1.txt
+
+
+
+
+
+
+
+
+
+
 ::add blank line
 for %%i in (i*.txt) do type blank.dd>>%%i
 
