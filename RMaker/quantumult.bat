@@ -17,6 +17,10 @@ wget -O u7.txt https://limbopro.com/Adblock4limbo.list
 wget -O u1.txt https://anti-ad.net/surge2.txt
 wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
 
+::direct
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
 ::add new rules
 ::wget -O i+number url
 
