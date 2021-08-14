@@ -14,6 +14,7 @@ wget -O i6.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX
 ::caps and blank
 wget -O u7.txt https://limbopro.com/Adblock4limbo.list
 ::all
+wget -O u1.txt https://anti-ad.net/surge2.txt
 wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
 
 ::add new rules
