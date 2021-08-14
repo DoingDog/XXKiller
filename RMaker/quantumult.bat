@@ -10,6 +10,7 @@ wget -O i4.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Su
 wget -O i5.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block.txt
 wget -O i6.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block_Plus.txt
 wget -O i7.txt https://limbopro.com/Adblock4limbo.list
+wget -O i8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
 
 ::add new rules
 ::wget -O i+number url
