@@ -18,14 +18,9 @@ wget -O u1.txt https://anti-ad.net/surge2.txt
 wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
 
 ::direct
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
-::add new rules
-::wget -O i+number url
-
-::download finished
-::Process rules
+wget -O x1.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
+wget -O x2.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
+wget -O x3.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list
 
 ::del rubbish
 ::del /f /q *.html
@@ -38,6 +33,11 @@ for /f "delims=" %%i in ('type "u7.txt"') do (
    echo !str!>>i7.txt
 )
 endlocal
+
+(for /f "eol=# delims=" %%i in (x1.txt) do (echo %%i,DIRECT))>>id1.txt
+(for /f "eol=# delims=" %%i in (x3.txt) do (echo %%i,DIRECT))>>id1.txt
+(for /f "eol=# delims=" %%i in (x2.txt) do (echo %%i,DIRECT))>>id1.txt
+
 (for /f "eol=# delims=" %%i in (u1.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u2.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u3.txt) do (echo %%i,REJECT))>>ia1.txt
