@@ -9,13 +9,7 @@ wget -O i3.txt https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRu
 wget -O i4.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
 wget -O i5.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block.txt
 wget -O i6.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block_Plus.txt
-wget -O i7.txt https://limbopro.com/Adblock4limbo.li
-wget -O i8.txt https://anti-ad.net/easylist.txt
-wget -O i9.txt https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/manhua.txt
-wget -O i10.txt https://adaway.org/hosts.txt
-wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
-wget -O i12.txt https://anti-ad.net/adguard.txt
-wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
+wget -O i7.txt https://limbopro.com/Adblock4limbo.list
 
 ::add new rules
 ::wget -O i+number url
@@ -40,5 +34,5 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (findstr /v /b /e "#[^#]*" nore.txt)>final.txt
 
 ::end cleanup
-copy /y final.txt ..\..\quanx.txt
+copy /y final.txt ..\..\quantumult.list
 del /f /q *.txt&exit
