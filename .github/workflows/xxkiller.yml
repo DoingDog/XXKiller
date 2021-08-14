@@ -17,6 +17,7 @@ jobs:
           cmd
           .\RMaker\mio.bat
           .\RMaker\quantumult.bat
+          .\RMaker\shadow.bat
       - name: commit
         run: |
           git config --global user.name "dd"
