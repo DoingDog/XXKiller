@@ -42,14 +42,13 @@ endlocal
 
 (for /f "eol=. delims=" %%i in (ut.txt) do (echo DOMAIN,%%i))>>ix1.txt
 
+setlocal enabledelayedexpansion
+(for /f "delims=" %%i in ('findstr "^\." ut.txt') do (
+        set line=%%i
+        echo;DOMAIN-SUFFIX,!line:~1!
+))>ix2.txt
 
-
-
-
-
-
-
-
+endlocal
 
 ::add blank line
 for %%i in (i*.txt) do type blank.dd>>%%i
