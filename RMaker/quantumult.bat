@@ -26,6 +26,15 @@ wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Su
 ::del /f /q *.html
 del /f /q *hsts
 
+
+:h2qx
+setlocal enabledelayedexpansion
+(for /f "eol=# delims=" %%a in ('type h2q.txt') do (
+	set "str=%%a"
+	set str=!str: =#!
+	for /f "tokens=2 delims=#" %%A in ("!str!") do (set /p =%%A<nul &echo,)
+))>uq1.txt
+
 setlocal enabledelayedexpansion
 for /f "delims=" %%i in ('type "u7.txt"') do (
    set str=%%i
