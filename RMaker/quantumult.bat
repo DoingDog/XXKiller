@@ -16,24 +16,25 @@ wget -O i6.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX
 wget -O u7.txt https://limbopro.com/Adblock4limbo.list
 ::all
 wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
-::add new rules
-::wget -O i+number url
+type blank.dd>>u8.txt
 
-::download finished
-::Process rules
+::hosts
+wget -O uh1.txt https://neodev.team/lite_host
+wget -O uh2.txt https://adaway.org/hosts.txt
+wget -O uh3.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 
-::del rubbish
-::del /f /q *.html
+
+for %%i in (uh*.txt) do type blank.dd>>%%i
+type uh*.txt>>ug.txt
+
 del /f /q *hsts
-
-
 :h2qx
 setlocal enabledelayedexpansion
-(for /f "eol=# delims=" %%a in ('type h2q.txt') do (
+(for /f "eol=# delims=" %%a in ('type ug.txt') do (
 	set "str=%%a"
 	set str=!str: =#!
 	for /f "tokens=2 delims=#" %%A in ("!str!") do (set /p =%%A<nul &echo,)
-))>uq1.txt
+))>>u8.txt
 
 setlocal enabledelayedexpansion
 for /f "delims=" %%i in ('type "u7.txt"') do (
