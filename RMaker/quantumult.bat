@@ -68,7 +68,9 @@ endlocal
 gawk "!a[$0]++" mergd1.txt>nore.txt
 
 ::process other lines
-(findstr /v /b /e "#[^#]*" nore.txt)>final.tx
+(findstr /v /b /e "#[^#]*" nore.txt)>final.txt
+type qxwl.dd>>final.tx
+type final.txt>>final.tx
 
 ::end cleanup
 copy /y final.tx ..\..\quantumult.list
