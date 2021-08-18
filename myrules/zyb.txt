@@ -1,0 +1,23 @@
+[Adblock Plus 2.0]
+! Title: ZYBang-AntiAds
+! Homepage: https://github.com/DoingDog/XXKiller
+! By: XX
+! License: https://github.com/DoingDog/XXKiller/blob/main/LICENSE
+@@||app-search.cdnjtzy.com^
+||*mall.zybang.com^
+||apiugc.zybang.com^
+||fmp-notice.zybang.com^
+||vip.zuoyebang.com^
+||msg.zybang.com^
+||notice.zuoyebang.cc^
+||owl-log.zuoyebang.cc^
+||jiazhang.zuoyebang.com^
+||sanxia.zybang.com^
+||apm.zuoyebang.com^
+||syh.zybang.com^
+||wenda.zuoyebang.com^
+||cdnjtzy.com^
+||apivip.zuoyebang.com^
+||shumei-app-thirdpart.zuoyebang.com^
+||nlogtj.zuoyebang.cc^
+||*sell.zuoyebang.*
