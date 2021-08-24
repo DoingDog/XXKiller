@@ -1,4 +1,4 @@
-host-suffix,local,direct
+HOST-SUFFIX,local,DIRECT
 USER-AGENT,archero*,DIRECT
 USER-AGENT,coffeecorp*,DIRECT
 USER-AGENT,Coffee%20Corp*,DIRECT
@@ -32,15 +32,14 @@ DOMAIN,vd.l.qq.com,DIRECT
 DOMAIN,analytics.strava.com,DIRECT
 DOMAIN,msg.umeng.com,DIRECT
 DOMAIN,msg.umengcloud.com,DIRECT
-host,data.bilibili.com,reject
-host-suffix,ctobsnssdk.com,reject
-host-suffix,lsttnews.com,reject
-host-suffix,51y5.net,reject
-HOST,mqtt.zhihu.com,reject
-HOST,sugar.zhihu.com,reject
+HOST,data.bilibili.com,REJECT
+HOST-SUFFIX,ctobsnssdk.com,REJECT
+HOST-SUFFIX,lsttnews.com,REJECT
+HOST-SUFFIX,51y5.net,REJECT
+HOST,mqtt.zhihu.com,REJECT
+HOST,sugar.zhihu.com,REJECT
 HOST,appcloud2.in.zhihu.com,REJECT
 USER-AGENT,AVOS*,REJECT
 IP-CIDR,118.89.204.198/32,REJECT
 IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
 HOST,118.89.204.198,REJECT
-
