@@ -61,16 +61,18 @@ setlocal enabledelayedexpansion
 (for /f "delims=" %%i in (mergd.txt) do (
         set line=%%i
         echo;!line: =!
-))>mergd1.txt
+))>nore.txt
 endlocal
 
-::delete repeated rules
-gawk "!a[$0]++" mergd1.txt>nore.txt
 
 ::process other lines
 (findstr /v /b /e "#[^#]*" nore.txt)>final.txt
 type qxwl.dd>>final.tx
-type final.txt>>final.tx
+type final.txt>>final1.txt
+type ..\..\myrules\qx-neo.txt>>final1.txt
+
+::delete repeated rules
+gawk "!a[$0]++" final1.txt>final.tx
 
 ::end cleanup
 copy /y final.tx ..\..\quantumult.list
