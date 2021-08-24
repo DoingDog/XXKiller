@@ -1,3 +1,4 @@
+host-suffix,local,direct
 USER-AGENT,archero*,DIRECT
 USER-AGENT,coffeecorp*,DIRECT
 USER-AGENT,Coffee%20Corp*,DIRECT
@@ -31,5 +32,8 @@ DOMAIN,vd.l.qq.com,DIRECT
 DOMAIN,analytics.strava.com,DIRECT
 DOMAIN,msg.umeng.com,DIRECT
 DOMAIN,msg.umengcloud.com,DIRECT
-
+host,data.bilibili.com,reject
+host-suffix,ctobsnssdk.com,reject
+host-suffix,lsttnews.com,reject
+host-suffix,51y5.net,reject
 
