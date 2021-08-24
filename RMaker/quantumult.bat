@@ -65,14 +65,13 @@ setlocal enabledelayedexpansion
 endlocal
 
 
-::process other lines
-(findstr /v /b /e "#[^#]*" nore.txt)>final.txt
-type qxwl.dd>>final.tx
-type final.txt>>final1.txt
-type ..\..\myrules\qx-neo.txt>>final1.txt
+::merge
+type qxwl.dd>>final.txt
+(findstr /v /b /e "#[^#]*" nore.txt)>>final.txt
+type ..\..\myrules\qx-neo.txt>>final.txt
 
 ::delete repeated rules
-gawk "!a[$0]++" final1.txt>final.tx
+gawk "!a[$0]++" final.txt>final.tx
 
 ::end cleanup
 copy /y final.tx ..\..\quantumult.list
