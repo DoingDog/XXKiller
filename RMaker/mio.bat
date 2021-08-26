@@ -44,8 +44,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (findstr /r /v /b "^/." nore.txt)>ntpa.txt
 
 ::process other lines
-(findstr /v /b /e "#[^#]*" ntpa.txt)>ntpb.txt
-(for /f "eol=! delims=" %%i in (ntpb.txt) do (echo %%i))>ntpc.txt
+(for /f "eol=! delims=" %%i in (ntpa.txt) do (echo %%i))>ntpc.txt
 (for /f "eol=[ delims=" %%i in (ntpc.txt) do (echo %%i))>nord.txt
 
 ::merge lines
