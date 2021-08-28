@@ -15,14 +15,11 @@ wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 wget -O i12.txt https://anti-ad.net/adguard.txt
 wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 
-::add new rules
-::wget -O i+number url
+::add new rules like wget -O i+number url
 
 ::download finished
-::Process rules
 
 ::del rubbish
-::del /f /q *.html
 del /f /q *hsts
 
 ::add blank line
@@ -35,16 +32,13 @@ type i*.txt>>mergd.txt
 ::delete repeated rules
 gawk "!a[$0]++" mergd.txt>nore.txt
 
-::delete comments
-
+::delete comments&rubbish
 (findstr /b /c:"@" nore.txt)>nord.txt
 (findstr /v /b /c:"@" /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
 
 ::count rules
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
-::error
-set/a rnum+=1
-::save ct
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
+::save
 echo %rnum%>..\..\ct.txt
 
 ::add title and date
