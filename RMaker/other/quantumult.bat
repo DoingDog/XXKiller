@@ -1,5 +1,5 @@
 @echo off
-cd /d %~dp0\aa
+cd /d %~dp0\..\aa
 
 ::start download files
 
