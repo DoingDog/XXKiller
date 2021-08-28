@@ -1,7 +1,7 @@
 # XXKiller 广告拦截规则
 适用AdGuard,AG HOME,ADAWAY等等<br/>
 全部由其他规则合并产生<br/><br/>
-规则数量：<a href="https://raw.githubusercontent.com/DoingDog/XXKiller/main/ct.txt">点击显示</a><br/>
+规则数量：<a href="https://raw.githubusercontent.com/DoingDog/XXKiller/main/ct.txt">点击显示精确值</a> 约21万<br/>
 <strong>每天0点更新</strong><br/><br/>
 更新地址：<br/>
 中国国内（有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>复制链接</a><br/>
