@@ -37,18 +37,8 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::delete comments
 
-::extract and move lines with "/"
-(findstr /r /b "^/." nore.txt)>ntp1.txt
-(findstr /r /v /b "^/." nore.txt)>ntpan.txt
-
-::process other lines
-(findstr /b /c:"@" ntpan.txt)>ntpl.txt
-(findstr /v /b /c:"@" ntpan.txt)>ntpa.txt
-(findstr /v /b /c:"# " ntpa.txt)>ntpb.txt
-(for /f "eol=! delims=" %%i in (ntpb.txt) do (echo %%i))>ntpc.txt
-type ntpl.txt>nord.txt
-(for /f "eol=[ delims=" %%i in (ntpc.txt) do (echo %%i))>>nord.txt
-type ntp1.txt>>nord.txt
+(findstr /b /c:"@" nore.txt)>nord.txt
+(findstr /v /b /c:"@" /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a
