@@ -9,6 +9,6 @@
 日本（有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>复制链接</a><br/>
 韩国（推荐） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>复制链接</a><br/>
 <br/><br/>
-合并规则列表见mio.bat的代码<br/><br/>
+合并规则列表:<br>AdguardDNS，HalfLifePC，乘风，<br/>乘风视频，antiad，Neodev，<br/>ADgk，冷莫hosts规则，adaway，<br/>Barbblock，极客爱好者规则，和一些额外规则（frules文件）<br/><br/>
 合并，去重规则的脚本已开源<br/><br/>
 (另有<a href="https://github.com/DoingDog/XXKillerMax">增强版规则</a>可以使用)
