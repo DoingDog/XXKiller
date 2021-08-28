@@ -4,10 +4,9 @@ cd /d %~dp0\aa
 ::start download files
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-wget -O i2.txt https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
+wget -O i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
 wget -O i3.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-wget -O i4.txt https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt
-wget -O i5.txt https://hacamer.coding.net/p/lite/d/AdBlock-Rules-Mirror/git/raw/master/AdGuard-Simplified-Domain-Names-Filter.txt
+wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 wget -O i6.txt https://neodev.team/lite_adblocker
 wget -O i7.txt https://file.trli.club/dns/hosts.txt
 wget -O i8.txt https://anti-ad.net/easylist.txt
@@ -44,7 +43,7 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 (findstr /r /v /b "^/." nore.txt)>ntpa.txt
 
 ::process other lines
-(findstr /v /b /e "#[^#]*" ntpa.txt)>ntpb.txt
+(findstr /v /b /c:"# " ntpa.txt)>ntpb.txt
 (for /f "eol=! delims=" %%i in (ntpb.txt) do (echo %%i))>ntpc.txt
 (for /f "eol=[ delims=" %%i in (ntpc.txt) do (echo %%i))>nord.txt
 
@@ -61,7 +60,7 @@ echo %rnum%>..\..\ct.txt
 ::add title and date
 echo ! Version: %date%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
-echo ! Count: %rnum%>>tpdate.txt
+echo ! Rule Count: %rnum%>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end cleanup
