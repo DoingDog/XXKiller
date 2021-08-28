@@ -39,14 +39,15 @@ gawk "!a[$0]++" mergd.txt>nore.txt
 
 ::extract and move lines with "/"
 (findstr /r /b "^/." nore.txt)>ntp1.txt
-(findstr /r /v /b "^/." nore.txt)>ntpa.txt
+(findstr /r /v /b "^/." nore.txt)>ntpan.txt
 
 ::process other lines
+(findstr /b /c:"@" ntpan.txt)>ntpl.txt
+(findstr /v /b /c:"@" ntpan.txt)>ntpa.txt
 (findstr /v /b /c:"# " ntpa.txt)>ntpb.txt
 (for /f "eol=! delims=" %%i in (ntpb.txt) do (echo %%i))>ntpc.txt
-(for /f "eol=[ delims=" %%i in (ntpc.txt) do (echo %%i))>nord.txt
-
-::merge lines
+type ntpl.txt>nord.txt
+(for /f "eol=[ delims=" %%i in (ntpc.txt) do (echo %%i))>>nord.txt
 type ntp1.txt>>nord.txt
 
 ::count rules
