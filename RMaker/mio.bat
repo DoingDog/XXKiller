@@ -10,7 +10,6 @@ wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.tx
 wget -O i6.txt https://neodev.team/lite_adblocker
 wget -O i7.txt https://file.trli.club/dns/hosts.txt
 wget -O i8.txt https://anti-ad.net/easylist.txt
-wget -O i9.txt https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/manhua.txt
 wget -O i10.txt https://adaway.org/hosts.txt
 wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 wget -O i12.txt https://anti-ad.net/adguard.txt
