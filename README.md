@@ -10,5 +10,6 @@
 韩国（推荐，炸了就用香港） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>复制链接</a><br/>
 <br/><br/>
 合并规则列表:<br>AdguardDNS，HalfLifePC，乘风，<br/>乘风视频，antiad，Neodev，<br/>ADgk，冷莫hosts规则，adaway，<br/>Barbblock，极客爱好者规则，和一些额外规则（frules文件）<br/><br/>
-合并，去重规则的脚本已开源<br/><br/>
-(另有<a href="https://github.com/DoingDog/XXKillerMax">增强版规则</a>可以使用)
+合并，去重规则的脚本已开源（mio.bat）<br/><br/>
+(另有<a href="https://github.com/DoingDog/XXKillerMax">增强版规则</a>可以使用)<br/>
+如果你用圈x，可以下载圈x去广告规则。把上面的链接中w.txt换成quantumult.list即可，放于分流的顶端：）
