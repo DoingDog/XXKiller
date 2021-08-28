@@ -1,5 +1,5 @@
 @echo off
-cd /d %~dp0\aa
+cd /d %~dp0\..\aa
 
 copy frontshadow.dd+final.tx+backshadow.dd mergd.txt
 
