@@ -7,7 +7,7 @@
 中国国内（有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>复制链接</a><br/>
 中国香港 <a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>复制链接</a><br/>
 日本（有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>复制链接</a><br/>
-韩国（推荐） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>复制链接</a><br/>
+韩国（推荐，炸了就用香港） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>复制链接</a><br/>
 <br/><br/>
 合并规则列表:<br>AdguardDNS，HalfLifePC，乘风，<br/>乘风视频，antiad，Neodev，<br/>ADgk，冷莫hosts规则，adaway，<br/>Barbblock，极客爱好者规则，和一些额外规则（frules文件）<br/><br/>
 合并，去重规则的脚本已开源<br/><br/>
