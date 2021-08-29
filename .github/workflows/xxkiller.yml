@@ -1,4 +1,4 @@
-name: make w.txt
+name: make rules
 
 on:
   schedule:
@@ -12,15 +12,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-      - name: run mio.bat
+      - name: run main
         run: |
           cmd
           .\RMaker\mio.bat
+      - name: run quanx
+        run: |
+          cmd
           .\RMaker\other\quantumult.bat
+      - name: run shadow
+        run: |
+          cmd
           .\RMaker\other\shadow.bat
       - name: commit
         run: |
-          git config --global user.name "dd"
+          git config --global user.name "me"
           git config --global user.email "aqvm@qq.com"
           git add .
           git commit -m "规则文件,已在$(date)更新" -a
