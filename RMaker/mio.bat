@@ -30,7 +30,8 @@ type frules.dd>>mergd.txt
 type i*.txt>>mergd.txt
 
 ::delete repeated rules
-gawk "!a[$0]++" mergd.txt>nore.txt
+gawk "!a[$0]++" mergd.txt>norm.txt
+(sort /rec 65535 norm.txt)>nord.txt
 
 ::delete comments&rubbish
 (findstr /b /c:"@" nore.txt)>nord.txt
