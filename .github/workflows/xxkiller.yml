@@ -1,4 +1,4 @@
-name: make
+name: make w.txt
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  mainrule:
+  build:
     runs-on: windows-latest
 
     steps:
@@ -16,37 +16,12 @@ jobs:
         run: |
           cmd
           .\RMaker\mio.bat
-      - name: commit
-        run: |
-          git config --global user.name "dd"
-          git config --global user.email "aqvm@qq.com"
-          git pull origin main --allow-unrelated-histories
-          git pull origin main
-          git init
-          git add .
-          git commit -m "规则文件,已在$(date)更新" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
-  other:
-    runs-on: windows-latest
-
-    steps:
-      - uses: actions/checkout@main
-      - name: run bat
-        run: |
-          cmd
           .\RMaker\other\quantumult.bat
           .\RMaker\other\shadow.bat
       - name: commit
         run: |
           git config --global user.name "dd"
           git config --global user.email "aqvm@qq.com"
-          git pull origin main --allow-unrelated-histories
-          git pull origin main
-          git init
           git add .
           git commit -m "规则文件,已在$(date)更新" -a
       - name: Push changes
