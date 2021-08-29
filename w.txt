@@ -5,7 +5,7 @@
 ! License: https://github.com/DoingDog/XXKiller/blob/main/LICENSE
 ! Expires: 1 days
 ! Version: Sun 08/29/2021
-! Last modified: Sun 08/29/2021T 1:14:24.49Z
+! Last modified: Sun 08/29/2021T 1:20:31.61Z
 ! Rule Count: 
 
 
