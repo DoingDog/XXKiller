@@ -37,6 +37,8 @@
 @@/*.business.apple.com/
 @@/*.cdn-apple.com/
 @@/*.ciscospark.com/
+@@/*.cleverpush.com/
+@@/*.crashlytics.com/
 @@/*.damoh.n-tv.de/
 @@/*.de.ioam.de/
 @@/*.delivery.mp.microsoft.com/
@@ -67,6 +69,7 @@
 @@/*.githubapp.com/
 @@/*.githubassets.com/
 @@/*.githubusercontent.com/
+@@/*.googleapis.com/
 @@/*.googlevideo.com/
 @@/*.gvt1.com/
 @@/*.gvt2.com/
@@ -82,6 +85,7 @@
 @@/*.ls-apple.com.akadns.net/
 @@/*.ls2-apple.com.akadns.net/
 @@/*.media-amazon.com/
+@@/*.mgr.consensu.org/
 @@/*.mzstatic.com/
 @@/*.netflix.com/
 @@/*.netflix.net/
@@ -167,6 +171,8 @@
 @@/*.webex.com.edgekey.net/
 @@/*.webex.com.ssl.sc.omtrdc.net/
 @@/*.webex.com/
+@@/*.whatsapp.com/
+@@/*.whatsapp.net/
 @@/*.windowsupdate.com/
 @@/*.wns.windows.com/
 @@/*.xbox.com/
@@ -646,6 +652,7 @@
 @@||ad4.on.cc/web/www/delivery/spcjs.php$domain=hk.on.cc
 @@||adac.de/_common/js/adac.webtrekk.js
 @@||adap.tv/redir/javascript/vpaid.js
+@@||adapi.zcool.com.cn/api/adstrategy/realtime/get_ad_info?location_id=$domain=zcool.com.cn
 @@||adaway.org^
 @@||adb.juvander.net^
 @@||adblock.dk^
@@ -687,7 +694,7 @@
 @@||adobedtm.com/*-source.min.js$script,domain=atresplayer.com|backcountry.com|bt.com|dollargeneral.com|kroger.com|personal.natwest.com
 @@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|kroger.com
 @@||adobedtm.com/extensions/$script,domain=antena3.com|atresmedia.com|atresplayer.com|lasexta.com
-@@||adobedtm.com/launch-$script
+@@||adobedtm.com/launch-$script,xmlhttprequest
 @@||adobedtm.com^$script,domain=sonystyle.com.cn
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com|foodnetwork.com
@@ -939,6 +946,7 @@
 @@||ams.amazon.com^$domain=ams.amazon.com
 @@||amzn.to^
 @@||an.yandex.ru/system/video-ads-sdk/adsdk.js$domain=5-tv.ru|armdb.org|gisher.org|peers.tv|tele-sport.ru
+@@||an.yandex.ru^
 @@||analitik.edevlet.gov.tr^$app=tr.gov.turkiye.edevlet.kapisi
 @@||analysys.cn^$domain=analysys.cn
 @@||analytics-collector-28944298.us-east-1.elb.amazonaws.com^
@@ -1092,12 +1100,14 @@
 @@||appboot.netflix.com^
 @@||appboycdn.com^*/appboy.min.js$script,domain=bakkt.com
 @@||appcloud.zhihu.com^
+@@||appdownload.alicdn.com^
 @@||appengine.google.com^
 @@||appldnld.apple.com^
 @@||apple.com/metrics/ac-analytics/*/scripts/$domain=apple.com
 @@||apple.com/metrics/data-relay/*/scripts/data-relay.js
 @@||apple.com/metrics/scripts/$domain=locate.apple.com
 @@||apple.com^
+@@||apple.com^$generichide
 @@||appledaily.com.hk/admedia/
 @@||appledaily.com.tw^*_ad_logo.
 @@||appledaily.com/js/nxm_
@@ -1193,6 +1203,7 @@
 @@||autoscout24.net/unifiedtracking/ivw.js
 @@||autotrader.co.uk^*/advert$~third-party
 @@||av30.xyz/cs/2.js
+@@||avatars.mds.yandex.net^
 @@||avclub.com^*/adManager.$script,~third-party
 @@||avforums.com/*ad$script
 @@||avgle.com/embed/$genericblock,generichide
@@ -1259,6 +1270,7 @@
 @@||bbc.com^
 @@||bbc.gscontxt.net^$script,domain=bbc.com
 @@||bbs.archlinux.org^
+@@||bbs.tgfcer.com^$generichide
 @@||bc.geocities.*/not_found/
 @@||bcebos.com/static/translation/widget/translate/output/AdBanner/AdBanner.js
 @@||bcebos.com^$script,domain=31xiaoshuo.org
@@ -1336,6 +1348,7 @@
 @@||bit.ly^
 @@||bitauto.com/bglogpostlog.js
 @@||bitbucket.org^
+@@||bitbucket.org^$generichide
 @@||bitcoinbazis.hu/advertise-with-us/$~third-party
 @@||bjjhq.com/HttpCombiner.ashx?$script,~third-party
 @@||blackcircles.ca^*/gtm.js$~third-party
@@ -1956,6 +1969,7 @@
 @@||ctrip.com/Customer-Market-Proxy/AdCallProxyV2.$~third-party
 @@||ctrip.com^
 @@||ctv.ca/players/mediaplayer/*/comscorebeacon.js
+@@||curiositystream.com^$generichide
 @@||custojusto.pt/user/myads/$~third-party
 @@||customerevents.netflix.com^
 @@||cutcaptcha.com^|
@@ -2112,6 +2126,7 @@
 @@||discovermagazine.com^
 @@||discussions.apple.com^
 @@||disney.demdex.net^
+@@||disneyplus.com^$generichide
 @@||disneyplus.disney.co.jp/view/vendor/analytics/$~third-party
 @@||dispatcher.oewabox.at^$domain=krone.at
 @@||display.apester.com^
@@ -2685,16 +2700,17 @@
 @@||gitee.com^
 @@||github.com/carlomorgenstern/piwik-angular/$domain=github.com
 @@||github.com^
+@@||github.com^$generichide
 @@||github.io/videojs-ima/node_modules/video.$domain=setn.com
 @@||github.io^
 @@||gitlab.com^
+@@||gitlab.com^$generichide
 @@||gitter.im^
 @@||gittigidiyor.net/reklam/$image
 @@||gizmodo.com.au^
 @@||gizmodo.com^
 @@||gjensidige.lv/Content/dev/scripts/analytics.js
 @@||gjensidige.lv/Content/dev/scripts/analytics.min.js
-@@||glbimg.com^*/300x250/$image,domain=globo.com
 @@||glenat.com^*/static/analytics.js$script,~third-party
 @@||global.fncstatic.com/static/isa/app/lib/VisitorAPI.js$domain=video.foxnews.com|video.foxbusiness.com
 @@||global.in.ai.monitor.azure.com^
@@ -3101,7 +3117,7 @@
 @@||googletagmanager.com/gtm.js$domain=askona.ru
 @@||googletagmanager.com/gtm.js$domain=asus.com.cn|support.amd.com
 @@||googletagmanager.com/gtm.js$domain=asus.com.cn|support.amd.com|warnermusic.com.tw
-@@||googletagmanager.com/gtm.js$domain=atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|easternbank.com|fortune.com|nflgamepass.com|pioneer.eu|royalbank.com|scotsman.com|trademe.co.nz
+@@||googletagmanager.com/gtm.js$domain=atptour.com|bsa-whitelabel.com|chipotle.com|complex.com|crello.com|cyclingnews.com|easternbank.com|fortune.com|nflgamepass.com|nordvpn.com|pioneer.eu|royalbank.com|scotsman.com|trademe.co.nz
 @@||googletagmanager.com/gtm.js$domain=auone.jp
 @@||googletagmanager.com/gtm.js$domain=avast.com
 @@||googletagmanager.com/gtm.js$domain=besplatka.ua
@@ -3419,6 +3435,7 @@
 @@||hb.afl.rakuten.co.jp^|
 @@||hbogo.com^
 @@||hbogo.pl^
+@@||hbomax.com^$generichide
 @@||hc360.com/ad/*.css
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js$script,domain=abcvideo.cc
@@ -3555,6 +3572,7 @@
 @@||ichnaea.netflix.com^
 @@||icloud.com.cn^
 @@||icloud.com^
+@@||icws.jb51.net^
 @@||id.sonyentertainmentnetwork.com^
 @@||identity.apple.com^
 @@||identity.mparticle.com/v*/identify$domain=cwseed.com
@@ -3622,6 +3640,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=netzwelt.de
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=news.tvb.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=oyunkuzusu.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=player.addradio.de
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=player.motorsport-magazin.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=video.udn.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=bloomberg.co.jp|farfeshplus.com|filmweb.pl|gamepix.com|klix.ba|locipo.jp|maharashtratimes.com|minigame.aeriagames.jp|nettavisen.no|niusdiario.es|rtlnieuws.nl|sportsbull.jp|sportsport.ba|success-games.net|synk-casualgames.com|tbs.co.jp|tv-asahi.co.jp|tv.rakuten.co.jp|tver.jp|video.tv-tokyo.co.jp|vlive.tv|webdunia.com|wtk.pl
@@ -3644,6 +3663,7 @@
 @@||img.client.10010.com^
 @@||img.gazetesok.com/images/content/*/reklam-
 @@||img.vidible.tv^
+@@||img.zcool.cn/ad_manager/location/$domain=zcool.com.cn
 @@||img.zuoyebang.cc^
 @@||img05.zhaopin.cn/2014/common/js/za/ga.js
 @@||img1.gtimg.com^
@@ -3768,6 +3788,7 @@
 @@||jav777.xyz/advertise/
 @@||jbj.co.uk^*/analytics.js$script,~third-party
 @@||jbprogramnotes.com^$generichide
+@@||jbzj.com^
 @@||jcpenney.com^
 @@||jd.com/adclick?$~third-party
 @@||jd.com/adclick?$popup,~third-party
@@ -4006,6 +4027,7 @@
 @@||loc.map.baidu.com/sdk.php$app=com.baidu.BaiduMap
 @@||localhost^
 @@||lodz.tvp.pl^
+@@||log.gds.mmstat.com^
 @@||log.mmstat.com/eg.js$domain=youku.com
 @@||log.mmstat.com^
 @@||log.mmstat.com^|
@@ -4420,6 +4442,7 @@
 @@||netdna.bootstrapcdn.com^
 @@||netflav.com^$generichide
 @@||netflix.com^
+@@||netflix.com^$generichide
 @@||netinsight.travelers.com/scripts/ntpagetaghttps.js
 @@||netmile.co.jp/ad/images/$image
 @@||netsh.org^$script,~third-party,xmlhttprequest,domain=serve.netsh.org
@@ -4598,6 +4621,7 @@
 @@||ooyala.com/3rdparty/comscore_*.swf$domain=bloomberg.com|businessweek.com|greentechmedia.com
 @@||ooyala.com/crossdomain.xml
 @@||open.fm^
+@@||open.spotify.com^$generichide
 @@||openad.oss-cn-shanghai.aliyuncs.com^$domain=yicai.com
 @@||openapi.youku.com/router^$app=com.huawei.hwvplayer.youku
 @@||openbsd.org^
@@ -4659,6 +4683,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chtoen.com|dizhishengcheng.com|doitwell.tw|ff14angler.com|haoweichi.com|it365.abctool.info|logi.im|monnsutogatya.com|numberempire.com|patch.ali213.net|pc3mag.com|shenfendaquan.com|wenxuecity.com|xiebruce.top|yabook.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cpu-world.com|megaleech.us
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=real-sports.jp|slideplayer.com|smallseotools.com|soranews24.com|tampermonkey.net|thefreedictionary.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=switch520.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=youneed.win
 @@||pagead2.googlesyndication.com/pagead/js/google_top_exp.js$domain=ebb.io
 @@||pagead2.googlesyndication.com/pagead/js/google_top_exp.js$domain=soranews24.com
@@ -4672,6 +4697,7 @@
 @@||pagure.io/static/issues_stats.js?
 @@||pando.com^
 @@||pandora.com/images/public/devicead/$image
+@@||pandora.com^$generichide
 @@||panel.flops.ru/js/member/evercookie_init.js
 @@||pangzi.ca^$subdocument
 @@||panjiachen.github.io^$generichide
@@ -4681,6 +4707,7 @@
 @@||paperpk.com/ads_pic_directory/$image,domain=paperpk.com
 @@||paperpk.com/pk_img/$image,domain=paperpk.com
 @@||papi-service.jd.com/ads/
+@@||paramountplus.com^$generichide
 @@||parma.am/js/counter.js
 @@||partner.googleadservices.com/gpt/pubads_$domain=mlb.com
 @@||partner.googleadservices.com/gpt/pubads_impl_$domain=ukr.net
@@ -4712,6 +4739,7 @@
 @@||pcworldcommunication.*.sc.omtrdc.net/b/ss/
 @@||pcworldcommunication.d2.sc.omtrdc.net/b/ss/$domain=techhive.com
 @@||pdrnetwork.112.2o7.net/b/ss/pdrnetworkpdrnetprod/
+@@||peacocktv.com^$generichide
 @@||people-pa.googleapis.com^
 @@||people.com^
 @@||pepperjamnetwork.com/banners/$image,domain=extrarebates.com
@@ -5060,7 +5088,6 @@
 @@||res.wx.qq.com/mmbizwap/$script
 @@||res.yyets.com/ads/mediav-250.js
 @@||reseguiden.se^*.siteCatalyst.js
-@@||resize.blogsys.jp^*/300x250/$image,domain=blog.livedoor.jp
 @@||resources.crowdtwist.com/fan_club/clients/$domain=myperks.catchow.com
 @@||restapi.amap.com^
 @@||restapi.ele.me^
@@ -5121,6 +5148,7 @@
 @@||s.marketwatch.com^
 @@||s.mvconf.f.360.cn^
 @@||s.pinimg.com^
+@@||s.tgfcer.com^$generichide
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||s.visilabs.net/Target.js^$domain=boyner.com.tr
 @@||s.visilabs.net/Target.js^$domain=evidea.com
@@ -5483,6 +5511,7 @@
 @@||ssl.geoplugin.net/javascript.gp$domain=imalentstore.com
 @@||ssl.google-analytics.com/ga.js$domain=gmail.com
 @@||ssl.google-analytics.com/ga_exp.js$domain=hvg.hu
+@@||ssl.google-analytics.com^
 @@||ssl.gstatic.com/analytics/$script,domain=analytics.google.com
 @@||ssl.gstatic.com^
 @@||ssl.msdk.qq.com^
@@ -5773,6 +5802,7 @@
 @@||techrepublic.com^*/dw-tracking-1.0.js$~third-party
 @@||tedcdn.com^
 @@||teenvogue.com/js/eventTracker.js
+@@||tejia.taobao.com^
 @@||telegraph.co.uk/template/ver1-0/js/webtrends/live/wtid.js
 @@||television-envivo.com^$generichide
 @@||temedya.com/player/web/$domain=habertempo.net
@@ -5820,6 +5850,7 @@
 @@||tianxun.com^*/js/tracker.js
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
 @@||ticketmaster.sc.omtrdc.net/b/ss/
+@@||tidal.com^$generichide
 @@||tile-service.weather.microsoft.com^
 @@||time-ios.apple.com^
 @@||time-macos.apple.com^
@@ -5882,6 +5913,7 @@
 @@||toysrus.com^
 @@||tp-emea.exactag.com^
 @@||tpdads.com/configs/bigleaguepolitics.js$script,domain=bigleaguepolitics.com
+@@||tq121.com.cn/j/ad/caoyu-min.js$domain=products.weather.com.cn
 @@||tra.scds.pmdstatic.net/advertising-core/$domain=voici.fr
 @@||tra.scds.pmdstatic.net/sourcepoint/$domain=voici.fr
 @@||track.adform.net/serving/scripts/trackpoint$script,domain=sky.it|ubibanca.com
@@ -5962,6 +5994,7 @@
 @@||tusfiles.net^
 @@||tv.sohu.com^
 @@||tv.wp.pl^
+@@||tv.youtube.com^$generichide
 @@||tv5.org/cms/javascript/*/sitestat.js
 @@||tvb.com/player/*/videojs.ads.
 @@||tvb.com/social/share_
@@ -6556,6 +6589,7 @@
 @@=mywebloadt1&$domain=myweb.hinet.net
 @@adsense$domain=adnanguney.com,image
 @@analytics^$domain=wwe.com
+@@app-measurement.com
 @@app.link
 @@apple.com
 @@consensu.org
