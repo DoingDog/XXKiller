@@ -5439,7 +5439,7 @@
 @@||tvdb2.plex.tv^
 @@||tvepg.pandora.xiaomi.com^
 @@||tvhayz.org/playergk/fingerprint2.min.js
-@@||tvid.in/sdk/loader.js$domain=economictimes.indiatimes.com
+@@||tvid.in/sdk/loader.js$domain=indiatimes.com|timesofindia.com
 @@||tvn24.pl^
 @@||tvnstyle.pl^
 @@||tvp.pl^
