@@ -1729,6 +1729,8 @@
 @@||def-vef.xboxlive.com^
 @@||default.cn.sz.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^
 @@||default.cn.sz.wagbridge.ad.alibabacorp.com^
+@@||default.cn.zb.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^
+@@||default.cn.zb.wagbridge.ad.alibabacorp.com^
 @@||delet.jhi.pl/bower_components/angular-google-analytics/$script,~third-party
 @@||delivery.vidible.tv^
 @@||delivery.wasu.cn/crossdomain.xml
@@ -3426,6 +3428,7 @@
 @@||js.maxmind.com^
 @@||js.revsci.net/gateway/gw.js?$domain=t-online.de
 @@||js.sentry-cdn.com^$script,domain=book.dmm.com|jobs.ch
+@@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||js.tudouui.com/bin/player2/$object
 @@||js.tv.itc.cn/gg.seed.js
 @@||jscssfunny.com/fe/appcreator/public/img/ad_img.$domain=flat-ads.com
@@ -4928,7 +4931,6 @@
 @@||sohu.com/integration-api/mix/region/*&refer=http
 @@||sohu.com/play/videonew.do?*/share_play.
 @@||sohu.com/upload/static/share/share_play.html
-@@||sokakyemekleri.com/wp-content/themes/mts_ad_sense/
 @@||solidfiles.com^
 @@||solr.sas.com/query/$xmlhttprequest,domain=jmp.com
 @@||som.aeroplan.com/b/ss/
@@ -5519,7 +5521,6 @@
 @@||urlcheck.hulu.com/crossdomain.xml
 @@||urlgalleries.net^$generichide
 @@||urlhaus.abuse.ch^
-@@||us.confirmit.com^$domain=support.lenovo.com
 @@||usbank.com^*/adrum.js?$script
 @@||use.fontawesome.com^
 @@||useinsider.com/ins.js$domain=pizzahut.jp
