@@ -690,7 +690,7 @@
 @@||alsc-buy2.ele.me^
 @@||alternate.de/js/emos2.js
 @@||alternativeto.net^
-@@||amazon-adsystem.com/aax2/apstag.js$domain=accuweather.com|blastingnews.com|exomashomepage.com|familyhandyman.com|foxbusiness.com|go.cnn.com|history.com|keloland.com|radio.com|rd.com|thehealthy.com|wboy.com|wkrn.com|wlns.com|wvnstv.com
+@@||amazon-adsystem.com/aax2/apstag.js$domain=accuweather.com|blastingnews.com|edition.cnn.com|exomashomepage.com|familyhandyman.com|foxbusiness.com|go.cnn.com|history.com|keloland.com|radio.com|rd.com|thehealthy.com|wboy.com|wkrn.com|wlns.com|wvnstv.com
 @@||amazon-adsystem.com/aax2/apstag.js$script,domain=abola.pt|gamestar.de|los40.com
 @@||amazon-adsystem.com/aax2/apstag.js$script,domain=programme-tv.net
 @@||amazon-adsystem.com/e/cm?$document,subdocument,domain=affiliate-program.amazon.co.uk|affiliate-program.amazon.com|affiliate-program.amazon.in|affiliate.amazon.co.jp|afiliados.amazon.es|associados.amazon.com.br|associates.amazon.ca|associates.amazon.cn|partenaires.amazon.fr|partnernet.amazon.de|programma-affiliazione.amazon.it
@@ -930,6 +930,7 @@
 @@||assets.mmsrg.com^
 @@||assets.sport1.de/bundles/
 @@||assets.strossle.com/strossle-widget-sdk/$script,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
+@@||assets.strossle.com^*/strossle-widget-sdk.js$script,domain=kaaoszine.fi
 @@||astat.bugly.qq.com^
 @@||astatic.ccmbg.com/fc/js/prebid?v=$domain=sante.journaldesfemmes.fr
 @@||astatic.ccmbg.com^*/prebid$script,domain=linternaute.com
@@ -3239,7 +3240,7 @@
 @@||images.google.com^
 @@||images.nvidiagrid.net^
 @@||images.sohu.com/bill/$domain=~auto.sohu.com
-@@||images.sprinklecontent.com^$image,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
+@@||images.sprinklecontent.com^$image,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
 @@||images.taboola.com^$domain=samsung.com|thestartmagazine.com
 @@||images.uc.cn^
 @@||images2.imgbox.com^
@@ -5112,6 +5113,7 @@
 @@||storage.embluemail.com/pixeltracking^$domain=lavoz.com.ar
 @@||storage.live.com^
 @@||storage.msn.com^
+@@||store-images.s-microsoft.com^
 @@||store.iqiyi.com^
 @@||store.steampowered.com^
 @@||store.usps.com/media/js/metrics/metrics.js
@@ -5746,7 +5748,7 @@
 @@||widget.trustpilot.com/bootstrap/$script,domain=exodus.co.uk
 @@||widget.weibo.com^
 @@||widgets.dlvr.it^
-@@||widgets.spklw.com/v1/$xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
+@@||widgets.spklw.com/v1/$xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
 @@||widgets.sprinklecontent.com/v2/$script,xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 @@||widgets.trustedshops.com/reviews/tsSticker/$domain=koziol-shop.de
 @@||widgets.trustedshops.com^
