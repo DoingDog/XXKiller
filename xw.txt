@@ -511,7 +511,7 @@
 @@||adobedtm.com^*/satelliteLib-$script,domain=elgiganten.se
 @@||adobedtm.com^*/satelliteLib-$script,domain=elkjop.no
 @@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.fr|laredoute.be|laredoute.ch|laredoute.fr|lci.fr|nrj.fr|tou.tv
-@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp
+@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp|support.nec-lavie.jp
 @@||adobedtm.com^*/satelliteLib-$script,domain=gigantti.fi
 @@||adobedtm.com^*/satelliteLib-$script,domain=laredoute.pl
 @@||adobedtm.com^*/satelliteLib-$script,domain=laredoute.ru
@@ -1175,6 +1175,7 @@
 @@||buy.ele.me^
 @@||buyad.bi-xenon.cn^
 @@||buzzfeed.com^
+@@||bwb101.goo.ne.jp/b.js$domain=news.goo.ne.jp
 @@||by.optimost.com^$domain=ft.com
 @@||bydgoszcz.tvp.pl^
 @@||bytedance.com/ttwid/union/register/
@@ -2680,8 +2681,8 @@
 @@||google.com/js/gweb/analytics/$domain=google.com
 @@||google.com/js/gweb/analytics/doubletrack.js$domain=android.com
 @@||google.com/payments/*/adwords.$document,subdocument
-@@||google.com/recaptcha/
 @@||google.com/recaptcha/$csp,domain=vidoza.co|vidoza.net
+@@||google.com/recaptcha/$csp,subdocument
 @@||google.com/translate_$media,third-party,xmlhttprequest
 @@||google.com/usability/$domain=google.com,document
 @@||google.de/translate_$media,third-party,xmlhttprequest
@@ -3323,7 +3324,7 @@
 @@||inpad.com.tw/data/adv/
 @@||inpref.com/frosmo.xdm.html?
 @@||inpref.com/messageApi?
-@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=kauppahalli24.fi
+@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=elisa.fi|kauppahalli24.fi
 @@||inpref.s3.amazonaws.com/frosmo.easy.js$third-party
 @@||inpref.s3.amazonaws.com/sites/$script,domain=kauppahalli24.fi
 @@||inpref.s3.amazonaws.com/sites/eventim_$script,third-party
@@ -3410,6 +3411,7 @@
 @@||jjjgame.com/plus/ad_
 @@||jjkmn.com^$generichide
 @@||jlthjy.com^$generichide
+@@||jmap.io/*/libs/Overture.js$~third-party
 @@||jmedj.co.jp/files/$image,~third-party
 @@||jobs.lifehacker.com^
 @@||joemonster.org^
@@ -3556,7 +3558,7 @@
 @@||lemall.com/adspace/
 @@||lemon.baidu.com^
 @@||lenovo.com/_ui/desktop/common/js/AdobeAnalyticsEvent.js$script,~third-party
-@@||lenovo.com/fea/js/adobeAnalytics/adobeAnalytics-searchComponent.js$xmlhttprequest,domain=lenovo.com
+@@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
 @@||leroymerlin.ru/config/analytics.js$script
 @@||lesports.com/pc/??*/click_statistics/
 @@||letelegramme.fr/js/xtcore.js
@@ -3621,6 +3623,7 @@
 @@||log.mmstat.com^
 @@||log.mmstat.com^|
 @@||log.zoom.us^
+@@||log000.goo.ne.jp/js/VLTraceDMD.js$domain=news.goo.ne.jp
 @@||logcg.content-delivery.top/wp-content/plugins/bwp-minify/min/?f=
 @@||logentries.com^|
 @@||logfiles.zoom.us^
@@ -3930,6 +3933,7 @@
 @@||mparticle.uc.cn^
 @@||mpsnare.iesnare.com/general5/wdp.js$domain=usbank.com
 @@||mpsnare.iesnare.com/snare.js$domain=citi.com|citibank.com|enmasse.com|login.skype.com|vitacost.com
+@@||mpsnare.iesnare.com/snare.js$script,domain=power.fi
 @@||mpsnare.iesnare.com/wu/snare.js$domain=westernunion.com
 @@||mqtt.zhihu.com^
 @@||ms332.com^$generichide
@@ -4033,6 +4037,7 @@
 @@||nextcloud.com/remote.php/$~third-party,xmlhttprequest
 @@||nexus.passport.com^
 @@||nexusrules.officeapps.live.com^
+@@||nf.pl/js/libs/cookiesDirective.js$script
 @@||nfl.com^
 @@||nflcdn.com/static/site/$script,domain=nfl.com
 @@||nflxext.com^
@@ -4534,6 +4539,7 @@
 @@||quark.sm.cn^
 @@||quattroruote.it^*/webtrekk_mediaTracking.min.js$script,~third-party
 @@||qun.qzone.qq.com^
+@@||qzs.qq.com^
 @@||r10s.jp/share/themes/ds/js/show_ads_randomly.js$domain=travel.rakuten.co.jp
 @@||r3.o.lencr.org^
 @@||r3sub.com^$generichide
@@ -5202,7 +5208,6 @@
 @@||tabiat.gov.tr/KACMS/Files/ad-$image,~third-party
 @@||tablespoon.com/library/js/TBSP_ntpagetag.js
 @@||taboola.com/libtrc/$script,domain=bild.de|bz-berlin.de|computerbild.de|fitbook.de|jetzt.de|metal-hammer.de|musikexpress.de|noizz.de|rollingstone.de|stylebook.de|techbook.de|travelbook.de|welt.de|wieistmeineip.at|wieistmeineip.ch|wieistmeineip.de
-@@||taboola.com/libtrc/$script,domain=news.goo.ne.jp
 @@||taboola.com/libtrc/impl.$script,domain=businessinsider.com|insider.com
 @@||tag.aticdn.net/583901/at.js$script,domain=tv5monde.com
 @@||tag.aticdn.net^
@@ -5553,6 +5558,7 @@
 @@||v10.events.data.microsoft.com^
 @@||v20.events.data.microsoft.com^
 @@||v2rayssr.com^$generichide
+@@||v6lvs.com^
 @@||vaillant.de/inc/assets/js/webtrekk_$script
 @@||valf.atm.youku.com/vf?site=1&rst=mp4&
 @@||vali-g1.cp31.ott.cibntv.net^
