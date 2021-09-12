@@ -2090,6 +2090,7 @@
 @@||fandango.com/b/ss/$image
 @@||fang.com/stats/clickm2011.js
 @@||fangcloud.com^$generichide
+@@||fast.appcues.com^$script,domain=initial.inc
 @@||fast.appcues.com^$script,domain=static.abcmouse.com
 @@||fastcontentdelivery.com^$script,domain=flashx.to|flashx.tv
 @@||fastmail.com^$generichide
