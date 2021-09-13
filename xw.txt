@@ -1230,6 +1230,7 @@
 @@||cb.baidu.com/ecom?*.baomihua.$domain=v.baidu.com
 @@||cbjs.baidu.com/js/m.js$domain=fxpan.com|iyingdi.com|pic.tiexue.net
 @@||cbjs.baidu.com/js/o.js$domain=jkpan.cc
+@@||cbs.com^$generichide
 @@||cbsi.com/dist/optanon.js$script,domain=cbsnews.com|zdnet.com
 @@||cbsimg.net/js/cbsi/dw.js$domain=cbssports.com
 @@||cbsinteractive.com^*/lib/tracking/comscore/$script
@@ -3136,6 +3137,7 @@
 @@||hp.com/in/*/ads/$script,stylesheet,~third-party
 @@||hr-online.de/website/includes/webanalyse/xtcore.js
 @@||href.li^|
+@@||ht-cdn2.adtng.com^
 @@||huacolor.com/js/$script
 @@||huacolor.com/skins/$script
 @@||hudong.pl.youku.com/n/setplugins/id_
@@ -3290,6 +3292,7 @@
 @@||imgbox.com^
 @@||imgix.net^
 @@||imgs.xkcd.com^
+@@||imgstat.baidu.com^
 @@||imgur.com/min/px.js$~third-party
 @@||imgur.com^
 @@||imobiliare.ro/js/gtm.js$script,~third-party
@@ -4356,6 +4359,7 @@
 @@||platform-modules.sgweb.softgames.de/ads/p2-ads-client.js$domain=games.softgames.com
 @@||platform.instagram.com^
 @@||platform.twitter.com^
+@@||play.google.com/log?$domain=meet.google.com
 @@||play.google.com/log?$xmlhttprequest,domain=google.com
 @@||play.google.com/log?format=json$domain=news.google.com
 @@||play.google.com^
@@ -4701,6 +4705,7 @@
 @@||s2.zdmimg.com^
 @@||s3.amazonaws.com^
 @@||s3.symcb.com^
+@@||s3t3d2y7.ackcdn.net^
 @@||s4.symcb.com^
 @@||s5.symcb.com^
 @@||s79.research.de.com/bb-mx/prime$domain=joyn.de
@@ -4733,7 +4738,6 @@
 @@||sb.scorecardresearch.com/beacon.js$domain=ntvspor.net
 @@||sb.scorecardresearch.com/beacon.js$domain=sciencechannel.com
 @@||sb.scorecardresearch.com/beacon.js$domain=velocity.com
-@@||sb.scorecardresearch.com^
 @@||sbg.hit.gemius.pl/gplayer.js$domain=play.nova.bg
 @@||sc2casts.com^$generichide
 @@||sc2casts.com^$script,domain=sc2casts.com
@@ -4934,7 +4938,7 @@
 @@||sogou.com/adpub/cfg/sendmsg.
 @@||sogou.com/pv.gif?*&stype=showskinpanel
 @@||sohu.com/adgtr/$domain=auto.sohu.com
-@@||sohu.com/cityjson$domain=114shouji.com|51credit.com|castech.com|eduyun.cn|ems.com.cn|jdboshi.com|jialingmm.net|lcm88.com|meiju11.com|mop.com|platinum-pen.com.cn|shouji.com.cn|skk.moe|vivo.com.cn|yxdm.me
+@@||sohu.com/cityjson$domain=114shouji.com|51credit.com|castech.com|eduyun.cn|ems.com.cn|jdboshi.com|jialingmm.net|lcm88.com|meiju11.com|mop.com|platinum-pen.com.cn|shouji.com.cn|skk.moe|vivo.com.cn|yxdm.org
 @@||sohu.com/cityjson$domain=114shouji.com|51credit.com|dilidili.one|jdboshi.com|jialingmm.net|lcm88.com|mop.com|shouji.com.cn|skk.moe|yxdm.tv
 @@||sohu.com/integration-api/mix/region/*&refer=http
 @@||sohu.com/play/videonew.do?*/share_play.
