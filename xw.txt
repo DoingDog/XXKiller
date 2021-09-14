@@ -143,7 +143,6 @@
 @@/vlive.qqvideo.tc.qq.com^$media,app=com.tencent.qqlivexiaomi
 @@/webtracking/*$domain=pasts.lv
 @@/wp-content/*/social_$domain=servercat.me
-@@/wp-content/plugins/blockalyzer-adblock-counter/*$image,script,~third-party,domain=~gaytube.com|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@/yozons-lib/core.js$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
 @@://www.fedex.com/Tracking?
 @@?adType=$domain=taotaosou.com
@@ -753,6 +752,7 @@
 @@||analytics.ladmedia.fr/parismatch/xtcore_mod2.js$domain=parismatch.com
 @@||analytics.logsss.com/logsss*.min.js$script,domain=rosegal.com
 @@||analytics.ooyala.com/static/analytics.js$script,domain=humo.be
+@@||analytics.tercept.com/js/ga.js$script,~third-party
 @@||analytics.twitter.com/mob_idsync_click
 @@||analytics.twitter.com^
 @@||analytics.twitter.com^$domain=analytics.twitter.com
@@ -1715,7 +1715,6 @@
 @@||daumcdn.net/adfit/static/ad-native.min.js$domain=daum.net
 @@||daumcdn.net/adfit/static/ad.min.js$script,domain=daum.net
 @@||davidsilverspares.co.uk/graphics/*_ad.gif$~third-party
-@@||dayanzai.me/image/ad/
 @@||dayanzai.me/image/ad/$image
 @@||db.local.clamav.net^
 @@||dc.services.visualstudio.com^
@@ -2995,6 +2994,7 @@
 @@||googleusercontent.com^
 @@||googlevideo.com^
 @@||gooogle.how^$generichide
+@@||goto.walmart.com^|
 @@||gotunnel.org
 @@||gouwu.qq.com^
 @@||gov.au/Scripts/ga.js$script,~third-party
@@ -3541,7 +3541,7 @@
 @@||lastampa.it/modulo/tracciatori/js/nielsen.js
 @@||lastampa.it/modulo/tracciatori/js/webtrekk.js
 @@||lastfm-img2.akamaized.net^
-@@||lastpass.com/ads.php$subdocument,~third-party
+@@||lastpass.com/ads.php$subdocument,domain=hdokiejnpimakedhajhdlcegeplioahd.chrome-extension-scheme
 @@||lastpass.com/images/ads/$image,~third-party
 @@||lasvegas.cbslocal.com^
 @@||latimes.com/hive/javascripts/loggingService.js
@@ -4653,6 +4653,7 @@
 @@||rum.perfops.net/rum.min.js$script,domain=cdnperf.com
 @@||rumble.com/embedJS/$script,domain=usawatchdog.com
 @@||rumble.com/j/p/$script,domain=usawatchdog.com
+@@||runescape.wiki^$image,~third-party
 @@||ruten.com.tw/ahd/fetch_ad.php
 @@||ruten.com.tw/ahd/fetch_ad.php?
 @@||ruten.com.tw/js/jquery.ruten.supertop_ad.js
