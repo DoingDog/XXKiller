@@ -2477,6 +2477,7 @@
 @@||google-analytics.com/analytics.js$domain=jump.com.tr
 @@||google-analytics.com/analytics.js$domain=karwan.tv
 @@||google-analytics.com/analytics.js$domain=keepassium.com
+@@||google-analytics.com/analytics.js$domain=key-hub.eu
 @@||google-analytics.com/analytics.js$domain=kolkata24x7.com
 @@||google-analytics.com/analytics.js$domain=kompas.com
 @@||google-analytics.com/analytics.js$domain=ksat.com
@@ -2684,6 +2685,7 @@
 @@||google.com/payments/*/adwords.$document,subdocument
 @@||google.com/recaptcha/$csp,domain=vidoza.co|vidoza.net
 @@||google.com/recaptcha/$csp,subdocument
+@@||google.com/recaptcha/api.js
 @@||google.com/translate_$media,third-party,xmlhttprequest
 @@||google.com/usability/$domain=google.com,document
 @@||google.de/translate_$media,third-party,xmlhttprequest
@@ -3549,6 +3551,7 @@
 @@||latimesblogs.latimes.com^
 @@||lazada.co.th/js/tracking.js
 @@||lcdn-registration.apple.com^
+@@||lcs.naver.com/m?u=$domain=smartstore.naver.com
 @@||ldxinyong.com^$generichide
 @@||league-funny.com^$generichide
 @@||league-funny.com^$script,~third-party
@@ -5655,8 +5658,6 @@
 @@||void.gr^
 @@||volterra.io^*/advertise_policy$~third-party
 @@||volterra.us^*/advertise_policy$~third-party
-@@||vortex-win.data.microsoft.com^
-@@||vortex.data.microsoft.com^
 @@||vox.com^
 @@||vplayer.ilsemedia.nl/swf/im_player.swf?
 @@||vpp.itunes.apple.com^
@@ -5711,7 +5712,6 @@
 @@||web.de^
 @@||web.telegram.org^$generichide
 @@||web.vip.miui.com^
-@@||web.vortex.data.microsoft.com^
 @@||webapp.simplisafe.com^*/angulartics-ga.min.js$script,~third-party
 @@||webcam.yahoo.com^
 @@||webcdn.stream.ne.jp^*/referrer.js$domain=stream.ne.jp
