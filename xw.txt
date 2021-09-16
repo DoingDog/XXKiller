@@ -689,7 +689,7 @@
 @@||alsc-buy2.ele.me^
 @@||alternate.de/js/emos2.js
 @@||alternativeto.net^
-@@||amazon-adsystem.com/aax2/apstag.js$domain=accuweather.com|blastingnews.com|edition.cnn.com|exomashomepage.com|familyhandyman.com|foxbusiness.com|go.cnn.com|history.com|keloland.com|radio.com|rd.com|thehealthy.com|wboy.com|wkrn.com|wlns.com|wvnstv.com
+@@||amazon-adsystem.com/aax2/apstag.js$domain=accuweather.com|blastingnews.com|cnn.com|exomashomepage.com|familyhandyman.com|foxbusiness.com|history.com|keloland.com|radio.com|rd.com|thehealthy.com|wboy.com|wkrn.com|wlns.com|wvnstv.com
 @@||amazon-adsystem.com/aax2/apstag.js$script,domain=abola.pt|gamestar.de|los40.com
 @@||amazon-adsystem.com/aax2/apstag.js$script,domain=programme-tv.net
 @@||amazon-adsystem.com/e/cm?$document,subdocument,domain=affiliate-program.amazon.co.uk|affiliate-program.amazon.com|affiliate-program.amazon.in|affiliate.amazon.co.jp|afiliados.amazon.es|associados.amazon.com.br|associates.amazon.ca|associates.amazon.cn|partenaires.amazon.fr|partnernet.amazon.de|programma-affiliazione.amazon.it
@@ -3449,6 +3449,7 @@
 @@||jsdelivr.net^$script,domain=thepiratebay.org
 @@||jsdelivr.net^*/keen-tracking.min.js$domain=nextquotidiano.it
 @@||jsfiddle.net^
+@@||jsfiddle.net^$generichide
 @@||jsjiami.com^$generichide
 @@||jsonip.com/?callback=$domain=hotelforex.com
 @@||jsonip.com/?callback=$script,domain=pagtel.com.br
@@ -3543,7 +3544,7 @@
 @@||lastampa.it/modulo/tracciatori/js/nielsen.js
 @@||lastampa.it/modulo/tracciatori/js/webtrekk.js
 @@||lastfm-img2.akamaized.net^
-@@||lastpass.com/ads.php$subdocument,domain=hdokiejnpimakedhajhdlcegeplioahd.chrome-extension-scheme
+@@||lastpass.com/ads.php$subdocument,domain=chrome-extension-scheme
 @@||lastpass.com/images/ads/$image,~third-party
 @@||lasvegas.cbslocal.com^
 @@||latimes.com/hive/javascripts/loggingService.js
