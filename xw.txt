@@ -1158,6 +1158,7 @@
 @@||browser.cloud.ucweb.com^
 @@||browser.sentry-cdn.com^$domain=doconcall.com.my|eco-clobber.co.uk
 @@||browser.sentry-cdn.com^$domain=marshmallow-qa.com
+@@||browser.sentry-cdn.com^$script,domain=vivareal.com.br
 @@||brsrvr.com/api/$xmlhttprequest,domain=dollargeneral.com
 @@||bt.jd.com^
 @@||btrace.qq.com^
@@ -1452,6 +1453,7 @@
 @@||cloud.talend.com/api/ipaas/services/analytics/$~third-party,xmlhttprequest
 @@||cloudflare-dns.com^
 @@||cloudflare.com/ajax/$stylesheet,domain=shink.me|shon.xyz
+@@||cloudflare.com/ajax/libs/fingerprintjs2/$script,domain=gamebox.gesoten.com
 @@||cloudflare.com/ajax/libs/fuckadblock/$domain=seselah.com
 @@||cloudflare.com/analytics?$domain=cloudflare.com
 @@||cloudflare.com^
@@ -2247,6 +2249,7 @@
 @@||gamediad.com:7990
 @@||gameflier.com/ad/
 @@||gameloft.com/advertising-$~third-party
+@@||gamerch.com/s3-assets/library/js/fingerprint2.min.js
 @@||gamersky.com/Common/GetHits.aspx?
 @@||gamersky.com^*/dhgame_
 @@||games.pch.com^$generichide
@@ -2472,6 +2475,7 @@
 @@||google-analytics.com/analytics.js$domain=independer.nl
 @@||google-analytics.com/analytics.js$domain=index.hr
 @@||google-analytics.com/analytics.js$domain=infoconso-multimedia.fr|viandesuisse.ch
+@@||google-analytics.com/analytics.js$domain=infoq.com
 @@||google-analytics.com/analytics.js$domain=janusnotes.com
 @@||google-analytics.com/analytics.js$domain=joblo.com
 @@||google-analytics.com/analytics.js$domain=jump.com.tr
@@ -2817,6 +2821,7 @@
 @@||googletagmanager.com/gtm.js$domain=imgur.com
 @@||googletagmanager.com/gtm.js$domain=incehesap.com
 @@||googletagmanager.com/gtm.js$domain=info.lifecell.ua
+@@||googletagmanager.com/gtm.js$domain=infoq.com
 @@||googletagmanager.com/gtm.js$domain=iphoneitalia.com
 @@||googletagmanager.com/gtm.js$domain=itv.com
 @@||googletagmanager.com/gtm.js$domain=jbc.be
@@ -4295,6 +4300,7 @@
 @@||pfsense.org^
 @@||pg-wuming.com^$generichide
 @@||pgl.yoyo.org^
+@@||phatcatmedia.net/images/ad.jpg$image,domain=allsonicgames.net
 @@||philadelphia.cbslocal.com^
 @@||phobos.apple.com^
 @@||photofunia.com/effects/$image,~third-party
@@ -5467,7 +5473,7 @@
 @@||tvdb2.plex.tv^
 @@||tvepg.pandora.xiaomi.com^
 @@||tvhayz.org/playergk/fingerprint2.min.js
-@@||tvid.in/sdk/loader.js$domain=indiatimes.com|timesofindia.com
+@@||tvid.in/sdk/loader.js$domain=indiatimes.com|timesofindia.com|timesnownews.com
 @@||tvn24.pl^
 @@||tvnstyle.pl^
 @@||tvp.pl^
