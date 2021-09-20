@@ -1321,6 +1321,7 @@
 @@||cdn.segment.com/analytics.js$domain=anime-planet.com
 @@||cdn.segment.com/analytics.js$domain=buffer.com
 @@||cdn.segment.com/analytics.js$domain=cryptokitties.co
+@@||cdn.segment.com/analytics.js/$script,domain=fender.com
 @@||cdn.segment.com/analytics.js^$domain=authenticate.trustpilot.com
 @@||cdn.segment.com/analytics.js^$domain=creativemarket.com
 @@||cdn.segment.com/analytics.js^$domain=crunchyroll.com
@@ -2562,7 +2563,6 @@
 @@||google-analytics.com/analytics.js$domain=tlctv.com.tr
 @@||google-analytics.com/analytics.js$domain=totv.org
 @@||google-analytics.com/analytics.js$domain=tradera.com|xxl.se
-@@||google-analytics.com/analytics.js$domain=trendyol.com
 @@||google-analytics.com/analytics.js$domain=tv-media.at
 @@||google-analytics.com/analytics.js$domain=tv3play.no
 @@||google-analytics.com/analytics.js$domain=tv3play.tv3.ee
@@ -2913,7 +2913,6 @@
 @@||googletagmanager.com/gtm.js$domain=thecompanion.app
 @@||googletagmanager.com/gtm.js$domain=tlctv.com.tr
 @@||googletagmanager.com/gtm.js$domain=tr.beinsports.com
-@@||googletagmanager.com/gtm.js$domain=trendyol.com
 @@||googletagmanager.com/gtm.js$domain=tvnow.de|tvnow.at
 @@||googletagmanager.com/gtm.js$domain=ucicinemas.pt
 @@||googletagmanager.com/gtm.js$domain=ucpa-vacances.com
@@ -3585,6 +3584,7 @@
 @@||lh5.google.com^
 @@||lh6.google.com^
 @@||lhl.zxcs.linghit.com^
+@@||libhunt.com^$generichide
 @@||libs.baidu.com^$domain=0794.org|0biquge.com|12zw.la|138txt.com|18xs.org|1biqu.com|1kanshu.cc|230book.net|23hh.com|23sk.com|23wxx.com|258zw.com|266ks.com|27xsw.com|30syy.com|33yq.org|37shuwu.net|3yt.com|477zw.co|52biquge.com|5ccc.tw|777zw.la|81book.com|81zw.me|877zw.com|99mk.com|99shumeng.net|aixswx.com|aomolit.com|aoyuge.com|balingtxt.com|baoshuu.com|biduoxs.com|bimiwuu.com|biqiugege8.com|biqudu.tv|biquge.lu|biquge.tv|biquge11.com|biquge775.com|biquge98.net|biqugecd.com|biqugee.com|biqugego.com|biqugesc.com|biquka.com|biqusan.com|bixia.org|bodekang.net|boluoxs.com|bookbao.org|botaodz.com|bqktxt.com|bshuku.com|bxwx.org|bxwx.tw|bxwx8.la|bxwxorg.com|clewx.com|day66.com|ddxs0.com|ddxsku.com|dushuge.org|faquge.com|gdbzkz.com|guaili.org|guanshu.cc|hatxt.com|hbfie.org|heikexs.com|heiyanwang.com|hongyeshuzhai.com|hongyeshuzhal.com|huixsw.com|hybiquge.com|ibiquta.com|ibswtan.com|imiaobige.com|ishisetianxia.com|ishubao.org|ixs.la|jianlaixiaoshuo.com|jinshulo.com|jx.la|kankezw.com|kkbiqu2.com|liewen.la|lindiankanshu.cc|liuxs.la|loubiqu.com|lwsktxt.com|lwtxt.net|mhtwx.la|mubige.com|paoshu8.com|paoshuzw.com|piaotianxs.com|pksge.com|qbxs8.net|qianqianxsw.net|qianrenge.cc|qiuyewx.com|qr1234.com|quge6.com|quledu.net|qushuba.com|rmxsba.com|shenshuxs.com|shu008.com|shuhaiwu.com|shumil.co|silukew.com|siluwx.org|sizhicn.com|sobiquge.com|soxscc.com|ttzw.tv|tutengzw.com|txshuku.la|txtshuku.org|tycqge.com|u33.me|v63xs.com|vipsk.org|wanwenhui.com|wbxsw.com|wenxuem.com|wurexs.com|x23us.me|x81zw.co|xbiqugecc.com|xbiqugew.net|xbiquke.com|xbiquwx.la|xbqge.net|xdingdiann.com|xiaoshuwu5.com|xiaxs.la|xieyixs.com|xinshuhaige.net|xinxs.la|xs5200.com|xs98.com|xsbiqu.com|xsbiqugew.com|xsqishu.com|xszww.com|xuanshu.com|xuehongxs.com|xyusk.com|yanqing888.org|yikanxiaoshuoa.com|yruan.com|yssm.info|yunxs.com|zaodk.com|zbzw.la|zhnxcw.com|zhuaji.org|zmccx.com|zzs5.com
 @@||libs.baidu.com^$domain=m.supfree.net
 @@||licdn.com^
@@ -5060,12 +5060,8 @@
 @@||stat.v-56.com/player
 @@||stat.y.qq.com^
 @@||stat24.com/crossdomain.xml$domain=ipla.tv
-@@||statcounter.com/chart.php?$script
 @@||statcounter.com/css/packed/statcounter-$stylesheet,~third-party
-@@||statcounter.com/js/fusioncharts.js
 @@||statcounter.com/js/packed/statcounter-$script,~third-party
-@@||statcounter.com/msline.swf
-@@||statcounter.com^$domain=gs.statcounter.com
 @@||states.newegg.com/b/ss/neweggprod/
 @@||static-cdn.jtvnw.net^
 @@||static.360buyimg.com^
