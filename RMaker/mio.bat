@@ -34,7 +34,7 @@ type frules.dd>>mergd.txt
 type i*.txt>>mergd.txt
 
 ::delete repeated rules
-sort -u -R -o=mergd.txt nore.txt
+s -u -R -o=mergd.txt nore.txt
 
 ::delete comments&rubbish
 (findstr /v /b /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>nord.txt
