@@ -34,6 +34,7 @@ type frules.dd>>mergd.txt
 type i*.txt>>mergd.txt
 
 ::delete repeated rules
+set LC_ALL='C'
 s -u -R --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
