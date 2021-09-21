@@ -71,7 +71,7 @@ type qxwl.dd>>final.txt
 type ..\..\myrules\qx-neo.txt>>final.txt
 
 ::delete repeated rules
-gawk "!a[$0]++" final.txt>final.tx
+s -u --output=final.tx final.txt
 
 ::end cleanup
 copy /y final.tx ..\..\quantumult.list
