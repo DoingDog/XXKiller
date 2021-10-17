@@ -16,8 +16,8 @@ wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 wget -O i12.txt https://anti-ad.net/adguard.txt
 wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 wget -O i14.txt https://www.i-dont-care-about-cookies.eu/abp/
-wget -O i15.txt https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener-AffiliateTagAllowlist.txt
-wget -O i16.txt https://github.com/DandelionSprout/adfilt/blob/master/LegitimateURLShortener.txt
+wget -O i15.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt
+wget -O i16.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
 
 ::add new rules like wget -O i+number url
 
