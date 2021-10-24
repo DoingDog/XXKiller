@@ -15,7 +15,7 @@ jobs:
       - name: run main
         run: |
           cmd
-          .\RMaker\mio.bat
+          .\RMaker\make.cmd
       - name: run quanx
         run: |
           cmd
