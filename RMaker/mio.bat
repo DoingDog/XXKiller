@@ -1,3 +1,4 @@
+::init
 @echo off
 cd /d %~dp0\aa
 
@@ -18,7 +19,6 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 wget -O i14.txt https://www.i-dont-care-about-cookies.eu/abp/
 wget -O i15.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt
 wget -O i16.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-
 ::add new rules like wget -O i+number url
 
 ::download finished
@@ -42,7 +42,7 @@ s -u --output=nore.txt mergd.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
-::save
+::save ct
 echo %rnum%>..\..\ct.txt
 
 ::add title and date
