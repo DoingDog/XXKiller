@@ -23,3 +23,13 @@ host, apivip.zuoyebang.com, reject
 host, shumei-app-thirdpart.zuoyebang.com, reject
 host, nlogtj.zuoyebang.cc, reject
 host-keyword, sell.zuoyebang, reject
+host, user-vue.zuoyebang.com, reject
+host, yy-s.zuoyebang.cc, reject
+host, www.zybang.com, reject
+host, zyb-stats.zuoyebang.cc, reject
+host, statistic.live.126.net, reject
+host, jxconf.zuoyebang.com, reject
+host, nps.zuoyebang.com, reject
+host, pluto.zuoyebang.com, reject
+host, resourceserver.zybang.com, reject
+host, quickverify.zybang.com, reject
