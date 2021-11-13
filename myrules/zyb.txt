@@ -18,6 +18,7 @@
 @@|www.zybang.cc^
 @@|www.zuoyebang.cc^
 @@|app-search.cdnjtzy.com^
+@@|napi.zybang.com^
 
 ||www.daxuesoutijiang.com^
 ||netease.im^
@@ -44,3 +45,4 @@
 @@|www.zybang.cc^
 @@|www.zuoyebang.cc^
 @@|app-search.cdnjtzy.com^
+@@|napi.zybang.com^
