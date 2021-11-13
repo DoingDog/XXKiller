@@ -15,6 +15,7 @@ host, www.zybang.cc, direct
 host, www.zuoyebang.cc, direct
 host, app-search.cdnjtzy.com, direct
 host, napi.zybang.com, direct
+host, img10.zuoyebang.cc, direct
 
 host, www.daxuesoutijiang.com, reject
 host-suffix, netease.im, reject
