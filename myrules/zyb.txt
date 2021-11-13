@@ -20,4 +20,30 @@
 ||apivip.zuoyebang.com^
 ||shumei-app-thirdpart.zuoyebang.com^
 ||nlogtj.zuoyebang.cc^
-||*sell.zuoyebang.*
+||*sell.zuoyebang.*#by DD
+
+host, search.zybang.com, direct
+host, paisou.zuoyebang.com, direct
+host, bd-s.zuoyebang.cc, direct
+host, n5.zuoyebang.cc, direct
+host, n4.zuoyebang.cc, direct
+host, n3.zuoyebang.cc, direct
+host, n2.zuoyebang.cc, direct
+host, n1.zuoyebang.cc, direct
+host, img.zuoyebang.cc, direct
+host, www.zybang.com, direct
+host, www.zuoyebang.com, direct
+host, www.zybang.cc, direct
+host, www.zuoyebang.cc, direct
+host, app-search.cdnjtzy.com, direct
+
+host, www.daxuesoutijiang.com, reject
+host-suffix, netease.im, reject
+host, httpdns.yunxindns.com, reject
+host-suffix, qiyukf.com, reject
+host-suffix, cdnjtzy.com, reject
+host, statistic.live.126.net, reject
+host-suffix, zuoyebang.com, reject
+host-suffix, zuoyebang.cc, reject
+host-suffix, zybang.com, reject
+host-suffix, zybang.cc, reject
