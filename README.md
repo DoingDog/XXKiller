@@ -2,11 +2,12 @@
 适用AdGuard,AG HOME,ADAWAY等等<br/>
 全部由其他规则合并产生<br/><br/>
 规则数量：<a href="https://raw.githubusercontent.com/DoingDog/XXKiller/main/ct.txt">点击显示精确值</a> <br/>
-<strong><br>每天0点更新</strong><br/><br/>
+<strong><br>每天北京时间0点更新</strong><br/><br/>
 更新地址：<br/>
-中国国内（有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>右键复制链接</a><br/>
+Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/main/w.txt>右键复制链接</a><br/>
+中国国内（更新有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>右键复制链接</a><br/>
 中国香港 <a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>右键复制链接</a><br/>
-日本（有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>右键复制链接</a><br/>
+日本（更新有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>右键复制链接</a><br/>
 <br/>使用方法：将上方地址加入拦截器订阅。<br/>
 <br/>由于排序方式的特殊性，效果可能一会好一会坏:|<br/><br/>
 <strong>规则过于强大，误杀严重。请配合白名单使用</strong><br/><br/>
