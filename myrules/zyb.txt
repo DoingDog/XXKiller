@@ -7,7 +7,7 @@
 @@|search.zybang.com^
 @@|paisou.zuoyebang.com^
 @@|bd-s.zuoyebang.cc^
-@@|n5.zuoyebang.c^c^
+@@|n5.zuoyebang.cc^
 @@|n4.zuoyebang.cc^
 @@|n3.zuoyebang.cc^
 @@|n2.zuoyebang.cc^
