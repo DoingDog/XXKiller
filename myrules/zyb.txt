@@ -20,6 +20,7 @@
 @@|app-search.cdnjtzy.com^
 @@|napi.zybang.com^
 @@|img10.zuoyebang.cc^
+@@|yy-s.zuoyebang.cc^
 
 ||www.daxuesoutijiang.com^
 ||netease.im^
@@ -31,20 +32,3 @@
 ||zuoyebang.cc^
 ||zybang.com^
 ||zybang.cc^
-
-@@|search.zybang.com^
-@@|paisou.zuoyebang.com^
-@@|bd-s.zuoyebang.cc^
-@@|n5.zuoyebang.c^c^
-@@|n4.zuoyebang.cc^
-@@|n3.zuoyebang.cc^
-@@|n2.zuoyebang.cc^
-@@|n1.zuoyebang.cc^
-@@|img.zuoyebang.cc^
-@@|www.zybang.com^
-@@|www.zuoyebang.com^
-@@|www.zybang.cc^
-@@|www.zuoyebang.cc^
-@@|app-search.cdnjtzy.com^
-@@|napi.zybang.com^
-@@|img10.zuoyebang.cc^
