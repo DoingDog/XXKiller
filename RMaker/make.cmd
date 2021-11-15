@@ -12,7 +12,7 @@ wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.tx
 wget -O i6.txt https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_adblocker
 ::wget -O i7.txt https://file.trli.club/dns/hosts.txt
 wget -O i8.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
-::wget -O i10.txt https://adaway.org/hosts.txt
+wget -O i10.txt https://adaway.org/hosts.txt
 wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 wget -O i17.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
 wget -O i12.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
@@ -20,6 +20,7 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 wget -O i14.txt https://www.i-dont-care-about-cookies.eu/abp/
 wget -O i15.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt
 wget -O i16.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+wget -O i17.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/dnsfilter/aa/brules.dd
 ::add new rules like wget -O i+number url
 
 ::download finished
