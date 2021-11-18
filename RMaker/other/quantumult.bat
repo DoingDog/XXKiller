@@ -68,7 +68,7 @@ endlocal
 ::merge
 type qxwl.dd>>final.txt
 (findstr /v /b /e "#[^#]*" nore.txt)>>final.txt
-#type ..\..\myrules\qx-neo.txt>>final.txt
+::type ..\..\myrules\qx-neo.txt>>final.txt
 
 ::delete repeated rules
 s -u --output=final.tx final.txt
