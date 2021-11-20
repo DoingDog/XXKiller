@@ -12,7 +12,7 @@ Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/
 <br/>由于排序方式的特殊性，效果可能一会好一会坏:|<br/><br/>
 <strong>规则过于强大，误杀严重。请配合白名单使用</strong><br/><br/>
 <br/>
-合并规则列表:<br>AdguardDNS，HalfLifePC，乘风，<br/>乘风视频，antiad，Neodev，<br/>ADgk，冷莫gh加速与白名单规则，adaway默认，<br/>Barbblock，极客爱好者规则，短链解析，<br>i dont care about cookies和一些额外规则（frules文件）<br/>
+合并规则列表:<br>AdguardDNS，HalfLifePC，乘风，<br/>乘风视频，antiad，Neodev，<br/>ADgk，白名单规则，adaway默认，<br/>Barbblock，短链解析，<br>i dont care about cookies和一些额外规则<br/>
 
 合并，去重规则的脚本已开源（cmd）<br/><br/>
 如果你用圈x，可以下载圈x去广告规则。把上面的链接中w.txt换成quantumult.list即可，放于分流的顶端：）
