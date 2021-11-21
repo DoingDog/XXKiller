@@ -40,6 +40,7 @@ type i*.txt>>mergd.txt
 
 ::delete repeated rules
 set LC_ALL='C'
+::sort rules. Random flag -R
 s -u -R --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
