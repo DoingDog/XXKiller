@@ -20,6 +20,10 @@ wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 wget -O i14.txt https://www.i-dont-care-about-cookies.eu/abp/
 wget -O i15.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt
 wget -O i16.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+wget -O i17.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+wget -O i18.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/lan-block.txt
+wget -O i19.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
+wget -O i20.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
 ::add new rules like wget -O i+number url
 
 ::download finished
