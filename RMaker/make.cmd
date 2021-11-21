@@ -54,6 +54,9 @@ echo %rnum%>..\..\ct.txt
 echo ! Version: %date%>>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 echo ! Rule Count: %rnum%>>tpdate.txt
+echo.>>tpdate.txt
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
+echo.>>tpdate.txt
 copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end cleanup
