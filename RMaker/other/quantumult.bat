@@ -11,11 +11,11 @@ wget -O u5.txt https://anti-ad.net/surge.txt
 wget -O u4.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
 ::fine
 wget -O i5.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block.txt
-wget -O i6.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block_Plus.txt
+::wget -O i6.txt https://raw.githubusercontent.com/NobyDa/ND-AD/master/QuantumultX/AD_Block_Plus.txt
 ::caps and blank
 wget -O u7.txt https://limbopro.com/Adblock4limbo.list
 ::all
-wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
+::wget -O u8.txt https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list
 ::add new rules
 ::wget -O i+number url
 
@@ -38,18 +38,18 @@ endlocal
 (for /f "eol=# delims=" %%i in (u2.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u3.txt) do (echo %%i,REJECT))>>ia1.txt
 (for /f "eol=# delims=" %%i in (u4.txt) do (echo %%i,REJECT))>>ia1.txt
-(for /f "eol=# delims=" %%i in (u8.txt) do (echo %%i,REJECT))>>ut.txt
+::(for /f "eol=# delims=" %%i in (u8.txt) do (echo %%i,REJECT))>>ut.txt
 
 
-(for /f "eol=. delims=" %%i in (ut.txt) do (echo DOMAIN,%%i))>>ix1.txt
+::(for /f "eol=. delims=" %%i in (ut.txt) do (echo DOMAIN,%%i))>>ix1.txt
 
-setlocal enabledelayedexpansion
-(for /f "delims=" %%i in ('findstr "^\." ut.txt') do (
-        set line=%%i
-        echo;DOMAIN-SUFFIX,!line:~1!
-))>ix2.txt
+::setlocal enabledelayedexpansion
+::(for /f "delims=" %%i in ('findstr "^\." ut.txt') do (
+::        set line=%%i
+::        echo;DOMAIN-SUFFIX,!line:~1!
+::))>ix2.txt
 
-endlocal
+::endlocal
 
 ::add blank line
 for %%i in (i*.txt) do type blank.dd>>%%i
