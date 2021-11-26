@@ -8,6 +8,8 @@
 # >> Firebase Cloud Messaging
 # >> Google Fonts API
 # >> Paramount+
+# 知乎去广告，以下规则的位置越前方越好
+# 知乎去广告，以下规则请放置在filter_local最顶部
 # Unbreak
 AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29)),REJECT
 DOMAIN-KEYWORD,adashx,REJECT
@@ -9227,7 +9229,7 @@ DOMAIN-SUFFIX,blocwhite7.com,REJECT
 DOMAIN-SUFFIX,blog-o-rama.de,REJECT
 DOMAIN-SUFFIX,blog-stat.com,REJECT
 DOMAIN-SUFFIX,blog-webkatalog.de,REJECT
-DOMAIN-SUFFIX,blog.google // Google Blog
+DOMAIN-SUFFIX,blog.google,DIRECT
 DOMAIN-SUFFIX,blog.trinityconsultants.com,REJECT
 DOMAIN-SUFFIX,blog104.com,REJECT
 DOMAIN-SUFFIX,blogad01.myweb.hinet.net,REJECT
@@ -21827,7 +21829,7 @@ DOMAIN-SUFFIX,googlesyndication.com,REJECT
 DOMAIN-SUFFIX,googletagmanager.com,REJECT
 DOMAIN-SUFFIX,googletagservices.com,REJECT
 DOMAIN-SUFFIX,googletakes.com,REJECT
-DOMAIN-SUFFIX,googletraveladservices.com // Google Flights
+DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
 DOMAIN-SUFFIX,googlevideoads.com,REJECT
 DOMAIN-SUFFIX,googlexbaidu.top,REJECT
 DOMAIN-SUFFIX,goolpter.com,REJECT
@@ -60831,14 +60833,14 @@ DOMAIN,alpinedrct.com,REJECT
 DOMAIN,als.baidu.com,REJECT
 DOMAIN,alsoknowsit.com,REJECT
 DOMAIN,alszaaceaz.com,REJECT
-DOMAIN,alt1-mtalk.google.com
-DOMAIN,alt2-mtalk.google.com
-DOMAIN,alt3-mtalk.google.com
-DOMAIN,alt4-mtalk.google.com
-DOMAIN,alt5-mtalk.google.com
-DOMAIN,alt6-mtalk.google.com
-DOMAIN,alt7-mtalk.google.com
-DOMAIN,alt8-mtalk.google.com
+DOMAIN,alt1-mtalk.google.com,DIRECT
+DOMAIN,alt2-mtalk.google.com,DIRECT
+DOMAIN,alt3-mtalk.google.com,DIRECT
+DOMAIN,alt4-mtalk.google.com,DIRECT
+DOMAIN,alt5-mtalk.google.com,DIRECT
+DOMAIN,alt6-mtalk.google.com,DIRECT
+DOMAIN,alt7-mtalk.google.com,DIRECT
+DOMAIN,alt8-mtalk.google.com,DIRECT
 DOMAIN,altabold1.com,REJECT
 DOMAIN,altastat.com,REJECT
 DOMAIN,alternads.info,REJECT
@@ -60949,7 +60951,7 @@ DOMAIN,analytics.praetor.im,REJECT
 DOMAIN,analytics.rayjump.com,REJECT
 DOMAIN,analytics.slashdotmedia.com,REJECT
 DOMAIN,analytics.snidigital.com,REJECT
-DOMAIN,analytics.strava.com
+DOMAIN,analytics.strava.com,DIRECT
 DOMAIN,analytics.talkingdata.net,REJECT
 DOMAIN,analytics.techweb.com.cn,REJECT
 DOMAIN,analytics.turn.com,REJECT
@@ -61177,7 +61179,7 @@ DOMAIN,app-lon07.marketo.com,REJECT
 DOMAIN,app-sj15.marketo.com,REJECT
 DOMAIN,app-sj30.marketo.com,REJECT
 DOMAIN,app-tj.adinall.com,REJECT
-DOMAIN,app.adjust.com
+DOMAIN,app.adjust.com,DIRECT
 DOMAIN,app.e2ma.net,REJECT
 DOMAIN,app.livemarketshoppers.com,REJECT
 DOMAIN,app.pho8.com,REJECT
@@ -61884,7 +61886,7 @@ DOMAIN,bdp.cn,REJECT
 DOMAIN,bds.snssdk.com,REJECT
 DOMAIN,bdsearch.2345.com,REJECT
 DOMAIN,bdstatic.eastmoney.com,REJECT
-DOMAIN,bdtj.tagtic.cn
+DOMAIN,bdtj.tagtic.cn,DIRECT
 DOMAIN,bdu1.eol.cn,REJECT
 DOMAIN,bdxs.playnetx.cn,REJECT
 DOMAIN,bdyhvguiq.com,REJECT
@@ -63393,7 +63395,7 @@ DOMAIN,clickzxc.com,REJECT
 DOMAIN,clickzzs.nl,REJECT
 DOMAIN,client.tahono.com,REJECT
 DOMAIN,clientgear.com,REJECT
-DOMAIN,clientservices.googleapis.com
+DOMAIN,clientservices.googleapis.com,DIRECT
 DOMAIN,clientservices.googleapis.com,REJECT
 DOMAIN,clifftopper.com,REJECT
 DOMAIN,clixco.in,REJECT
@@ -65012,9 +65014,9 @@ DOMAIN,dl-rms.com,REJECT
 DOMAIN,dl.8ox.cn,REJECT
 DOMAIN,dl.browsermine.com,REJECT
 DOMAIN,dl.downf468.com,REJECT
-DOMAIN,dl.google.com
+DOMAIN,dl.google.com,DIRECT
 DOMAIN,dl.heima8.com,REJECT
-DOMAIN,dl.l.google.com
+DOMAIN,dl.l.google.com,DIRECT
 DOMAIN,dl.microsword.net,REJECT
 DOMAIN,dl.weshineapp.com,REJECT
 DOMAIN,dl1d2m8ri9v3j.cloudfront.net,REJECT
@@ -66499,7 +66501,7 @@ DOMAIN,fail24h.com,REJECT
 DOMAIN,failoglo.com,REJECT
 DOMAIN,fairadsnetwork.com,REJECT
 DOMAIN,fairnessels.com,REJECT
-DOMAIN,fairplay.l.qq.com
+DOMAIN,fairplay.l.qq.com,DIRECT
 DOMAIN,faiyazahmed.com,REJECT
 DOMAIN,faktor.io,REJECT
 DOMAIN,falconsafe.com.sg,REJECT
@@ -66887,8 +66889,8 @@ DOMAIN,folloyu.com,REJECT
 DOMAIN,foloatoo.com,REJECT
 DOMAIN,fondazioneciampi.org,REJECT
 DOMAIN,fonderredd.info,REJECT
-DOMAIN,fonts.googleapis.com
-DOMAIN,fonts.gstatic.com
+DOMAIN,fonts.googleapis.com,DIRECT
+DOMAIN,fonts.gstatic.com,DIRECT
 DOMAIN,foocheeb.net,REJECT
 DOMAIN,food5.net,REJECT
 DOMAIN,foodieblogroll.com,REJECT
@@ -70940,7 +70942,7 @@ DOMAIN,livestatsnet.services,REJECT
 DOMAIN,livetex.ru,REJECT
 DOMAIN,livetrafficfeed.com,REJECT
 DOMAIN,liveuniversenetwork.com,REJECT
-DOMAIN,livew.l.qq.com
+DOMAIN,livew.l.qq.com,DIRECT
 DOMAIN,livewebstats.dk,REJECT
 DOMAIN,livexxx.me,REJECT
 DOMAIN,livvckublf.com,REJECT
@@ -71066,7 +71068,7 @@ DOMAIN,log.kajicam.com,REJECT
 DOMAIN,log.kuaigeng.com,REJECT
 DOMAIN,log.kukuplay.com,REJECT
 DOMAIN,log.liusha.info,REJECT
-DOMAIN,log.mmstat.com
+DOMAIN,log.mmstat.com,DIRECT
 DOMAIN,log.mtime.cn,REJECT
 DOMAIN,log.musical.ly,REJECT
 DOMAIN,log.orchidscape.net,REJECT
@@ -72725,8 +72727,8 @@ DOMAIN,msg.eclicks.cn,REJECT
 DOMAIN,msg.ettoday.net,REJECT
 DOMAIN,msg.mbm.cn.miaozhen.com,REJECT
 DOMAIN,msg.mobile.kglink.cn,REJECT
-DOMAIN,msg.umeng.com
-DOMAIN,msg.umengcloud.com
+DOMAIN,msg.umeng.com,DIRECT
+DOMAIN,msg.umengcloud.com,DIRECT
 DOMAIN,msg.umengcloud.com,REJECT
 DOMAIN,msgapp.com,REJECT
 DOMAIN,msgs.jp,REJECT
@@ -72751,7 +72753,7 @@ DOMAIN,mswysfgnr.com,REJECT
 DOMAIN,msxmfyhwgkos.com,REJECT
 DOMAIN,mszoioqvm.com,REJECT
 DOMAIN,mt.sellingrealestatemalta.com,REJECT
-DOMAIN,mtalk.google.com
+DOMAIN,mtalk.google.com,DIRECT
 DOMAIN,mtbgrgscjwcjc.com,REJECT
 DOMAIN,mtburn.com,REJECT
 DOMAIN,mtbwqtfqnj.com,REJECT
@@ -75438,7 +75440,7 @@ DOMAIN,pub.dreamboxcart.com,REJECT
 DOMAIN,pub.network,REJECT
 DOMAIN,pub.pxl.ace.advertising.com,REJECT
 DOMAIN,pub.sitetag.us,REJECT
-DOMAIN,pubads.g.doubleclick.net
+DOMAIN,pubads.g.doubleclick.net,DIRECT
 DOMAIN,pubads.g.doubleclick.net,REJECT
 DOMAIN,pubdirecte.com,REJECT
 DOMAIN,pubdream.com,REJECT
@@ -78861,7 +78863,7 @@ DOMAIN,sxzemwijeyqxg.com,REJECT
 DOMAIN,sxzffgjzaohtf.com,REJECT
 DOMAIN,sybhpi.cn,REJECT
 DOMAIN,sycbmucgctvha.com,REJECT
-DOMAIN,sycm.mmstat.com
+DOMAIN,sycm.mmstat.com,DIRECT
 DOMAIN,sygame.695157.com,REJECT
 DOMAIN,syhganutwnp.com,REJECT
 DOMAIN,syhjnolp.com,REJECT
@@ -79802,7 +79804,7 @@ DOMAIN,tran.mediav.com,REJECT
 DOMAIN,tranite.info,REJECT
 DOMAIN,tranquilside.com,REJECT
 DOMAIN,transactionale.com,REJECT
-DOMAIN,translate.googleapis.com
+DOMAIN,translate.googleapis.com,DIRECT
 DOMAIN,trapasol.com,REJECT
 DOMAIN,traveladvertising.com,REJECT
 DOMAIN,travelmail.traveltek.net,REJECT
@@ -80438,7 +80440,7 @@ DOMAIN,upapi.net,REJECT
 DOMAIN,upckrtagwpwk.com,REJECT
 DOMAIN,updat120.clanteam.com,REJECT
 DOMAIN,update.51edm.net,REJECT
-DOMAIN,update.googleapis.com
+DOMAIN,update.googleapis.com,DIRECT
 DOMAIN,update0.aiclk.com,REJECT
 DOMAIN,updo.nl,REJECT
 DOMAIN,uphuatdmwbdm.com,REJECT
@@ -80780,7 +80782,7 @@ DOMAIN,vctgwjsgivo.com,REJECT
 DOMAIN,vcvefwzdxhysh.com,REJECT
 DOMAIN,vcxoizuwy.com,REJECT
 DOMAIN,vcyxvhxysl.com,REJECT
-DOMAIN,vd.l.qq.com
+DOMAIN,vd.l.qq.com,DIRECT
 DOMAIN,vd.l.qq.com,REJECT
 DOMAIN,vdacizdywoe.com,REJECT
 DOMAIN,vdains.info,REJECT
@@ -84288,14 +84290,13 @@ DOMAIN,zzxlukodff.com,REJECT
 DOMAIN,zzxosget.com,REJECT
 DOMAIN,zzy.quyaoya.com,REJECT
 HOST-SUFFIX,51y5.net,REJECT
-HOST-SUFFIX,ctobsnssdk.com,REJECT
 HOST-SUFFIX,local,DIRECT
 HOST-SUFFIX,lsttnews.com,REJECT
 HOST,118.89.204.198,REJECT
 HOST,appcloud2.in.zhihu.com,REJECT
 HOST,data.bilibili.com,REJECT
-HOST,mqtt.zhihu.com,REJECT
-HOST,sugar.zhihu.com,REJECT
+HOST,mqtt.zhihu.com,reject
+HOST,sugar.zhihu.com,reject
 IP-CIDR,1.3.0.10/32,no-resolve,REJECT
 IP-CIDR,10.72.25.0/24,no-resolve,REJECT
 IP-CIDR,10.72.25.0/24,REJECT
@@ -84705,8 +84706,8 @@ IP-CIDR,78.140.131.214/32,REJECT
 IP-CIDR,91.196.216.64/32,REJECT
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve,REJECT
 IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
-USER-AGENT,archero*
+USER-AGENT,archero*,DIRECT
 USER-AGENT,AVOS*,REJECT
-USER-AGENT,Coffee%20Corp*
-USER-AGENT,coffeecorp*
-USER-AGENT,restaurant-mobile*
+USER-AGENT,Coffee%20Corp*,DIRECT
+USER-AGENT,coffeecorp*,DIRECT
+USER-AGENT,restaurant-mobile*,DIRECT
