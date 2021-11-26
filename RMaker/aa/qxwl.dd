@@ -1,66 +1,48 @@
 HOST-SUFFIX,local,DIRECT
-USER-AGENT,archero*,DIRECT
-USER-AGENT,coffeecorp*,DIRECT
-USER-AGENT,Coffee%20Corp*,DIRECT
-USER-AGENT,restaurant-mobile*,DIRECT
-DOMAIN,app.adjust.com,DIRECT
-DOMAIN,bdtj.tagtic.cn,DIRECT
-DOMAIN,log.mmstat.com,DIRECT
-DOMAIN,sycm.mmstat.com,DIRECT
-DOMAIN-SUFFIX,blog.google,DIRECT
-DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
-DOMAIN,clientservices.googleapis.com,DIRECT
-DOMAIN,dl.google.com,DIRECT
-DOMAIN,dl.l.google.com,DIRECT
-DOMAIN,update.googleapis.com,DIRECT
-DOMAIN,translate.googleapis.com,DIRECT
-DOMAIN,fonts.googleapis.com,DIRECT
-DOMAIN,fonts.gstatic.com,DIRECT
-DOMAIN,mtalk.google.com,DIRECT
-DOMAIN,alt1-mtalk.google.com,DIRECT
-DOMAIN,alt2-mtalk.google.com,DIRECT
-DOMAIN,alt3-mtalk.google.com,DIRECT
-DOMAIN,alt4-mtalk.google.com,DIRECT
-DOMAIN,alt5-mtalk.google.com,DIRECT
-DOMAIN,alt6-mtalk.google.com,DIRECT
-DOMAIN,alt7-mtalk.google.com,DIRECT
-DOMAIN,alt8-mtalk.google.com,DIRECT
-DOMAIN,pubads.g.doubleclick.net,DIRECT
-DOMAIN,fairplay.l.qq.com,DIRECT
-DOMAIN,livew.l.qq.com,DIRECT
-DOMAIN,vd.l.qq.com,DIRECT
-DOMAIN,analytics.strava.com,DIRECT
-DOMAIN,msg.umeng.com,DIRECT
-DOMAIN,msg.umengcloud.com,DIRECT
-DOMAIN,ad.10010.com,DIRECT
-DOMAIN,ad.abchina.com,DIRECT
-DOMAIN,ad.kazakinfo.com,DIRECT
-DOMAIN,ad.ourgame.com,DIRECT
-DOMAIN,adcdn.fastmirror.org,DIRECT
-DOMAIN,adcdn.pingan.com,DIRECT
-DOMAIN,advert.kf5.com,DIRECT
-DOMAIN,api.ads.tvb.com,DIRECT
-DOMAIN,api.tw06.xlmc.sandai.net,DIRECT
-DOMAIN,app-advertise.zhihuishu.com,DIRECT
-DOMAIN,buyad.bi-xenon.cn,DIRECT
-DOMAIN,captcha.su.baidu.com,DIRECT
-DOMAIN,console.bce.baidu.com,DIRECT
-DOMAIN,cws-cctv.conviva.com,DIRECT
-DOMAIN,data.mistat.xiaomi.com,DIRECT
-DOMAIN,eimg.smzdm.com,DIRECT
-DOMAIN,img.ads.tvb.com,DIRECT
-DOMAIN,in.m.jd.com,DIRECT
-DOMAIN,ipv4.gdt.qq.com,DIRECT
-DOMAIN,login.bce.baidu.com,DIRECT
-DOMAIN,mapi.m.jd.com,DIRECT
-DOMAIN,mazu.3g.qq.com,DIRECT
-DOMAIN,newad.mail.wo.cn,DIRECT
-DOMAIN,qappcenterv6.3g.qq.com,DIRECT
-DOMAIN,ratewrite.tmall.com,DIRECT
-DOMAIN,res-ga.smzdm.com,DIRECT
-DOMAIN,s2.zdmimg.com,DIRECT
-DOMAIN,tools.3g.qq.com,DIRECT
-DOMAIN,vku.youku.com,DIRECT
+
+# Unbreak
+# > General
+USER-AGENT,archero*
+USER-AGENT,coffeecorp*
+USER-AGENT,Coffee%20Corp*
+USER-AGENT,restaurant-mobile*
+DOMAIN,app.adjust.com
+DOMAIN,bdtj.tagtic.cn
+# > Alibaba
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
+# > Google
+DOMAIN-SUFFIX,blog.google // Google Blog
+DOMAIN-SUFFIX,googletraveladservices.com // Google Flights
+DOMAIN,clientservices.googleapis.com
+DOMAIN,dl.google.com
+DOMAIN,dl.l.google.com
+DOMAIN,update.googleapis.com
+DOMAIN,translate.googleapis.com
+# >> Google Fonts API
+DOMAIN,fonts.googleapis.com
+DOMAIN,fonts.gstatic.com
+# >> Firebase Cloud Messaging
+DOMAIN,mtalk.google.com
+DOMAIN,alt1-mtalk.google.com
+DOMAIN,alt2-mtalk.google.com
+DOMAIN,alt3-mtalk.google.com
+DOMAIN,alt4-mtalk.google.com
+DOMAIN,alt5-mtalk.google.com
+DOMAIN,alt6-mtalk.google.com
+DOMAIN,alt7-mtalk.google.com
+DOMAIN,alt8-mtalk.google.com
+# >> Paramount+
+DOMAIN,pubads.g.doubleclick.net
+# > Tencent
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+# > Strava
+DOMAIN,analytics.strava.com
+# > Umeng
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
 
 HOST,data.bilibili.com,REJECT
 HOST-SUFFIX,ctobsnssdk.com,REJECT
