@@ -45,7 +45,8 @@ set LC_ALL='C'
 s -u -R --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
-(findstr /v /b /c:"# " /c:"£¡" /c:"[" /c:"!" /c:"¡¾" nore.txt)>nord.txt
+(findstr /v /b /c:"# " /c:"ï¼" /c:"[" /c:"!" /c:"ã€" nore.txt)>nordz.txt
+(findstr /v /e /c:"com/banbendalao/adguard" /c:"875865300" nordz.txt)>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
