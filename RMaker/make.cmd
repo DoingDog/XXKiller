@@ -1,7 +1,6 @@
 ::init
 @echo off
 cd /d %~dp0\aa
-chcp 936
 
 ::start download files
 
@@ -45,8 +44,7 @@ set LC_ALL='C'
 s -u -R --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
-(findstr /v /b /c:"# " /c:"！" /c:"[" /c:"!" /c:"【" nore.txt)>nordz.txt
-(findstr /v /e /c:"com/banbendalao/adguard" /c:"875865300" nordz.txt)>nord.txt
+(findstr /v /b /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
