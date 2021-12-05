@@ -47,6 +47,9 @@ DOMAIN,msg.umengcloud.com,DIRECT
 HOST,data.bilibili.com,REJECT
 HOST-SUFFIX,lsttnews.com,REJECT
 HOST-SUFFIX,51y5.net,REJECT
+host-suffix, wifi188.com, reject
+host-suffix, ieeewifi.com, reject
+host-suffix, getui.net, reject
 
 # 知乎去广告，以下规则请放置在filter_local最顶部
 IP-CIDR,118.89.204.198/32,REJECT
