@@ -16,14 +16,14 @@ jobs:
         run: |
           cmd
           .\RMaker\make.cmd
-      - name: run quanx
-        run: |
-          cmd
-          .\RMaker\other\quantumult.bat
-      - name: run shadow
-        run: |
-          cmd
-          .\RMaker\other\shadow.bat
+#      - name: run quanx
+#        run: |
+#          cmd
+#          .\RMaker\other\quantumult.bat
+#      - name: run shadow
+#        run: |
+#          cmd
+#          .\RMaker\other\shadow.bat
       - name: commit
         run: |
           git config --global user.name "me"
