@@ -1,13 +1,14 @@
 ::init
 @echo off
 cd /d %~dp0\aa
+set LC_ALL='C'
 
 ::start download files
 
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 wget -O i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
-wget -O i3.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+::wget -O i3.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
+wget -O x4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 wget -O i5.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/allow.txt
 wget -O i6.txt https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_adblocker
 wget -O i7.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
@@ -16,7 +17,7 @@ wget -O i9.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/dnsfilte
 wget -O i10.txt https://adaway.org/hosts.txt
 wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
 wget -O i12.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
-wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
+::wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
 wget -O i14.txt https://www.i-dont-care-about-cookies.eu/abp/
 wget -O i15.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt
 wget -O i16.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
@@ -31,6 +32,10 @@ wget -O i20.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/fi
 ::del rubbish
 if exist .\*hsts del /f /q *hsts
 
+::del FUCKING GBK exclaimation marks
+s -r --output=x4x.txt x4.txt
+(more +3 x4x.txt)>i4.txt
+
 ::add blank line
 for %%s in (i*.txt) do type blank.dd>>%%s
 
@@ -39,7 +44,6 @@ type frules.dd>mergd.txt
 type i*.txt>>mergd.txt
 
 ::delete repeated rules
-set LC_ALL='C'
 ::sort rules Random flag -R
 s -u --output=nore.txt mergd.txt
 
@@ -59,10 +63,12 @@ echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
 echo.>>tpdate.txt
 
-type title.dd>..\..\w.txt
-type tpdate.txt>>..\..\w.txt
-type nord.txt>>..\..\w.txt
-type brules.dd>>..\..\w.txt
+type title.dd>w.txt
+type tpdate.txt>>w.txt
+type nord.txt>>w.txt
+type brules.dd>>w.txt
+
+copy /y .\w.txt ..\..\
 
 ::end cleanup
 del /f /q .\*.txt&exit
