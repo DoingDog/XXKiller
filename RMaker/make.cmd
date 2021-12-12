@@ -29,22 +29,22 @@ wget -O i20.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/fi
 ::download finished
 
 ::del rubbish
-del /f /q *hsts
+if exist .\*hsts del /f /q *hsts
 
 ::add blank line
-for %%i in (i*.txt) do type blank.dd>>%%i
+for %%s in (i*.txt) do type blank.dd>>%%s
 
 ::Merge
-type frules.dd>>mergd.txt
+type frules.dd>mergd.txt
 type i*.txt>>mergd.txt
 
 ::delete repeated rules
 set LC_ALL='C'
-::sort rules. Random flag -R
-s -u -R --output=nore.txt mergd.txt
+::sort rules Random flag -R
+::s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
-(findstr /v /b /c:"# " /c:"！" /c:"[" /c:"!" nore.txt)>nord.txt
+(findstr /v /b /c:"# " /c:"[" /c:"!" mergd.txt)>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
@@ -52,7 +52,7 @@ for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
 echo %rnum%>..\..\ct.txt
 
 ::add title and date
-echo ! Version: %date%>>tpdate.txt
+echo ! Version: %date%>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
 echo ! Rule Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
