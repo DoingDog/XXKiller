@@ -59,10 +59,10 @@ echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
 echo.>>tpdate.txt
 
-type title.dd>..\..\final.txt
-type tpdate.txt>>..\..\final.txt
-type nord.txt>>..\..\final.txt
-type brules.dd>>..\..\final.txt
+type title.dd>..\..\w.txt
+type tpdate.txt>>..\..\w.txt
+type nord.txt>>..\..\w.txt
+type brules.dd>>..\..\w.txt
 
 ::end cleanup
-del /f /q *.txt&exit
+del /f /q .\*.txt&exit
