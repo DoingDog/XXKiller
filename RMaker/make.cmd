@@ -41,10 +41,10 @@ type i*.txt>>mergd.txt
 ::delete repeated rules
 set LC_ALL='C'
 ::sort rules Random flag -R
-::s -u --output=nore.txt mergd.txt
+s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
-(findstr /v /b /c:"# " /c:"[" /c:"!" mergd.txt)>nord.txt
+(findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
@@ -58,8 +58,8 @@ echo ! Rule Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
 echo.>>tpdate.txt
-copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
+::copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
 
 ::end cleanup
-copy /y final.txt ..\..\w.txt
+copy /y nord.txt ..\..\w.txt
 del /f /q *.txt&exit
