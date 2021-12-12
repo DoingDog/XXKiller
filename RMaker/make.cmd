@@ -41,9 +41,7 @@ type i*.txt>>mergd.txt
 ::delete repeated rules
 set LC_ALL='C'
 ::sort rules Random flag -R
-s -u -r --output=nore1.txt mergd.txt
-(for /f "skip=5 delims=" %%b in (nore1.txt) do (echo %%b))>>nore2.txt
-s --output=nore.txt nore2.txt
+s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
 (findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord.txt
