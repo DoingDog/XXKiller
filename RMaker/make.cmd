@@ -58,8 +58,11 @@ echo ! Rule Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
 echo.>>tpdate.txt
-::copy title.dd+tpdate.txt+nord.txt+brules.dd final.txt
+
+type title.dd>..\..\final.txt
+type tpdate.txt>>..\..\final.txt
+type nord.txt>>..\..\final.txt
+type brules.dd>>..\..\final.txt
 
 ::end cleanup
-copy /y nord.txt ..\..\w.txt
 del /f /q *.txt&exit
