@@ -10,7 +10,7 @@ Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/
 日本（更新有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>右键复制链接</a><br/>
 <br/>使用方法：将上方地址加入拦截器订阅。<br/>
 <br/><br/><br/>
-<strong>规则过于强大，误杀严重。请配合白名单使用 （已经带白名单了</strong><br/><br/>
+<strong>规则过于强大，误杀严重。请配合白名单使用 （已经带白名单了</strong><br/>还是建议电脑用这个规则<br/>
 <br/>
 合并规则列表:<br>AdguardDNS，HalfLifePC，乘风，<br/>乘风视频，antiad，Neodev，<br/>ADgk，白名单规则，adaway默认，<br/>Barbblock，短链解析，<br>i dont care about cookies和一些额外规则<br/>
 
