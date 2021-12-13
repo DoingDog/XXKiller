@@ -27,6 +27,7 @@ wget -O i17.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/fi
 wget -O i18.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/lan-block.txt
 wget -O i19.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
 wget -O i20.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+wget -O i21.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 ::add new rules like wget -O i+number url
 
 ::download finished
@@ -60,7 +61,7 @@ echo %rnum%>..\..\ct.txt
 ::add title and date
 echo ! Version: %date%>tpdate.txt
 echo ! Last modified: %date%T%time%Z>>tpdate.txt
-echo ! Rule Count: %rnum%>>tpdate.txt
+echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
 
