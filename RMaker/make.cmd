@@ -1,4 +1,6 @@
 ::init
+:: Good luck hhh
+
 @echo off
 cd /d %~dp0\aa
 set LC_ALL='C'
@@ -45,7 +47,7 @@ type i*.txt>>mergd.txt
 
 ::delete repeated rules
 ::sort rules Random flag -R
-s -u -R --output=nore.txt mergd.txt
+s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
 (findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord.txt
