@@ -2,6 +2,7 @@
 :: Good luck hhh
 
 @echo off
+chcp 65001
 cd %~dp0\aa
 set LC_ALL='C'
 
