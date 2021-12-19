@@ -10,7 +10,7 @@ set LC_ALL='C'
 wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 wget -O i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
 ::wget -O i3.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+wget -O x4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
 wget -O i5.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/allow.txt
 wget -O i6.txt https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_adblocker
 wget -O i7.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
@@ -36,8 +36,8 @@ wget -O i21.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
 if exist .\*hsts del /f /q *hsts
 
 ::del FUCKING GBK exclaimation marks
-::s -r --output=x4x.txt x4.txt
-::(more +3 x4x.txt)>i4.txt
+s -r --output=x4x.txt x4.txt
+(more +3 x4x.txt)>i4.txt
 
 ::add blank line
 for %%s in (i*.txt) do type blank.dd>>%%s
@@ -51,7 +51,7 @@ type i*.txt>>mergd.txt
 s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
-(findstr /v /b /c:"# " /c:"[" /c:"!" /c:"！" /c:"【" nore.txt)>nord.txt
+(findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord.txt
 ::(gawk "!a[$0]++" nord2.txt)>nord.txt
 
 ::count rules
