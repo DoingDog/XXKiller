@@ -15,6 +15,7 @@ jobs:
       - name: run main
         run: |
           cmd /u /c .\RMaker\make.cmd
+          exit
 #      - name: run quanx
 #        run: |
 #          cmd
