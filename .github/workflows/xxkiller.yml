@@ -14,8 +14,7 @@ jobs:
       - uses: actions/checkout@main
       - name: run main
         run: |
-          cmd
-          call .\RMaker\make.cmd
+          cmd /u /c .\RMaker\make.cmd
 #      - name: run quanx
 #        run: |
 #          cmd
