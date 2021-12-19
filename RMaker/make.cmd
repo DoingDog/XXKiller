@@ -1,8 +1,8 @@
 ::init
 :: Good luck hhh
 
-@echo off
-cd /d %~dp0\aa
+::@echo off
+cd %~dp0\aa
 set LC_ALL='C'
 
 ::start download files
