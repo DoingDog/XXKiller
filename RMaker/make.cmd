@@ -51,8 +51,8 @@ type i*.txt>>mergd.txt
 s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
-(findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nordx.txt
-gawk "!a[$0]++" nordx.txt>nord.txt
+(findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord2.txt
+(gawk "!a[$0]++" nord2.txt)>nord.txt
 
 ::count rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nord.txt')do set/a rnum=%%a+1
