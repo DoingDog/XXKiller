@@ -1,7 +1,7 @@
 ::init
 :: Good luck hhh
 
-::@echo off
+@echo off
 cd %~dp0\aa
 set LC_ALL='C'
 
