@@ -29,6 +29,7 @@ wget -O i18.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/fi
 wget -O i19.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
 wget -O i20.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
 wget -O i21.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+wget -O i22.txt https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt
 ::add new rules like wget -O i+number url
 
 ::download finished
