@@ -44,6 +44,11 @@ DOMAIN,analytics.strava.com,DIRECT
 DOMAIN,msg.umeng.com,DIRECT
 DOMAIN,msg.umengcloud.com,DIRECT
 
+HOST-SUFFIX,k.jd.com,REJECT
+HOST-SUFFIX,ctobsnssdk.com,REJECT
+HOST-SUFFIX,tpns.tencent.com,REJECT
+HOST-SUFFIX,api-adservices.apple.com,REJECT
+
 HOST,data.bilibili.com,REJECT
 HOST-SUFFIX,lsttnews.com,REJECT
 HOST-SUFFIX,51y5.net,REJECT
