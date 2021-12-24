@@ -1,54 +1,54 @@
 HOST-SUFFIX,local,DIRECT
 
-# Unbreak
-# > General
-USER-AGENT,archero*,DIRECT
-USER-AGENT,coffeecorp*,DIRECT
+HOST-SUFFIX,blog.google,DIRECT
+HOST-SUFFIX,dizhensubao.getui.com,DIRECT
+HOST-SUFFIX,f.video.weibocdn.com,DIRECT
+HOST-SUFFIX,fus.cdn.krcom.cn,DIRECT
+HOST-SUFFIX,googletraveladservices.com,DIRECT
+HOST-SUFFIX,ol.epicgames.com,DIRECT
+HOST-SUFFIX,tracking-protection.cdn.mozilla.net,DIRECT
+HOST,ad.10010.com,DIRECT
+HOST,alt1-mtalk.google.com,DIRECT
+HOST,alt2-mtalk.google.com,DIRECT
+HOST,alt3-mtalk.google.com,DIRECT
+HOST,alt4-mtalk.google.com,DIRECT
+HOST,alt5-mtalk.google.com,DIRECT
+HOST,alt6-mtalk.google.com,DIRECT
+HOST,alt7-mtalk.google.com,DIRECT
+HOST,alt8-mtalk.google.com,DIRECT
+HOST,analytics.95516.com,DIRECT
+HOST,analytics.strava.com,DIRECT
+HOST,app.adjust.com,DIRECT
+HOST,bdtj.tagtic.cn,DIRECT
+HOST,clientservices.googleapis.com,DIRECT
+HOST,dl.google.com,DIRECT
+HOST,dl.l.google.com,DIRECT
+HOST,fairplay.l.qq.com,DIRECT
+HOST,fonts.googleapis.com,DIRECT
+HOST,fonts.gstatic.com,DIRECT
+HOST,livew.l.qq.com,DIRECT
+HOST,log.mmstat.com,DIRECT
+HOST,msg.umeng.com,DIRECT
+HOST,msg.umengcloud.com,DIRECT
+HOST,mtalk.google.com,DIRECT
+HOST,origin-a.akamaihd.net,DIRECT
+HOST,picanalysis.vivo.com.cn,DIRECT
+HOST,pubads.g.doubleclick.net,DIRECT
+HOST,sycm.mmstat.com,DIRECT
+HOST,tracking.miui.com,DIRECT
+HOST,translate.googleapis.com,DIRECT
+HOST,update.googleapis.com,DIRECT
+HOST,vd.l.qq.com,DIRECT
+HOST,xivanalysis.com,DIRECT
 USER-AGENT,Coffee%20Corp*,DIRECT
+USER-AGENT,coffeecorp*,DIRECT
 USER-AGENT,restaurant-mobile*,DIRECT
-DOMAIN,app.adjust.com,DIRECT
-DOMAIN,bdtj.tagtic.cn,DIRECT
-# > Alibaba
-DOMAIN,log.mmstat.com,DIRECT
-DOMAIN,sycm.mmstat.com,DIRECT
-# > Google
-DOMAIN-SUFFIX,blog.google,DIRECT
-DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
-DOMAIN,clientservices.googleapis.com,DIRECT
-DOMAIN,dl.google.com,DIRECT
-DOMAIN,dl.l.google.com,DIRECT
-DOMAIN,update.googleapis.com,DIRECT
-DOMAIN,translate.googleapis.com,DIRECT
-# >> Google Fonts API
-DOMAIN,fonts.googleapis.com,DIRECT
-DOMAIN,fonts.gstatic.com,DIRECT
-# >> Firebase Cloud Messaging
-DOMAIN,mtalk.google.com,DIRECT
-DOMAIN,alt1-mtalk.google.com,DIRECT
-DOMAIN,alt2-mtalk.google.com,DIRECT
-DOMAIN,alt3-mtalk.google.com,DIRECT
-DOMAIN,alt4-mtalk.google.com,DIRECT
-DOMAIN,alt5-mtalk.google.com,DIRECT
-DOMAIN,alt6-mtalk.google.com,DIRECT
-DOMAIN,alt7-mtalk.google.com,DIRECT
-DOMAIN,alt8-mtalk.google.com,DIRECT
-# >> Paramount+
-DOMAIN,pubads.g.doubleclick.net,DIRECT
-# > Tencent
-DOMAIN,fairplay.l.qq.com,DIRECT
-DOMAIN,livew.l.qq.com,DIRECT
-DOMAIN,vd.l.qq.com,DIRECT
-# > Strava
-DOMAIN,analytics.strava.com,DIRECT
-# > Umeng
-DOMAIN,msg.umeng.com,DIRECT
-DOMAIN,msg.umengcloud.com,DIRECT
+USER-AGENT,archero*,DIRECT
 
 HOST-SUFFIX,k.jd.com,REJECT
 HOST-SUFFIX,ctobsnssdk.com,REJECT
 HOST-SUFFIX,tpns.tencent.com,REJECT
 HOST-SUFFIX,api-adservices.apple.com,REJECT
-
 HOST,data.bilibili.com,REJECT
 HOST-SUFFIX,lsttnews.com,REJECT
 HOST-SUFFIX,51y5.net,REJECT
@@ -56,11 +56,9 @@ host-suffix, wifi188.com, reject
 host-suffix, ieeewifi.com, reject
 host-suffix, getui.net, reject
 
-# 知乎去广告，以下规则请放置在filter_local最顶部
 IP-CIDR,118.89.204.198/32,REJECT
 IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
 HOST,118.89.204.198,REJECT
-# 知乎去广告，以下规则的位置越前方越好
 HOST,appcloud2.in.zhihu.com,REJECT
 HOST,mqtt.zhihu.com,reject
 HOST,sugar.zhihu.com,reject
