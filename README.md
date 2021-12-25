@@ -9,6 +9,7 @@ Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/
 中国香港 <a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>右键复制链接</a><br/>
 日本（更新有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>右键复制链接</a><br/>
 <br/>使用方法：将上方地址加入拦截器订阅。<br/>
+手动更新版规则：更稳定 <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/long.txt>右键复制链接</a><br/>
 <br/><br/><br/>
 <strong>规则过于强大，误杀严重。请配合白名单使用 （已经带白名单了</strong><br/>:\建议电脑端或dns用这个规则。手机会卡爆<br/>
 <br/>
