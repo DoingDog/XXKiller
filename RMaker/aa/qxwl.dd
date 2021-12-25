@@ -53,6 +53,11 @@ USER-AGENT,archero*,DIRECT
 # Custom ads
 
 
+#HOST-SUFFIX,mapi.m.jd.com,REJECT
+HOST-SUFFIX,kepler.jd.com,REJECT
+HOST-SUFFIX,trace.qq.com,REJECT
+HOST-SUFFIX,orbit.jd.com,REJECT
+HOST-SUFFIX,pglstatp-toutiao.com,REJECT
 HOST-SUFFIX,k.jd.com,REJECT
 HOST-SUFFIX,ctobsnssdk.com,REJECT
 HOST-SUFFIX,tpns.tencent.com,REJECT
@@ -74,6 +79,7 @@ USER-AGENT,AVOS*,REJECT
 
 #apple metrics
 
+HOST-SUFFIX,configuration.apple.com,REJECT
 HOST-SUFFIX,api-adservices.apple.com,REJECT
 HOST,appleglobal.102.112.2o7.net,REJECT
 HOST,appleglobal.112.2o7.net,REJECT
