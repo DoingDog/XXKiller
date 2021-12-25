@@ -52,7 +52,7 @@ USER-AGENT,archero*,DIRECT
 
 # Custom ads
 
-
+HOST,collector.githubapp.com,REJECT
 #HOST-SUFFIX,mapi.m.jd.com,REJECT
 HOST-SUFFIX,kepler.jd.com,REJECT
 HOST-SUFFIX,trace.qq.com,REJECT
