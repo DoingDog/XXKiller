@@ -50,8 +50,8 @@ type i*.txt>>mergd.txt
 
 ::delete repeated rules
 ::sort rules Random flag -R
-concmd /o:gbk mergd.txt merged.txt
-s -u --output=nore.txt merged.txt
+::concmd /o:gbk mergd.txt merged.txt
+s -u --output=nore.txt mergd.txt
 
 ::delete comments&rubbish
 (findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord.txt
