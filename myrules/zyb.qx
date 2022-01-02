@@ -16,6 +16,7 @@ host, app-search.cdnjtzy.com, direct
 host, napi.zybang.com, direct
 host, img10.zuoyebang.cc, direct
 host, yy-s.zuoyebang.cc, direct
+host, shumei-app-thirdpart.zuoyebang.com, direct
 
 host, www.daxuesoutijiang.com, reject
 host-suffix, netease.im, reject
