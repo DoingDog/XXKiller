@@ -20,6 +20,8 @@ host, shumei-app-thirdpart.zuoyebang.com, direct
 host, www.kuaiduizuoye.com, direct
 
 host, www.daxuesoutijiang.com, reject
+host, kw1-1253445850.image.myqcloud.com, reject
+host, kd02-1253445850.image.myqcloud.com, reject
 host-suffix, kuaiduizuoye.com, reject
 host-suffix, netease.im, reject
 host, httpdns.yunxindns.com, reject
