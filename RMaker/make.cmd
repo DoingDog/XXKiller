@@ -8,29 +8,7 @@ set LC_ALL='C'
 
 ::start download files
 
-wget -O i1.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-wget -O i2.txt https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad-pc.txt
-::wget -O i3.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-wget -O i4.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-wget -O i5.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/allow.txt
-wget -O i6.txt https://raw.githubusercontent.com/neodevpro/neodevhost/master/lite_adblocker
-wget -O i7.txt https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_plus.txt
-wget -O i8.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt
-wget -O i9.txt https://raw.githubusercontent.com/Cats-Team/AdRules/main/dnsfilter/aa/brules.dd
-wget -O i10.txt https://adaway.org/hosts.txt
-wget -O i11.txt https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
-wget -O i12.txt https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-adguard.txt
-::wget -O i13.txt https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
-wget -O i14.txt https://www.i-dont-care-about-cookies.eu/abp/
-wget -O i15.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener-AffiliateTagAllowlist.txt
-wget -O i16.txt https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
-wget -O i17.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
-wget -O i18.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/lan-block.txt
-wget -O i19.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
-wget -O i20.txt https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
-wget -O i21.txt https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-::wget -O i22.txt https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt
-::add new rules like wget -O i+number url
+for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (wget -O i%%i.txt %%j)
 
 ::download finished
 
