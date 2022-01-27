@@ -3,7 +3,7 @@
 全部由其他规则合并产生<br/><br/>
 
 注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/>
-规则数量：已经37万了啊：/ <a href="https://raw.githubusercontent.com/DoingDog/XXKiller/main/ct.txt">点击显示</a> <br/>
+规则数量：已经多少了啊：/ <a href="https://raw.githubusercontent.com/DoingDog/XXKiller/main/ct.txt">点击显示</a> <br/>
 <strong><br>每天北京时间0点更新</strong><br/><br/>
 更新地址（右键DL）：<br/>
 Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/main/w.txt>我是链接</a><br/>
