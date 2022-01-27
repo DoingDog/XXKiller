@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
-! title: 乘风 广告过滤规则
+! title: j
 ! Version: 202105121
 ! Expires: 2 days
 ! Homepage: https://bbs.kafan.cn/thread-1866845-1-1.html
 !@@*$domain=taobao.com|alipay.com|suning.com|vmall.com|etao.com|tmall.com|paipai.com|jd.com|jd.hk|i.qq.com|my.csdn.net
 @@*$stylesheet
-!--------------------------百度----------------------------------
+!------------------------------------------------------------
 @@||bdstatic.com/static/common/widget/ui/admanager/$script,domain=image.baidu.com
 @@||cpro.baidustatic.com/cpro/ui/cm.js
 ||cpro.
@@ -42,12 +42,12 @@ v.baidu.com##div[videoadv],a[href^="http://g.youxi.v.baidu."]
 
 www.baidu.com##div.c-container:has(a[data-landurl])
 zhidao.baidu.com###left-promotion,#ui-tooltip-0,div.cms-slide.cms-slide-optimus,div.wgt-bottom-ask,div.cms-slide.cms-slide-lazy
-!--贴吧---
+!-----
 tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##div[ad-dom-img],#thread_list>li:not(.j_thread_list):not(.thread_top_list_folder),div[data-rank]
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
 ||tb1.bdstatic.com/??/tb/_/game_iframe_common_$script
 ||tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script
-!----------------------通用、广告联盟站点-----------------------
+!--------------------------------------
 ||ad.
 */ad.
 */ad/$script,subdocument,media
@@ -70,7 +70,7 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com##div[ad-dom-img]
 ||g.$third-party,subdocument,script
 ||gg.
 ||ggg.
-! 电信截持弹窗 3行
+!
 ||189.cn/$popunder
 ||greenet.cn/$popunder
 ||189.gd/$popunder
@@ -120,7 +120,7 @@ pageMediaControl*$script
 @@||dwstatic.com/b=amkit
 ||wan.$~image
 ||iwan.$third-party
-!-------------------通用脚本广告--------------------
+!---------------------------------
 */51ads/
 @@||img05.zhaopin.cn/2014/common/js/za/ga.js
 */ga.js^
@@ -154,7 +154,7 @@ pageMediaControl*$script
 */tan1.$script
 */tj.js|
 */tongji.js|$domain=~zongheng.com
-!-------------------下载站点-----------------------
+!-----------------------------------------
 *.gif|$image,domain=3987.com|www.ouyaoxiazai.com|www.myhack58.com
 www.3987.com##.downinfo > .fr, .show.xiazai_bj
 ||statics.3987.com/all_site/$script
@@ -266,7 +266,7 @@ yxdown.com##.bg_l,.bg_r,div.gg,div[id$=_ads]
 ||www.zolsky.com/killsoftware/sdsoft/page2/newad/$script
 ||www.zolsky.com/hotsoft/$subdocument,script
 ||www.zolsky.com/read/readad/$subdocument
-! 中关村在线
+
 www.zol.com.cn##.side-news-nointel.side-news,#bgad
 www.zol.com.cn,www.91danji.com,92btbtt.com##body:style(background: center !important)
 zol.com.cn##.down-h4,span.down-alink,div[class^=ad_],div[class*=-ad],div[class|=ad],div[id^=AD_]
@@ -313,7 +313,7 @@ qq.com##div[bosszone=tymyd],div[id^=AdZone],#coo_qqBrowser,div.ad-banner,div.sid
 ||swa.gtimg.com/
 ||wb.gtimg.com/adwin/
 sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35,div[adconfig_charset]
-!-------------------网易--------------------
+!-----------------------------
 @@||bnet.163.com/
 ||g.163.com/$~object-subrequest
 ||img1.126.net/
@@ -342,7 +342,7 @@ mail.163.com,mail.126.com##.emailSuggest,#theme,.gWel-bottom
 ||mimg.127.net/m/lb/img/inboxBottom/$image
 ||mimg.127.net/m/lb/img/leftNavBottom/$image
 |data:text/plain$popup,domain=music.163.com
-!-------------------新浪--------------------
+!----------------------------------
 ||sinaimg.cn/unipro/$domain=~video.sina.com.cn|~weibo.com
 ||sinaimg.cn/crop.$domain=~video.sina.com.cn|~weibo.com
 ||n.sinaimg.cn/tech/zcapp$image
@@ -388,7 +388,7 @@ x0.ifengimg.com
 ||y2.ifengimg.com/xingzhao/JS/bsgspecial.js$script
 v.ifeng.com##.vAdbox,div.vAdImg,div.newAdImg,div.ad300,div.ad1000,div.vPlayerAdbox,div.main+.scrollcol,#js_videopause_container
 @@||ifengimg.com/*/ad.js
-!-------------------小说站点-----------------------
+!------------------------------------
 @@||qidian.gtimg.com/*/qd/js/component/ad_strategies.$script
 qidian.com###tr-banner,#topGameOp,div.banner-wrap,div.focus-img.cf
 ||qidian.com/upload/gamesy/20$image
@@ -414,7 +414,7 @@ enennsa.gushiwen.cn
 ||a.lz13.cn/
 ||cgm.shicimingju.com
 ||www.shicimingju.com/scmjddd/
-!-------------------财经--------------------
+!-------------------------------------
 ||www.chnmoney.com/skin/$script
 ||www.chnmoney.com/dfile/$script,image
 www.chnmoney.com##.tonglan
@@ -497,7 +497,7 @@ pcpop.com##[id^=ad_],div.ad1,div.pcpop_ad1,div#banner9th
 v2ex.com##.box:has(.sidebar_compliance)
 ||v2ex.assets.uxengine.net/assets/sidebar/$image
 zhihu.com##.Banner.Card,.shameimaru-section,.Banner-image
-!-------------------杂项--------------------
+!-------------------------------------
 1ting.com##[id^=tingx_]
 ||www.1ting.com/$subdocument
 mail.21cn.com##.arale-dialog-1_2_3
@@ -561,7 +561,7 @@ d2.yiche.com
 ||zchot.com/images/jiaoyou
 ||www.zhujiceping.com/F/$image
 ||www.zhujiceping.com/wp-content/uploads/$script
-!-------------------影视资源--------------------
+!--------------------------------------
 |https://www.36dm.com/js/
 |https://www.36dm.com/tbklb/
 ||www.36dm.com/images/$image
@@ -584,14 +584,14 @@ czywssj.com
 subhd.com##div[style^="text-align:center;height:270px"],.col-md-10 > div:nth-of-type(1)
 ||subhd.com/images/ap/$image
 ||ygdy8.com/jsy/
-!--人人影视 rrys2019.com ----
+
 iyoowi.com
 ||jstucdn.com/g3/
 ||lx167.com^$third-party
 quandangdang.net
-!-- 天天美剧 ttmeiju.me ----
+!meiju.me ----
 dieka888.com
-!-------------------视频站点--------------------
+!------------------------------
 ||mtime.cn/library/*/Goods$script
 trade.mtime.com
 !service.mall.mtime.com
@@ -606,7 +606,7 @@ trade.mtime.com
 ||bokecc.com/flash/playlog?
 ||click.bokecc.com/
 ||imedia.bokecc.com/
-!------------------精简自adbyby规则------------------
+!----------------------------
 */7mad.$image,object,object-subrequest
 */9vads
 */acadv
@@ -1276,7 +1276,7 @@ admin5.com##.float_both,div.sherry_ad1,div.specialBox,.content_right_ad
 ||17173.itc.cn/2013/www/if/$image,object,object-subrequest
 
 [Adblock Plus 2.0]
-! title: 乘风 视频广告过滤规则
+! title: g
 ! Version: 202105021
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
