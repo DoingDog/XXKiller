@@ -6,11 +6,9 @@ chcp 65001
 cd %~dp0\aa
 set LC_ALL='C'
 
-::start download files
-
+::start download files & encode
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (wget -O i%%i.txt %%j)
-
-::download finished
+for %%i in (i*.txt) do (concmd /o:utf8 %%i)
 
 ::del rubbish
 if exist .\*hsts del /f /q *hsts
@@ -20,7 +18,7 @@ if exist .\*hsts del /f /q *hsts
 ::(more +3 x4x.txt)>i4.txt
 
 ::add blank line
-for %%s in (i*.txt) do type blank.dd>>%%s
+for %%i in (i*.txt) do type blank.dd>>%%i
 
 ::Merge
 type frules.dd>mergd.txt
@@ -28,8 +26,7 @@ type i*.txt>>mergd.txt
 
 ::delete repeated rules
 ::sort rules Random flag -R
-::concmd /o:gbk mergd.txt merged.txt
-s -u --output=nore.txt mergd.txt
+s -u -o=nore.txt mergd.txt
 
 ::delete comments&rubbish
 (findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord.txt
