@@ -26,7 +26,8 @@ type i*.txt>>mergd.txt
 
 ::delete repeated rules
 ::sort rules Random flag -R
-s -u -o nore.txt mergd.txt
+::s -u -o nore.txt mergd.txt
+(gawk "!a[$0]++" mergd.txt)>nore.txt
 
 ::delete comments&rubbish
 (findstr /v /b /c:"# " /c:"[" /c:"!" nore.txt)>nord.txt
