@@ -8,7 +8,7 @@ set LC_ALL='C'
 
 ::start download files & encode
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (wget -O i%%i.txt %%j)
-for %%i in (i*.txt) do (concmd /o:utf8 %%i)
+::for %%i in (i*.txt) do (concmd /o:utf8 %%i)
 
 ::del rubbish
 if exist .\*hsts del /f /q *hsts
