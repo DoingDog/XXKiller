@@ -50,7 +50,6 @@ USER-AGENT,restaurant-mobile*,DIRECT
 USER-AGENT,archero*,DIRECT
 
 # Custom ads
-
 HOST,collector.githubapp.com,REJECT
 #HOST-SUFFIX,mapi.m.jd.com,REJECT
 HOST-SUFFIX,kepler.jd.com,REJECT
