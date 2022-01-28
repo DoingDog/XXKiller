@@ -49,7 +49,6 @@ USER-AGENT,coffeecorp*,DIRECT
 USER-AGENT,restaurant-mobile*,DIRECT
 USER-AGENT,archero*,DIRECT
 
-
 # Custom ads
 
 HOST,collector.githubapp.com,REJECT
