@@ -23,7 +23,7 @@ for %%i in (i*.txt) do type blank.dd>>%%i
 ::Merge
 type blank.dd>mergd.txt
 type i*.txt>>mergd.txt
-type .\custom-rules\*.txt>>mergd.txt
+type .\custom-rules\*>>mergd.txt
 
 ::delete repeated rules
 ::sort rules Random flag -R
