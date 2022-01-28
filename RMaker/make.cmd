@@ -131,6 +131,7 @@ echo ! Last modified: %date%T%time%Z>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
+echo.>>tpdate.txt
 
 type title.dd>w.txt
 type tpdate.txt>>w.txt
