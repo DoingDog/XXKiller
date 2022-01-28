@@ -21,8 +21,9 @@ if exist .\*hsts del /f /q *hsts
 for %%i in (i*.txt) do type blank.dd>>%%i
 
 ::Merge
-type frules.dd>mergd.txt
+type blank.dd>mergd.txt
 type i*.txt>>mergd.txt
+type .\custom-rules\*.txt>>mergd.txt
 
 ::delete repeated rules
 ::sort rules Random flag -R
@@ -136,7 +137,7 @@ echo.>>tpdate.txt
 type title.dd>w.txt
 type tpdate.txt>>w.txt
 type nordv.txt>>w.txt
-type brules.dd>>w.txt
+type addition.dd>>w.txt
 
 copy /y .\w.txt ..\..\
 
