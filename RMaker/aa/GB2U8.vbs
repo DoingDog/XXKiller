@@ -5,10 +5,10 @@
 ' *==============================================================================*
 aCode = "GB2312"
 bCode = "UTF-8"
-Show = "   "
-Usage1 = ""
-Usage2 = ""
-Usage3 = "     "
+Show = " "
+Usage1 = " "
+Usage2 = " "
+Usage3 = " "
 Usage4 = "BY: fastslz"
 
 Set objArgs=WScript.Arguments
