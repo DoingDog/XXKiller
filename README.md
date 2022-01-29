@@ -4,7 +4,7 @@
 
 注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/>
 规则数量：已经多少了啊：/ <a href="https://raw.githubusercontent.com/DoingDog/XXKiller/main/ct.txt">点击显示</a> <br/>
-<strong><br>每天北京时间差不多0点更新</strong><br/><br/>
+<strong><br>每天北京时间差不多0点和12点更新</strong><br/><br/>
 更新地址（右键DL）：<br/>
 Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/main/w.txt>我是链接</a><br/>
 中国附近（更新有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>我是链接</a><br/>
