@@ -67,6 +67,7 @@ for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=%%a+1
 
 ::get version code
 for /f "tokens=1 delims=:" %%i in ('echo %time%') do (set v3=%%i)
+if not %v3% gtr 9 set v3=0%v3%
 for /f "tokens=2 delims= " %%i in ('echo %date%') do (set v1=%%i)
 for /f "tokens=1,2,3 delims=/" %%i in ('echo %v1%') do (set v2=%%k%%i%%j)
 set vs=%v2%%v3%
@@ -80,7 +81,7 @@ echo count : %rnum%>>..\..\ct.txt
 
 ::add title and date
 echo ! Version: %vs%>tpdate.txt
-echo ! Last modified: %lm%>>tpdate.txt
+echo ! Last modified: %lm% UTC>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
