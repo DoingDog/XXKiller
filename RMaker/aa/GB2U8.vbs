@@ -1,15 +1,15 @@
 ' *==============================================================================*
-' * CMD 命令行编码转换工具包括GB2312,UTF-8,Unicode,BIG5...支持拖拽、文件另保存为 *
+' *  *
 ' * CodeChange.vbs     BY: yongfa365 http://www.yongfa365.com         2007-10-04 *
 ' * GB2U8.vbs          BY: fastslz   http://bbs.cn-dos.net            2007-12-03 *
 ' *==============================================================================*
 aCode = "GB2312"
 bCode = "UTF-8"
-Show = "本脚本仅支持"&aCode&"到"&bCode&"的转换，请拖拽单个要转换的文件到此文件上！    "
-Usage1 = "语法１：GB2U8.vbs [驱动器][目录][文件名] （直接替换原文件模式）"
-Usage2 = "语法２：GB2U8.vbs [驱动器][目录][文件名]  [目标驱动器][目录][新名称] /Ｙ"
-Usage3 = "        如果目标新文件已存在，使用/Ｙ参数后将直接替换而不提示是否改写！  "
-Usage4 = "命令行编码转换工具 BY: fastslz"
+Show = "   "
+Usage1 = ""
+Usage2 = ""
+Usage3 = "     "
+Usage4 = "BY: fastslz"
 
 Set objArgs=WScript.Arguments
 Set fso=CreateObject("Scripting.FileSystemObject")
@@ -24,7 +24,7 @@ if not objArgs.Count < 3 Then
           Sourcefile=objArgs(0)
           Getfile=objArgs(1)
           else
-          MsgBox "文件数量或参数太多，拖拽批量处理请用 ANSI2UTF8.vbs     ", vbInformation, "程序意外终止"
+      MsgBox " ANSI2UTF8.vbs     ", vbInformation, "fsss"
           Wscript.Quit
        end if
        else
@@ -32,7 +32,7 @@ if not objArgs.Count < 3 Then
           Sourcefile=objArgs(0)
           Getfile=objArgs(1)
           if fso.FileExists(objArgs(1)) then
-             Choice = MsgBox ("待处理文件“"+Sourcefile+"” ==> 目标文件“"+Getfile+"”    "&vbCrLf&"目标文件已存在，是否改写现有文件？“"+objArgs(1)+"”    ",vbQuestion+vbYesNo,"是否改写")
+             Choice = MsgBox ("a"+Sourcefile+" ==> b"+Getfile+"   "&vbCrLf&""+objArgs(1)+"   ",vbQuestion+vbYesNo,"")
              if Choice = vbYes Then
                 Getfile=objArgs(1)
                 else
