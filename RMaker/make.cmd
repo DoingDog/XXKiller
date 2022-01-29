@@ -4,13 +4,13 @@ chcp 65001
 cd %~dp0\aa
 set LC_ALL='C'
 
-::start download files
+::start download files in rule-list
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (wget -O i%%i.txt %%j)
 
-::fix encode
+::fix encoding to utf8
 for %%i in (i*.txt) do (gb2u8.vbs %%i)
 
-::delete rubbish files
+::delete rubbish files of wget
 if exist .\*hsts del /f /q *hsts
 
 ::add blank line to every file
@@ -20,7 +20,7 @@ for %%i in (i*.txt) do type blank.dd>>%%i
 type blank.dd>mergd.txt
 type i*.txt>>mergd.txt
 
-::Merge custom rules
+::Merge custom rules in folder
 type .\custom-rules\*>>mergd.txt
 
 ::primary deduplicate
@@ -28,7 +28,7 @@ s -u -r -i -o nore.txt mergd.txt
 
 ::extract useful lines
 
-::punctuation mark
+::extract punctuation mark into file
 (findstr /b /c:"##" nore.txt)>nord.txt
 (findstr /b /c:"#%#" nore.txt)>>nord.txt
 (findstr /b /c:"#$#" nore.txt)>>nord.txt
@@ -52,34 +52,34 @@ s -u -r -i -o nore.txt mergd.txt
 (findstr /b /c:"|" nore.txt)>>nord.txt
 (findstr /b /c:"~" nore.txt)>>nord.txt
 
-::numbers
+::extract numbers into file
 (findstr /b [0-9] nore.txt)>>nord.txt
 
-::alphabet
+::extract alphabet into file
 (findstr /b [Aa-Zz] nore.txt)>>nord.txt
 
 ::secondary deduplicate and sort
 (gawk "!a[$0]++" nord.txt)>nordn.txt
 s -i -o nordv.txt nordn.txt
 
-::count rules
+::count total rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=%%a+1
 
-::get version code
+::get and save version code
 for /f "tokens=1,2 delims=:" %%i in ('echo %time%') do (set v3=%%i%%j)
 if not %v3% gtr 999 set v3=0%v3%
 for /f "tokens=2 delims= " %%i in ('echo %date%') do (set v1=%%i)
 for /f "tokens=1,2,3 delims=/" %%i in ('echo %v1%') do (set v2=%%k%%i%%j)
 set vs=%v2%%v3%
 
-::get time
+::get last modified time
 for /f "tokens=2,3 delims= " %%i in ('echo %date%T%time%Z') do (set lm=%%i%%j)
 
-::save numbers to file
+::save info into file
 echo version : %vs%>..\..\ct.txt
 echo count : %rnum%>>..\..\ct.txt
 
-::add title and date
+::add title and date to rule
 echo ! Version: %vs%>tpdate.txt
 echo ! Last modified: %lm% UTC>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
@@ -93,7 +93,7 @@ type tpdate.txt>>w.txt
 type nordv.txt>>w.txt
 type addition.dd>>w.txt
 
-::move file
+::move file out
 copy /y .\w.txt ..\..\
 
 ::end cleanup
