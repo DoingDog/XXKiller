@@ -2,7 +2,7 @@ name: make rules
 
 on:
   schedule:
-    - cron: '50 15 * * *'
+    - cron: '50 3,15 * * *'
 
   workflow_dispatch:
 
