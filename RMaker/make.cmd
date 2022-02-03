@@ -1,6 +1,6 @@
 ::init
 @echo off
-chcp 65001
+chcp 936
 cd %~dp0\aa
 set LC_ALL='C'
 
@@ -11,7 +11,7 @@ wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleW
 
 ::fix encoding to utf8
 ::if error,enable this
-for %%i in (i*.txt) do (gb2u8.vbs %%i)
+::for %%i in (i*.txt) do (gb2u8.vbs %%i)
 
 ::delete rubbish files of wget
 ::if exist .\*hsts del /f /q *hsts
