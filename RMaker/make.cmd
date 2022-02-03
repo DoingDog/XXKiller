@@ -62,8 +62,8 @@ s -u -r -i -o nore.txt mergd.txt
 (findstr /b [Aa-Zz] nore.txt)>>nord.txt
 
 ::secondary deduplicate and sort
-(gawk "!a[$0]++" nord.txt)>nordn.txt
-s -i -o nordv.txt nordn.txt
+::(gawk "!a[$0]++" nord.txt)>nordn.txt
+s -u -i -o nordv.txt nord.txt
 
 ::count total rules
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=%%a+1
