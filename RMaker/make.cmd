@@ -1,6 +1,6 @@
 ::init
 @echo off
-chcp 936
+chcp 65001
 cd %~dp0\aa
 set LC_ALL='C'
 
