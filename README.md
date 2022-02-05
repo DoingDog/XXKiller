@@ -17,4 +17,4 @@ Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/
 合并规则列表 见rule-list.ini<br/>
 
 合并规则的脚本见Rmaker（make.cmd）<br/><br/>
-如果你有奇怪的问题，包括但不限于此规则的bug，直接tg@exdot 或者酷安@金布里  ：\
+如果你有奇怪的问题，包括但不限于此规则的bug，酷安@金布里  ：\
