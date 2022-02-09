@@ -8,4 +8,9 @@ data.mistat.rus.xiaomi.com
 tracking.miui.com
 tracking.intl.miui.com
 tracking.india.miui.com
+
+
 tracking.rus.miui.com
+
+@@||api.installer.xiaomi.com^$important
+@@||app.chat.xiaomi.net^$important
