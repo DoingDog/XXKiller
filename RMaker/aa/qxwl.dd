@@ -70,7 +70,7 @@ HOST,data.bilibili.com,REJECT
 HOST-SUFFIX,lsttnews.com,REJECT
 HOST-SUFFIX,51y5.net,REJECT
 host-suffix, mcdn.bilivideo.cn, reject
-host-suffix, v1d.szbdyd.com, reject
+#host-suffix, v1d.szbdyd.com, reject
 host, hblock-check.molinero.dev, reject
 host-suffix, wifi188.com,REJECT
 host-suffix, ieeewifi.com,REJECT
