@@ -7,7 +7,7 @@
 <strong><br>每天北京时间差不多0点和12点更新</strong><br/><br/>
 更新地址（右键DL）：<br/>
 Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/main/w.txt>我是链接</a><br/>
-中国附近（更新有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>我是链接</a><br/>
+中国附近（更新有延迟） <a href=https://gcore.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>我是链接</a><br/>
 中国香港 （推荐）<a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
 日本（更新有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
 <br/>使用方法：将上方地址加入拦截器订阅。<br/>
