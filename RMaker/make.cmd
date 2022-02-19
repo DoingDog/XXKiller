@@ -7,8 +7,7 @@ set listn=0
 
 ::start download files in rule-list
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (
-set /a listn+=1
-wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4860.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O i%listn%.txt %%j
+wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4860.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O i%%i.txt %%j
 )
 
 ::fix encoding to utf8
