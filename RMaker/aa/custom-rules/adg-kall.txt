@@ -1,10 +1,59 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.3.0
-! TimeUpdated: 2022-02-07T21:55
+! Version: 1.0.5.1
+! TimeUpdated: 2022-02-15T20:42
 ! Expires: 30 days
 !
+||gdfp.gifshow.com^
+||p1-lm.adkwai.com^
+||api.iegadp.qq.com^
+||api-cmnt.wtzw.com^
+||api-sc.wtzw.com^
+||qm-dig.wtzw.com^
+||open.e.kuaishou.com^
+||js-ad.a.yximgs.com^
+||ali-ad.a.yximgs.com^
+||tx-ad.a.yximgs.com^
+||qzs.gdtimg.com/*/page/ANTempMob^
+||adx-sg.anythinktech.com^
+||adx-cn.anythinktech.com^
+||v*-be-pack.pglstatp-toutiao.com^
+/obj/ad-app-package^
+/ad-union-splash-page/ad-union-splash*
+||open.e.kuaishou.com/rest/*/open/univ^$replace=/\"impAdInfo\"/null/i
+||adsmind.ugdtimg.com^
+.com/ads_svp_video*
+||pgdt.ugdtimg.com^
+||jsmov2.a.kwimgs.com^
+/ad-union-video-page/ad-union-video-page*
+/ad-union-end-card/ad-union-end-card*
+||ali-ec.static.yximgs.com/kos/*/hybrid/svga/svga^
+||ali-ec.static.yximgs.com/kos/*/hybrid/vendor/vendor^
+/jsmov2.a.kwimgs.com/*.mp4^
+||web-trace.ksapisrv.com/ktrace/collect^
+||static.yximgs.com^$app=com.and.idiom.tip
+||pangolin-sdk-toutiao.com^$app=com.and.idiom.tip
+||clk.optaim.com/event.ng^
+||js.tv.itc.cn/gg.seed.js^
+||js.tv.itc.cn/site/wemedia/play^$replace=/onStartAdShown/null/
+tv.sohu.com$$script[tag-content="amazonAD"]
+tv.sohu.com$$div[class="modAdv"]
+||3i8329f829j482943.com^
+||335pai.com/static/js/common.js^
+||335pai.com/static/js/advertiser.js^
+zol.com.cn$$section[class="white-bg main-section-border"]
+zol.com.cn$$div[class="app-list-container"]
+zol.com.cn$$div[id="waitrep"]
+||ca.zol.com.cn/rpv^
+zol.com.cn$$div[class="google-ad"]
+zol.com.cn$$div[class="banner-ad"]
+||cpro.zol.com.cn/source/resource/web/0jsmge.js
+||cpro.zol.com.cn/production/pkc/static/l_j_g_mqs.js^
+||cpro.zol.com.cn/site/kfb_uunb_x_h.js^
+||icon.zol-img.com.cn/app/js/*/appbarforbms.js^
+||hc.sogoubaidusm.cn/wap/*.js^
+||cpro.zol.com.cn/soqukh.js^
 ||teads.tv^
 ||pool.admedo.com^
 egkatzioura.com$$div[class="ad"]
@@ -119,7 +168,6 @@ cjxueba.com$$script[tag-content="InitDo"]
 www.cjxueba.com##div > [href="javascript:gl0212();"]
 www.cjxueba.com##div > img
 ||pv.sohu.com/cityjson^
-||snssdk.com/get_domains^
 ||iweather.feeds.heytapmobi.com/heyFeedsList/getList^
 ||loverzhou.club^
 ||hanyingmall.cn^
@@ -283,8 +331,8 @@ toutiaoapi.com$$section[class="commonbox hasfooter"]
 ||zglibrary.com/basis/appPopup/listClient^
 ||api.app.xymoby.com/api/sdk/strategy/infoList^
 /obj/ad.union.api
-/img/web.business.image^$domain=pglstatp-toutiao.com
-/obj/web.business.image^$domain=pglstatp-toutiao.com
+/img/web.business.image^
+/obj/web.business.image^
 ||taobao.com^$domain=acgnx.se
 acgnx.se$$div[class="banner"]
 acgnx.se$$div[class="clear intro_inner"]
@@ -1125,7 +1173,6 @@ www.fons.com.cn##.TwjcNeADCPyHwrHn-above
 ||hls.cntv.myalicdn.com^$app=com.moji.mjweather
 ||35c.moji.com^
 ||ffds.api.moji.com^
-||sf*-ttcdn-tos.pstatp.com^$app=com.moji.mjweather
 ||v*.log.moji.com/ad^
 ||voiceads.cn^
 ||zooqle.unblockproject.uno^$popup
@@ -1385,25 +1432,21 @@ dmhy.org##div[id$="_ad"] > a:first-child > img
 ||web.static.zhangyue01.com/am/amp/static/js/*.js
 ||zhangyue.com/zyapi/bookstore/user/activitymenu^
 ||st-offlinegame.vivo.com.cn^
-wapbaike.baidu.com$$div[class="audio-control-container"]
-wapbaike.baidu.com$$script[tag-content="headerbar"]
+wapbaike.baidu.com$$div[class="BK-content-load"]
 wapbaike.baidu.com$$div[class="BK-after-content-wrapper"]
 wapbaike.baidu.com$$div[class="super-layer-promote square squareAni"]
 baike.baidu.com$$div[id="J_yitiao_container"]
 ||s.bdstatic.com/common/openjs/openBox.js?
-||bkssl.bdimg.com/static/m-second/pkg/video-list*
-||bkssl.bdimg.com/static/wiki-m-lemma/pkg/lemma*
-||bkssl.bdimg.com/static/wiki-m-common/pkgModules/lib*
 ||bkssl.bdimg.com/static/wiki-m-common/pkgModules/larkplayer-
 ||bkssl.bdimg.com/static/wiki-m-lemma/widget/loadMoreContent-n/invokeBaiduApp/invokeBaiduApp*
-||baike.baidu.com^$replace=/(adManager|imageAd|floatAd)//
+||baike.baidu.com^$replace=/(adManager|imageAd|floatAd)/null/
 baike.baidu.com$$div[id="J-floatAd"]
 ||baike.baidu.com/api/wapui^
 zhidao.baidu.com$$script[id="t:question-answer-adyx-tmpl"]
 zhidao.baidu.com$$div[class="wgt-brand-btm-ad"]
 zhidao.baidu.com$$div[class="wgt-business-marketing"]
 zhidao.baidu.com$$div[class="-asp"]
-||zhidao.baidu.com^$replace=/(adsAll|adsEids|naAdObj)//
+||zhidao.baidu.com^$replace=/(adsAll|adsEids|naAdObj)/null/
 ||zhidao.baidu.com/mobile/ajax/getqbcontent^
 ||zhidao.baidu.com/mobile/ajax/getqbfeed^
 ||iknowwap.bdimg.com/static/m-question-new/pkg/qb-ad.*.js^
