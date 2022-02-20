@@ -3,26 +3,56 @@
 chcp 65001
 cd %~dp0\aa
 set LC_ALL='C'
-set listn=0
 
-::start download files in rule-list
+::enable proxy in local machine (not needed
+::set http_proxy=127.0.0.1:7890
+::set https_proxy=127.0.0.1:7890
+
+::start download files in rule-list and convert and merge
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (
-wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4860.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O i%%i.txt %%j
+wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4860.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O down.txt %%j
+type blank.dd>>down.txt
+
+if %%i==d2w (
+for /f "tokens=* delims=" %%a in (down.txt) do (
+>>down1.txt echo ^@^@^|^|%%a^^
+)
+type down1.txt>down.txt
+del /f /q down1.txt
 )
 
-::fix encoding to utf8
+if %%i==d2a (
+for /f "tokens=* delims=" %%a in (down.txt) do (
+>>down1.txt echo ^|^|%%a^^
+)
+type down1.txt>down.txt
+del /f /q down1.txt
+)
+
+if %%i==a2w (
+for /f "tokens=* delims=" %%a in (down.txt) do (
+>>down1.txt echo ^@^@%%a^^
+)
+type down1.txt>down.txt
+del /f /q down1.txt
+)
+
+type down.txt>>mergd.txt
+)
+
+::fix encoding to utf8 (not needed
 ::if error,enable this
 ::for %%i in (i*.txt) do (gb2u8.vbs %%i)
 
-::delete rubbish files of wget
+::delete rubbish files of wget (not needed
 ::if exist .\*hsts del /f /q *hsts
 
-::add blank line to every file
-for %%i in (i*.txt) do type blank.dd>>%%i
+::add blank line to every file (not needed
+::for %%i in (i*.txt) do type blank.dd>>%%i
 
-::Merge all downloaded files
-type blank.dd>mergd.txt
-type i*.txt>>mergd.txt
+::Merge all downloaded files (not needed
+::type blank.dd>mergd.txt
+::type i*.txt>>mergd.txt
 
 ::Merge custom rules in folder
 type .\custom-rules\*>>mergd.txt
