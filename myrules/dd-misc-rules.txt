@@ -1,4 +1,5 @@
 @@||local^
+@@||localhost^
 @@||blog.google^
 @@||dizhensubao.getui.com^
 @@||f.video.weibocdn.com^

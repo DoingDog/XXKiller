@@ -1,10 +1,11 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.5.1
-! TimeUpdated: 2022-02-15T20:42
+! Version: 1.0.5.2
+! TimeUpdated: 2022-02-25T22:52
 ! Expires: 30 days
 !
+||gzdata1.tencentcdn.xyz^
 ||gdfp.gifshow.com^
 ||p1-lm.adkwai.com^
 ||api.iegadp.qq.com^
