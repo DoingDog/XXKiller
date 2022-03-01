@@ -18,4 +18,4 @@ Github（有时候打不开） <a href=https://github.com/DoingDog/XXKiller/raw/
 
 合并规则的脚本见Rmaker（make.cmd）<br/><br/>
 如果你有奇怪的问题，包括但不限于此规则的bug，酷安@金布里  ：\
-<br><br>todo:改进脚本使其自动为下载列表排序；自动转换规则类型
+<br><br>todo:自动转换规则类型
