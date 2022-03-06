@@ -28,3 +28,6 @@ Github（卡） <a href=https://github.com/DoingDog/XXKiller/raw/main/w.txt>我�
 合并规则的脚本见Rmaker（make.cmd）<br/><br/>
 如果你有奇怪的问题，包括但不限于此规则的bug，酷安@金布里  ：\
 <br><br>todo:自动转换规则类型
+
+
+![](http://profile-counter.glitch.me/xxkiller-ads/count.svg)
