@@ -1,5 +1,13 @@
 # XXKiller 广告拦截规则
-适用AdGuard,AG HOME,ADAWAY等等<br/>
+<img src="https://img.shields.io/github/stars/DoingDog/XXKiller?color=yellow">
+<img src="https://img.shields.io/github/forks/DoingDog/XXKiller?color=orange">
+<img src="https://img.shields.io/github/issues/DoingDog/XXKiller?color=green">
+<br>
+<img src="https://img.shields.io/github/license/DoingDog/XXKiller?color=bule">
+<img src="https://img.shields.io/github/languages/code-size/DoingDog/XXKiller?color=blueviolet">
+<img src='https://github.com/DoingDog/XXKiller/actions/workflows/xxkiller.yml/badge.svg'>
+
+<br>适用AdGuard,AG HOME,ADAWAY等等<br/>
 全部由其他规则合并产生<br/><br/>
 
 注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/>
