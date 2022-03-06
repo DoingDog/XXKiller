@@ -1,8 +1,8 @@
 # XXKiller 广告拦截规则
+<br>
 <img src="https://img.shields.io/github/stars/DoingDog/XXKiller?color=yellow">
 <img src="https://img.shields.io/github/forks/DoingDog/XXKiller?color=orange">
 <img src="https://img.shields.io/github/issues/DoingDog/XXKiller?color=green">
-<br>
 <img src="https://img.shields.io/github/license/DoingDog/XXKiller?color=bule">
 <img src="https://img.shields.io/github/languages/code-size/DoingDog/XXKiller?color=blueviolet">
 <img src='https://github.com/DoingDog/XXKiller/actions/workflows/xxkiller.yml/badge.svg'>
