@@ -1,11 +1,32 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.5.2
-! TimeUpdated: 2022-02-25T22:52
+! Version: 1.0.5.6
+! TimeUpdated: 2022-03-05T21:26
 ! Expires: 30 days
 !
-||gzdata1.tencentcdn.xyz^
+||laifupal.com^
+||5ibanma.com^
+||ahlsm1.com^
+||zaitianyan.com^
+||cream.lichengyu.com^
+||js.jialingmm.net/dm/history.js^
+||js.jialingmm.net/dm/tj.js^
+chaofen.cn$$div[class="menu"]
+chaofen.cn$$div[class="yx_tuijian"]
+||img.chaofen.cn/Public/Wap/js/a_d_v.js^
+||static.idongde.com/assets/vendor/main.js^
+||img*.idongde.com^
+||nitupic.com^
+||img.3dmxku.com/uploads/js^
+baidu.com##.wgt-ads
+||a.huoche7.com^
+||gl.zle.com/Javascripts/copy/copy.js^
+||huoche7.com/common/*/ftdb.js*
+||huoche7.com/source/*/bu.js^
+||huoche7.com/production/*/qaq.js^
+||ztgame.com^
+||ggsafe.com^
 ||gdfp.gifshow.com^
 ||p1-lm.adkwai.com^
 ||api.iegadp.qq.com^
