@@ -1,36 +1,28 @@
-name: make rules
-
+name: cron update
 on:
   schedule:
     - cron: '50 3,15 * * *'
-
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: windows-latest
-
     steps:
-      - uses: actions/checkout@main
-      - name: run main
+      - uses: actions/checkout@v2
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: run script
         run: |
           .\RMaker\make.cmd
-          exit
-#      - name: run quanx
-#        run: |
-#          cmd
-#          .\RMaker\other\quantumult.bat
-#      - name: run shadow
-#        run: |
-#          cmd
-#          .\RMaker\other\shadow.bat
+          exit 0
       - name: commit
         run: |
-          git config --global user.name "me"
-          git config --global user.email "aqvm@qq.com"
-          git add .
-          git commit -m "规则文件,已在$(date)更新" -a
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "已在$(date)更新" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
