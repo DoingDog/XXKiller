@@ -115,7 +115,7 @@ echo count : %rnum%>>..\..\ct.txt
 
 ::add title and date to rule
 echo ! Version: %vs%>tpdate.txt
-echo ! Last modified: %lm% UTC>>tpdate.txt
+echo ! Last modified: %lm% UTC+8>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
