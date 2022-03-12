@@ -16,12 +16,13 @@ echo Downloading...
 wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O down.txt %%j
 echo Download-OK!
 
-type blank.dd>>down.txt
-type blank.dd>>down.txt
+sed -i -E --posix "/^$/d" down.txt
 
 if %%i==c2w (
 echo Auto-transformation-%%i...
-sed -i -E --posix "s/^.+,//g" down.txt
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
+sed -i -E --posix "s/^.+?,//g" down.txt
 sed -i -E --posix "s/,.+$//g" down.txt
 sed -i -E --posix  "s/^/@@||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
@@ -30,7 +31,9 @@ echo Auto-transformation-OK!
 
 if %%i==c2a (
 echo Auto-transformation-%%i...
-sed -i -E --posix "s/^.+,//g" down.txt
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
+sed -i -E --posix "s/^.+?,//g" down.txt
 sed -i -E --posix "s/,.+$//g" down.txt
 sed -i -E --posix  "s/^/||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
@@ -39,6 +42,8 @@ echo Auto-transformation-OK!
 
 if %%i==h2w (
 echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
 sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
 sed -i -E --posix  "s/^/@@||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
@@ -47,6 +52,8 @@ echo Auto-transformation-OK!
 
 if %%i==h2a (
 echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
 sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
 sed -i -E --posix  "s/^/||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
@@ -55,6 +62,8 @@ echo Auto-transformation-OK!
 
 if %%i==d2w (
 echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
 sed -i -E --posix  "s/^/@@||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
 echo Auto-transformation-OK!
@@ -62,6 +71,8 @@ echo Auto-transformation-OK!
 
 if %%i==d2a (
 echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
 sed -i -E --posix  "s/^/||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
 echo Auto-transformation-OK!
@@ -80,25 +91,12 @@ echo Auto-transformation-OK!
 )
 
 echo Merging...
+type blank.dd>>down.txt
 type down.txt>>mergd.txt
 echo Merge-OK!
 
 )
 echo Download-completed!
-
-::fix encoding to utf8 (not needed
-::if error,enable this
-::for %%i in (i*.txt) do (gb2u8.vbs %%i)
-
-::delete rubbish files of wget (not needed
-::if exist .\*hsts del /f /q *hsts
-
-::add blank line to every file (not needed
-::for %%i in (i*.txt) do type blank.dd>>%%i
-
-::Merge all downloaded files (not needed
-::type blank.dd>mergd.txt
-::type i*.txt>>mergd.txt
 
 ::Merge custom rules in folder
 echo Merging-Custom...
@@ -119,34 +117,34 @@ echo Deduplicate-OK!
 echo Extracting-lines...
 
 ::extract punctuation mark into file
-(findstr /b /c:"##" nore.txt)>nord.txt
-(findstr /b /c:"#%#" nore.txt)>>nord.txt
-(findstr /b /c:"#$#" nore.txt)>>nord.txt
-(findstr /b /c:"#@#" nore.txt)>>nord.txt
-(findstr /b /c:"#pkg" nore.txt)>>nord.txt
-(findstr /b /c:"$" nore.txt)>>nord.txt
-(findstr /b /c:"&" nore.txt)>>nord.txt
-(findstr /b /c:"(" nore.txt)>>nord.txt
-(findstr /b /c:"*" nore.txt)>>nord.txt
-(findstr /b /c:"," nore.txt)>>nord.txt
-(findstr /b /c:"-" nore.txt)>>nord.txt
-(findstr /b /c:"." nore.txt)>>nord.txt
-(findstr /b /c:"/" nore.txt)>>nord.txt
-(findstr /b /c:":" nore.txt)>>nord.txt
-(findstr /b /c:";" nore.txt)>>nord.txt
-(findstr /b /c:"=" nore.txt)>>nord.txt
-(findstr /b /c:"?" nore.txt)>>nord.txt
-(findstr /b /c:"@" nore.txt)>>nord.txt
-(findstr /b /c:"_" nore.txt)>>nord.txt
-(findstr /b /c:"^" nore.txt)>>nord.txt
-(findstr /b /c:"|" nore.txt)>>nord.txt
-(findstr /b /c:"~" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\#\#/p" nore.txt)>nord.txt
+(sed -n -E --posix "/^\#\%\#/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\#\$\#/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\#\@\#/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\#pkg/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\$/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\&/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\(/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\*/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\,/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\-/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\./p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\//p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\:/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\;/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\=/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\?/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\@/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\_/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\^/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\|/p" nore.txt)>>nord.txt
+(sed -n -E --posix "/^\~/p" nore.txt)>>nord.txt
 
 ::extract numbers into file
-(findstr /b [0-9] nore.txt)>>nord.txt
+(sed -n -E --posix "/^[0-9]/p" nore.txt)>>nord.txt
 
 ::extract alphabet into file
-(findstr /b [Aa-Zz] nore.txt)>>nord.txt
+(sed -n -E --posix "/^[Aa-Zz]/p" nore.txt)>>nord.txt
 
 echo Extract-OK!
 
