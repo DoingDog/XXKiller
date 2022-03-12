@@ -3,6 +3,7 @@
 chcp 65001
 cd %~dp0\aa
 cls
+del /f /q .\*.txt
 echo init-OK!
 
 ::enable proxy in local machine (not needed
@@ -118,39 +119,37 @@ echo Deduplicate-OK!
 echo Extracting-lines...
 
 ::extract punctuation mark into file
-(sed -n -E --posix "/^\#\#/p" nore.txt)>nord.txt
-(sed -n -E --posix "/^\#\%\#/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\#\$\#/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\#\@\#/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\#pkg/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\$/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\&/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\(/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\*/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\,/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\-/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\./p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\//p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\:/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\;/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\=/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\?/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\@/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\_/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\^/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\|/p" nore.txt)>>nord.txt
-(sed -n -E --posix "/^\~/p" nore.txt)>>nord.txt
+(findstr /b /c:"##" nore.txt)>nord.txt
+(findstr /b /c:"#%#" nore.txt)>>nord.txt
+(findstr /b /c:"#$#" nore.txt)>>nord.txt
+(findstr /b /c:"#@#" nore.txt)>>nord.txt
+(findstr /b /c:"#pkg" nore.txt)>>nord.txt
+(findstr /b /c:"$" nore.txt)>>nord.txt
+(findstr /b /c:"&" nore.txt)>>nord.txt
+(findstr /b /c:"(" nore.txt)>>nord.txt
+(findstr /b /c:"*" nore.txt)>>nord.txt
+(findstr /b /c:"," nore.txt)>>nord.txt
+(findstr /b /c:"-" nore.txt)>>nord.txt
+(findstr /b /c:"." nore.txt)>>nord.txt
+(findstr /b /c:"/" nore.txt)>>nord.txt
+(findstr /b /c:":" nore.txt)>>nord.txt
+(findstr /b /c:";" nore.txt)>>nord.txt
+(findstr /b /c:"=" nore.txt)>>nord.txt
+(findstr /b /c:"?" nore.txt)>>nord.txt
+(findstr /b /c:"@" nore.txt)>>nord.txt
+(findstr /b /c:"_" nore.txt)>>nord.txt
+(findstr /b /c:"^" nore.txt)>>nord.txt
+(findstr /b /c:"|" nore.txt)>>nord.txt
+(findstr /b /c:"~" nore.txt)>>nord.txt
 
 ::extract numbers into file
-(sed -n -E --posix "/^[0-9]/p" nore.txt)>>nord.txt
+(findstr /b [0-9] nore.txt)>>nord.txt
 
 ::extract alphabet into file
-(sed -n -E --posix "/^[Aa-Zz]/p" nore.txt)>>nord.txt
+(findstr /b [Aa-Zz] nore.txt)>>nord.txt
 
 echo Extract-OK!
 
-::secondary deduplicate and sort
-::(gawk "!a[$0]++" nord.txt)>nordn.txt
 
 echo Sorting...
 set LC_ALL='C'
@@ -159,7 +158,7 @@ echo Sort-OK!
 
 ::count total rules
 echo Counting...
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=1
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=%%a
 echo Count-OK!
 
 ::get and save version code
