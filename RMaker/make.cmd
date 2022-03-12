@@ -2,7 +2,6 @@
 @echo off
 chcp 65001
 cd %~dp0\aa
-set LC_ALL='C'
 
 ::enable proxy in local machine (not needed
 ::set http_proxy=127.0.0.1:7890
@@ -83,6 +82,7 @@ type down.txt>>mergd.txt
 type .\custom-rules\*>>mergd.txt
 
 ::primary deduplicate
+set LC_ALL='C'
 s -u -r -i -o nore.txt mergd.txt
 
 ::extract useful lines
