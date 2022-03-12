@@ -110,6 +110,7 @@ echo Deduplicate...
 
 set LC_ALL='C'
 s -u -r -i -o nore.txt mergd.txt
+set LC_ALL=
 
 echo Deduplicate-OK!
 
@@ -152,6 +153,7 @@ echo Extract-OK!
 ::(gawk "!a[$0]++" nord.txt)>nordn.txt
 
 echo Sorting...
+set LC_ALL='C'
 s -u -i -o nordv.txt nord.txt
 echo Sort-OK!
 
