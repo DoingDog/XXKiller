@@ -159,7 +159,7 @@ echo Sort-OK!
 
 ::count total rules
 echo Counting...
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=%%a+1
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=1
 echo Count-OK!
 
 ::get and save version code
@@ -198,5 +198,9 @@ echo Merge-OK!
 copy /y .\w.txt ..\..\
 
 ::end cleanup
+if not %rnum% gtr 100 (
+echo FAILING...
+exit 1
+)
 echo All-done!
 del /f /q .\*.txt&exit
