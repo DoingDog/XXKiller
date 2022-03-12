@@ -10,35 +10,60 @@ set LC_ALL='C'
 
 ::start download files in rule-list and convert and merge
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (
-wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4916.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O down.txt %%j
+
+wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O down.txt %%j
+
+type blank.dd>>down.txt
 type blank.dd>>down.txt
 
-if %%i==d2w (
-for /f "tokens=* delims=" %%a in (down.txt) do (
->>down1.txt echo ^@^@^|^|%%a^^
+if %%i==c2w (
+sed -i -E --posix "s/^.+,//g" down.txt
+sed -i -E --posix "s/,.+$//g" down.txt
+sed -i -E --posix  "s/^/@@||/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
 )
-type down1.txt>down.txt
-del /f /q down1.txt
+
+if %%i==c2a (
+sed -i -E --posix "s/^.+,//g" down.txt
+sed -i -E --posix "s/,.+$//g" down.txt
+sed -i -E --posix  "s/^/||/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
+)
+
+if %%i==h2w (
+sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
+sed -i -E --posix  "s/^/@@||/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
+)
+
+if %%i==h2a (
+sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
+sed -i -E --posix  "s/^/||/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
+)
+
+if %%i==d2w (
+sed -i -E --posix  "s/^/@@||/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
 )
 
 if %%i==d2a (
-for /f "tokens=* delims=" %%a in (down.txt) do (
->>down1.txt echo ^|^|%%a^^
-)
-type down1.txt>down.txt
-del /f /q down1.txt
+sed -i -E --posix  "s/^/||/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
 )
 
 if %%i==a2w (
-for /f "tokens=* delims=" %%a in (down.txt) do (
->>down1.txt echo ^@^@%%a^^
+sed -i -E --posix  "s/^\|\|/@@||/g" down.txt
 )
-type down1.txt>down.txt
-del /f /q down1.txt
+
+if %%i==w2a (
+sed -i -E --posix  "s/^\@\@\|\|/||/g" down.txt
 )
 
 type down.txt>>mergd.txt
+
 )
+::download complete
 
 ::fix encoding to utf8 (not needed
 ::if error,enable this
