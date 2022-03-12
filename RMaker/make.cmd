@@ -2,6 +2,8 @@
 @echo off
 chcp 65001
 cd %~dp0\aa
+cls
+echo init-OK!
 
 ::enable proxy in local machine (not needed
 ::set http_proxy=127.0.0.1:7890
@@ -10,59 +12,79 @@ cd %~dp0\aa
 ::start download files in rule-list and convert and merge
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (
 
+echo Downloading...
 wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O down.txt %%j
+echo Download-OK!
 
 type blank.dd>>down.txt
 type blank.dd>>down.txt
 
 if %%i==c2w (
+echo Auto-transformation-%%i...
 sed -i -E --posix "s/^.+,//g" down.txt
 sed -i -E --posix "s/,.+$//g" down.txt
 sed -i -E --posix  "s/^/@@||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
 )
 
 if %%i==c2a (
+echo Auto-transformation-%%i...
 sed -i -E --posix "s/^.+,//g" down.txt
 sed -i -E --posix "s/,.+$//g" down.txt
 sed -i -E --posix  "s/^/||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
 )
 
 if %%i==h2w (
+echo Auto-transformation-%%i...
 sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
 sed -i -E --posix  "s/^/@@||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
 )
 
 if %%i==h2a (
+echo Auto-transformation-%%i...
 sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
 sed -i -E --posix  "s/^/||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
 )
 
 if %%i==d2w (
+echo Auto-transformation-%%i...
 sed -i -E --posix  "s/^/@@||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
 )
 
 if %%i==d2a (
+echo Auto-transformation-%%i...
 sed -i -E --posix  "s/^/||/g" down.txt
 sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
 )
 
 if %%i==a2w (
+echo Auto-transformation-%%i...
 sed -i -E --posix  "s/^\|\|/@@||/g" down.txt
+echo Auto-transformation-OK!
 )
 
 if %%i==w2a (
+echo Auto-transformation-%%i...
 sed -i -E --posix  "s/^\@\@\|\|/||/g" down.txt
+echo Auto-transformation-OK!
 )
 
+echo Merging...
 type down.txt>>mergd.txt
+echo Merge-OK!
 
 )
-::download complete
+echo Download-completed!
 
 ::fix encoding to utf8 (not needed
 ::if error,enable this
@@ -79,13 +101,22 @@ type down.txt>>mergd.txt
 ::type i*.txt>>mergd.txt
 
 ::Merge custom rules in folder
+echo Merging-Custom...
+
 type .\custom-rules\*>>mergd.txt
 
+echo Merge-OK!
+
 ::primary deduplicate
+echo Deduplicate...
+
 set LC_ALL='C'
 s -u -r -i -o nore.txt mergd.txt
 
+echo Deduplicate-OK!
+
 ::extract useful lines
+echo Extracting-lines...
 
 ::extract punctuation mark into file
 (findstr /b /c:"##" nore.txt)>nord.txt
@@ -117,14 +148,22 @@ s -u -r -i -o nore.txt mergd.txt
 ::extract alphabet into file
 (findstr /b [Aa-Zz] nore.txt)>>nord.txt
 
+echo Extract-OK!
+
 ::secondary deduplicate and sort
 ::(gawk "!a[$0]++" nord.txt)>nordn.txt
+
+echo Sorting...
 s -u -i -o nordv.txt nord.txt
+echo Sort-OK!
 
 ::count total rules
+echo Counting...
 for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=%%a+1
+echo Count-OK!
 
 ::get and save version code
+echo Getting-codes...
 for /f "tokens=1,2 delims=:" %%i in ('echo %time%') do (set v3=%%i%%j)
 if not %v3% gtr 999 set v3=0%v3%
 for /f "tokens=2 delims= " %%i in ('echo %date%') do (set v1=%%i)
@@ -145,15 +184,19 @@ echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
 echo.>>tpdate.txt
+echo Get-codes-OK!
 
 ::final merge
+echo Merging...
 type title.dd>w.txt
 type tpdate.txt>>w.txt
 type nordv.txt>>w.txt
 type addition.dd>>w.txt
+echo Merge-OK!
 
 ::move file out
 copy /y .\w.txt ..\..\
 
 ::end cleanup
+echo All-done!
 del /f /q .\*.txt&exit
