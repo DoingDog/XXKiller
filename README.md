@@ -16,7 +16,7 @@
 <iframe  
  height=850 
  width=90% 
- src="./change.log"  
+ src="https://raw.githubusercontent.com/DoingDog/XXKiller/main/change.log"  
  frameborder=0  
  allowfullscreen>
  </iframe>
