@@ -170,18 +170,18 @@ for /f "tokens=1,2,3 delims=/" %%i in ('echo %v1%') do (set v2=%%k%%i%%j)
 set vs=%v2%%v3%
 
 ::get last modified time
-for /f "tokens=2,3 delims= " %%i in ('echo %date%T%time%Z') do (set lm=%%i%%j)
+for /f "tokens=2,3 delims= " %%i in ('echo %date% %time%') do (set lm=%%i%%j)
 
 ::save info into file
 ::if local,disable this
 ::in order to update readme
-echo {"schemaVersion":1,"label":"Last updated","color":"green","message":"%lm% UTC"} > ..\..\changelog\date
+echo {"schemaVersion":1,"label":"Last updated","color":"green","message":"%lm% (北京时间)"} > ..\..\changelog\date
 echo {"schemaVersion":1,"label":"Version","color":"blue","message":"%vs%"} > ..\..\changelog\ver
 echo {"schemaVersion":1,"label":"Rule count","color":"yellow","message":"%rnum%"} > ..\..\changelog\num
 
 ::add title and date to rule
 echo ! Version: %vs%>tpdate.txt
-echo ! Last modified: %lm% UTC>>tpdate.txt
+echo ! Last modified: %lm% (北京时间)>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
@@ -205,5 +205,4 @@ echo FAILING...
 exit 1
 )
 echo All-done!
-tzutil /l
 del /f /q .\*.txt&exit
