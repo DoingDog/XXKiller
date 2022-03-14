@@ -175,9 +175,9 @@ for /f "tokens=2,3 delims= " %%i in ('echo %date%T%time%Z') do (set lm=%%i%%j)
 ::save info into file
 ::if local,disable this
 ::in order to update readme
-sed -i "2c %lm% UTC" ..\..\changelog\date
-sed -i "2c %vs%" ..\..\changelog\ver
-sed -i "2c %rnum%" ..\..\changelog\num
+echo {"schemaVersion":1,"label":"Last updated","color":"green","message":"%lm% UTC"} > ..\..\changelog\date
+echo {"schemaVersion":1,"label":"Version","color":"blue","message":"%vs%"} > ..\..\changelog\ver
+echo {"schemaVersion":1,"label":"Rule count","color":"yellow","message":"%rnum%"} > ..\..\changelog\num
 
 ::add title and date to rule
 echo ! Version: %vs%>tpdate.txt
