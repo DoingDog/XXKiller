@@ -170,7 +170,7 @@ for /f "tokens=1,2,3 delims=/" %%i in ('echo %v1%') do (set v2=%%k%%i%%j)
 set vs=%v2%%v3%
 
 ::get last modified time
-for /f "tokens=2,3 delims= " %%i in ('echo %date%  %time%') do (set lm=%%i%%j)
+for /f "tokens=2,3 delims= " %%i in ('echo %date% %time%') do (set lm=%%i %%j)
 
 ::save info into file
 ::if local,disable this
