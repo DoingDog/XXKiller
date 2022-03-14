@@ -1,7 +1,7 @@
 name: cron update
 on:
   schedule:
-    - cron: '50 3,15 * * *'
+    - cron: '50 */12 * * *'
   workflow_dispatch:
   
 env: 
@@ -16,7 +16,12 @@ jobs:
           ref: main
           fetch-depth: 1
 
-
+#set time
+      - name: set time
+        timeout-minutes: 15
+        run: |
+          tzutil /s "China Standard Time"
+          exit 0
 #main
       - name: run script
         timeout-minutes: 15
