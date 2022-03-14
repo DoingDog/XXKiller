@@ -173,8 +173,11 @@ set vs=%v2%%v3%
 for /f "tokens=2,3 delims= " %%i in ('echo %date%T%time%Z') do (set lm=%%i%%j)
 
 ::save info into file
-echo version : %vs%>..\..\ct.txt
-echo count : %rnum%>>..\..\ct.txt
+::if local,disable this
+::in order to update readme
+echo %rnum%>info1.log
+echo %vs%>info2.log
+echo %lm% UTC>info3.log
 
 ::add title and date to rule
 echo ! Version: %vs%>tpdate.txt
