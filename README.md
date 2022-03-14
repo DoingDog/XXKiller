@@ -1,10 +1,10 @@
 # XXKiller 广告拦截规则
-<br>
-<img src="https://img.shields.io/github/stars/DoingDog/XXKiller?color=yellow">
-<img src="https://img.shields.io/github/forks/DoingDog/XXKiller?color=orange">
-<img src="https://img.shields.io/github/issues/DoingDog/XXKiller?color=green">
-<img src="https://img.shields.io/github/license/DoingDog/XXKiller?color=bule">
-<img src="https://img.shields.io/github/languages/code-size/DoingDog/XXKiller?color=blueviolet">
+<br><br>
+<img src='https://img.shields.io/github/stars/DoingDog/XXKiller?color=yellow'>
+<img src='https://img.shields.io/github/forks/DoingDog/XXKiller?color=orange'>
+<img src='https://img.shields.io/github/issues/DoingDog/XXKiller?color=green'>
+<img src='https://img.shields.io/github/license/DoingDog/XXKiller?color=bule'>
+<img src='https://img.shields.io/github/languages/code-size/DoingDog/XXKiller?color=blueviolet'>
 <img src='https://github.com/DoingDog/XXKiller/actions/workflows/xxkiller.yml/badge.svg'>
 
 <br>适用AdGuard,AG HOME,ADAWAY等等<br/>
@@ -12,7 +12,7 @@
 
 注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/>
 刷新“中国附近”更新缓存 <a href=https://purge.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>点击</a><br/>
-规则数量，版本和更新日期： <br/>
+规则数量，版本和更新日期： <br/> <br/>
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/num'>
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/ver'>
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/date'>
