@@ -13,9 +13,13 @@
 注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/>
 刷新“中国附近”更新缓存 <a href=https://purge.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>点击</a><br/>
 规则数量，版本和更新日期： <br/>
-<br>count:
-<br>version:
-<br>update:
+<iframe  
+ height=850 
+ width=90% 
+ src="./change.log"  
+ frameborder=0  
+ allowfullscreen>
+ </iframe>
 <strong><br><br>每天北京时间差不多0点和12点更新</strong><br/><br/>
 更新地址（右键DL）：<br/>
 Github（卡） <a href=https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
