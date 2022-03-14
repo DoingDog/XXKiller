@@ -14,7 +14,7 @@ echo init-OK!
 for /f "eol=# tokens=1,2 delims= " %%i in (..\rule-list.ini) do (
 
 echo Downloading...
-wget --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O down.txt %%j
+wget -q --no-hsts --no-cookies -U "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" --no-check-certificate -t 2 -T 30 -O down.txt %%j
 echo Download-OK!
 
 sed -i -E --posix "/^$/d" down.txt
@@ -170,7 +170,7 @@ for /f "tokens=1,2,3 delims=/" %%i in ('echo %v1%') do (set v2=%%k%%i%%j)
 set vs=%v2%%v3%
 
 ::get last modified time
-for /f "tokens=2,3 delims= " %%i in ('echo %date% %time%') do (set lm=%%i%%j)
+for /f "tokens=2,3 delims= " %%i in ('echo %date%  %time%') do (set lm=%%i%%j)
 
 ::save info into file
 ::if local,disable this
