@@ -33,15 +33,6 @@ jobs:
           exit 0
           
 
-# if local,disable this          
-      - name: update readme
-        continue-on-error: true
-        run: |
-          .\RMaker\readme.cmd
-          exit 0
-
-
-
       - name: commit
         run: |
           git config --global user.name "github-actions[bot]"
