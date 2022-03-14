@@ -1,10 +1,40 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.5.6
-! TimeUpdated: 2022-03-05T21:26
+! Version: 1.0.5.8
+! TimeUpdated: 2022-03-14T18:12
 ! Expires: 30 days
 !
+||jingyan.yxlady.com/static/js/mip_jy.js^
+||enews10.yxlady.net^
+||jingyan.yxlady.com/static/js/mip_main.js^
+||uty.micocc.com
+||lanm.huliyinzi.com
+||ns.adobe.com^
+||swimg2.tsderen.cn^
+||st.huliyinzi.com/ads_app_pic^
+360kuai.com$$div[class="footer-wrapper"]
+360kuai.com##.footer-wrapper
+tuliu.com$$script[tag-content="red-envelope"]
+tuliu.com$$script[tag-content="ad_html"]
+tuliu.com$$script[tag-content="vFloat"]
+tuliu.com$$script[tag-content="tuliu_advert"]
+tuliu.com$$script[tag-content="tbEventAnalysis"]
+tuliu.com$$script[tag-content="tuliu-advertising"]
+tuliu.com$$script[tag-content="popZhuzhaiModal"]
+tuliu.com$$script[tag-content="app-code-box"]
+tuliu.com$$div[id="red-envelope"]
+tuliu.com$$div[id="popGuangImg"]
+tuliu.com$$div[class="J-baidu-ad-box"]
+tuliu.com$$div[class="J-tuliu-advert-box"]
+tuliu.com$$div[class="info-probably"]
+tuliu.com$$div[class="info-wmgg-probably]
+tuliu.com$$div[class="info-"]
+tuliu.com$$div[id="siderbar-join-fixed"]
+tuliu.com$$div[class="row ad_380"]
+tuliu.com$$div[class="row home-banner"]
+tuliu.com$$div[class="ind-news row"]
+||statics.tuliu.com/stats/js/tb_prod_v1.js^
 ||laifupal.com^
 ||5ibanma.com^
 ||ahlsm1.com^
@@ -1681,7 +1711,7 @@ bilibili.com###slide_ad
 ||config.kuyun.com^
 ||dvb.pandora.xiaomi.com^
 ||de.pandora.xiaomi.com^
-||data.mistat.xiaomi.com^
+@@||data.mistat.xiaomi.com^
 ||device.io.mi.com^
 ||gvod.aiseejapp.atianqi.com^
 ||g.dtv.cn.miaozhan.com^
@@ -25455,13 +25485,13 @@ cr173.com##.downnowgaosu
 ||richmedia.video.qq.com^
 /variety.tc.qq.com/*.mp4
 ||vfiles.gtimg.cn/wupload/ad_control_config_test.ad_copy_pic_url_conf^
+@@||vfiles.gtimg.cn^$domain=v.qq.com,third-party
 ||ltsbsy.qq.com^
 ||lives.l.qq.com/livemsg^
 ||r.release.qq.com^
 ||ilive.qq.com^
 ||yoo.gtimg.com^
 ||terminallog-76327.gzc.vod.tencent-cloud.com^
-||vfiles.gtimg.cn^
 ||tetrack.qq.com/tetrack/openApp^
 ||omgid.qq.com^
 ||mazu.m.qq.com^
