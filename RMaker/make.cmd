@@ -205,5 +205,5 @@ echo FAILING...
 exit 1
 )
 echo All-done!
-echo "$(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+tzutil /l
 del /f /q .\*.txt&exit
