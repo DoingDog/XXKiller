@@ -1,21 +1,23 @@
-# XXKiller 广告拦截规则
-<center>
-<br>仓库信息<br>
+<h1 align="center">XXKiller<br>广告拦截规则</h1>
+<div align="center">
+<h2 align="center">仓库信息</h2>
 <img src='https://img.shields.io/github/stars/DoingDog/XXKiller?color=yellow'>
 <img src='https://img.shields.io/github/forks/DoingDog/XXKiller?color=orange'>
 <img src='https://img.shields.io/github/issues/DoingDog/XXKiller?color=green'>
 <img src='https://img.shields.io/github/license/DoingDog/XXKiller?color=bule'>
 <img src='https://img.shields.io/github/languages/code-size/DoingDog/XXKiller?color=blueviolet'>
 <img src='https://github.com/DoingDog/XXKiller/actions/workflows/xxkiller.yml/badge.svg'>
-
+</div>
 <br>适用AdGuard,AG HOME,ADAWAY等等<br/>
 全部由其他规则合并产生<br/>
 注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/>
 <br/>
 以下分别是规则数量，版本和更新日期： <br/> <br/>
+<div align="center">
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/num'>
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/ver'>
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/date'>
+</div>
 <strong><br><br>更新时间：每天北京时间差不多0点和12点更新</strong><br/><br/><br/>
 规则使用地址（右键复制）：<br/><br/>
 Github（卡） <a href=https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
@@ -37,4 +39,4 @@ Github（卡） <a href=https://raw.githubusercontent.com/DoingDog/XXKiller/main
 
 <br/>这个叫啥？<br/>
 ![](http://profile-counter.glitch.me/xxkiller-ads/count.svg)
-</center>
+
