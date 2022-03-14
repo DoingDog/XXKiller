@@ -20,13 +20,40 @@
 </div>
 <strong><br><br>更新时间：每天北京时间差不多0点和12点更新</strong><br/><br/><br/>
 规则使用地址（右键复制）：<br/><br/>
-Github（卡） <a href=https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
-中国附近1（更新有延迟） <a href=https://gcore.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>我是链接</a><br/>
-中国附近2（更新有延迟） <a href=https://fastly.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>我是链接</a><br/>
-中国附近3（更新有延迟） <a href=https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt>我是链接</a><br/>
-中国香港 （推荐）<a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
-日本（更新有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
-韩国（不稳） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
+
+Github（卡）   
+```
+https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
+```
+
+中国附近1（更新有延迟）   
+```
+https://gcore.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
+```
+
+中国附近2（更新有延迟）   
+```
+https://fastly.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
+```
+
+中国附近3（更新有延迟）  
+```
+https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
+```
+
+中国香港 （推荐）  
+```
+https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt
+```
+日本（更新有延迟）   
+```
+https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
+```
+
+韩国（不稳）   
+```
+https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
+```
 <br/>使用方法：将上方地址选择一个加入拦截器订阅。<br/>
 <br/><br/><br/>
 <strong>规则过于强大，误杀严重（有误杀请同时订阅<a href="https://raw.fastgit.org/DoingDog/rconvert/main/mod-trli.txt">trli的白名单</a></strong> 已经合并，无需重复添加<br/>:\建议电脑端或dns用这个规则。手机会卡（测试了ios adguard已卡爆<br/>
