@@ -22,7 +22,7 @@ Github（卡） <a href=https://raw.githubusercontent.com/DoingDog/XXKiller/main
 中国香港 （推荐）<a href=https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
 日本（更新有延迟） <a href=https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
 韩国（不稳） <a href=https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt>我是链接</a><br/>
-<br/>使用方法：将上方地址加入拦截器订阅。<br/>
+<br/>使用方法：将上方地址选择一个加入拦截器订阅。<br/>
 <br/><br/><br/>
 <strong>规则过于强大，误杀严重（有误杀请同时订阅<a href="https://raw.fastgit.org/DoingDog/rconvert/main/mod-trli.txt">trli的白名单</a></strong> 已经合并，无需重复添加<br/>:\建议电脑端或dns用这个规则。手机会卡（测试了ios adguard已卡爆<br/>
 <br/>
