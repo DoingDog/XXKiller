@@ -6,6 +6,10 @@ cls
 del /f /q .\*.txt
 echo init-OK!
 
+::set date and time
+set times=%date:~0,4%/%date:~5,2%/%date:~8,2% %time:~0,2%:%time:~3,2%
+:set dates=%date:~0,4%/%date:~5,2%/%date:~8,2%
+
 ::enable proxy in local machine (not needed
 ::set http_proxy=127.0.0.1:7890
 ::set https_proxy=127.0.0.1:7890
@@ -176,13 +180,13 @@ for /f "tokens=1 delims=." %%i in ('echo %lm%') do (set lm=%%i)
 ::save info into file
 ::if local,disable this
 ::in order to update readme
-echo {"schemaVersion":1,"label":"Last updated","color":"green","message":"%lm% (北京时间)"} > ..\..\changelog\date
+echo {"schemaVersion":1,"label":"Last updated","color":"green","message":"%times% (北京时间)"} > ..\..\changelog\date
 echo {"schemaVersion":1,"label":"Version","color":"blue","message":"%vs%"} > ..\..\changelog\ver
 echo {"schemaVersion":1,"label":"Rule count","color":"yellow","message":"%rnum%"} > ..\..\changelog\num
 
 ::add title and date to rule
 echo ! Version: %vs%>tpdate.txt
-echo ! Last modified: %lm% (北京时间)>>tpdate.txt
+echo ! Last modified: %times% (北京时间)>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
