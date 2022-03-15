@@ -7,9 +7,9 @@ del /f /q .\*.txt
 echo init-OK!
 
 ::set date and time
-echo %time%
-echo %date%
-set times=%date:~3,4%/%date:~8,2%/%date:~11,2% %time:~0,2%:%time:~3,2%
+::echo %time%
+::echo %date%
+::set times=%date:~3,4%/%date:~8,2%/%date:~11,2% %time:~0,2%:%time:~3,2%
 ::set dates=%date:~0,4%/%date:~5,2%/%date:~8,2%
 
 ::enable proxy in local machine (not needed
@@ -175,20 +175,24 @@ for /f "tokens=2 delims= " %%i in ('echo %date%') do (set v1=%%i)
 for /f "tokens=1,2,3 delims=/" %%i in ('echo %v1%') do (set v2=%%k%%i%%j)
 set vs=%v2%%v3%
 
+for /f "tokens=1,2 delims=:" %%i in ('echo %time%') do (set g3=%%i:%%j)
+for /f "tokens=1,2,3 delims=/" %%i in ('echo %v1%') do (set g1=%%k/%%i/%%j)
+set gs=%g1% %g3%
+
 ::get last modified time
-for /f "tokens=2,3 delims= " %%i in ('echo %date% %time%') do (set lm=%%i %%j)
-for /f "tokens=1 delims=." %%i in ('echo %lm%') do (set lm=%%i)
+::for /f "tokens=2,3 delims= " %%i in ('echo %date% %time%') do (set lm=%%i %%j)
+::for /f "tokens=1 delims=." %%i in ('echo %lm%') do (set lm=%%i)
 
 ::save info into file
 ::if local,disable this
 ::in order to update readme
-echo {"schemaVersion":1,"label":"Last updated","color":"green","message":"%times% (北京时间)"} > ..\..\changelog\date
+echo {"schemaVersion":1,"label":"Last updated","color":"green","message":"%gs% (北京时间)"} > ..\..\changelog\date
 echo {"schemaVersion":1,"label":"Version","color":"blue","message":"%vs%"} > ..\..\changelog\ver
 echo {"schemaVersion":1,"label":"Rule count","color":"yellow","message":"%rnum%"} > ..\..\changelog\num
 
 ::add title and date to rule
 echo ! Version: %vs%>tpdate.txt
-echo ! Last modified: %times% (北京时间)>>tpdate.txt
+echo ! Last modified: %gs% (北京时间)>>tpdate.txt
 echo ! Count: %rnum%>>tpdate.txt
 echo.>>tpdate.txt
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>>tpdate.txt
