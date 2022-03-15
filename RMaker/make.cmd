@@ -7,8 +7,8 @@ del /f /q .\*.txt
 echo init-OK!
 
 ::set date and time
-::echo %time%
-::echo %date%
+echo %time%
+echo %date%
 set times=%date:~3,4%/%date:~8,2%/%date:~11,2% %time:~0,2%:%time:~3,2%
 ::set dates=%date:~0,4%/%date:~5,2%/%date:~8,2%
 
