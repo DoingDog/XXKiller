@@ -7,8 +7,10 @@ del /f /q .\*.txt
 echo init-OK!
 
 ::set date and time
+echo %time%
+echo %date%
 set times=%date:~0,4%/%date:~5,2%/%date:~8,2% %time:~0,2%:%time:~3,2%
-:set dates=%date:~0,4%/%date:~5,2%/%date:~8,2%
+::set dates=%date:~0,4%/%date:~5,2%/%date:~8,2%
 
 ::enable proxy in local machine (not needed
 ::set http_proxy=127.0.0.1:7890
