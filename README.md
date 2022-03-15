@@ -25,40 +25,40 @@
 <details><summary><strong>规则地址已经藏起来啦~~ 点击展开 嘻嘻~</strong></summary>
 <br>  
 
-Github（卡）   
+Github 原版 raw（真的连得上吗）   
 ```
 https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
 ```
 
-中国附近1（更新有延迟）   
+中国附近1 jsdelivr（12小时更新延迟）   
 ```
 https://gcore.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
 ```
 
-中国附近2（更新有延迟）   
+中国附近2 jsdelivr（12小时更新延迟）   
 ```
 https://fastly.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
 ```
 
-中国附近3（更新有延迟）  
+中国附近3 jsdelivr（12小时更新延迟）  
 ```
 https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
 ```
-中国香港 （推荐）  
+中国香港 iQ （推荐）  
 ```
 https://raw.iqiq.io/DoingDog/XXKiller/main/w.txt
 ```
 
-中国香港 （推荐）  
+中国香港 fg（推荐）  
 ```
 https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt
 ```
-日本（更新有延迟）   
+日本 statically（?小时更新延迟）   
 ```
 https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
 ```
 
-韩国（不稳）   
+韩国 ghp（速度还行）   
 ```
 https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
 ```
