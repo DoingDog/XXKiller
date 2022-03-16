@@ -3,8 +3,8 @@
 chcp 65001
 cd %~dp0\aa
 cls
-del /f /q .\*.txt
-echo init-OK!
+if exist *.txt del /f /q .\*.txt
+echo Init-OK!
 
 ::set date and time
 ::echo %time%
