@@ -1,5 +1,6 @@
 #by DD
 #仅适作业帮家长版，可跳身份证验证，去广告
+# qx rule
 #加入分流引用，关闭策略偏好
 
 host, search.zybang.com, direct
