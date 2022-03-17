@@ -29,45 +29,36 @@ Github 原版 raw（真的连得上吗）
 ```
 https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
 ```
-
 中国香港 iQ （快速）
 ```
 https://raw.iqiq.io/DoingDog/XXKiller/main/w.txt
 ```
-
-
 中国附近1 jsdelivr（12小时更新延迟） （快速）  
 ```
 https://gcore.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
 ```
-
 中国附近2 jsdelivr（12小时更新延迟） （普通）  
 ```
 https://fastly.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
 ```
-
 中国附近3 jsdelivr（12小时更新延迟） （慢速） 
 ```
 https://cdn.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
 ```
-
 中国香港 fastgit（12小时更新延迟） （慢速） 
 ```
 https://raw.fastgit.org/DoingDog/XXKiller/main/w.txt
-
 ```
-
-
 韩国 ghproxy（12小时更新延迟） （慢速） 
 ```
 https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
-
+```
 日本 staticaly  （？小时更新延迟）（倒闭）
 ```
 https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
 ```
 
-```
+
 </details>
 <br/>使用方法：将上方地址选择一个加入拦截器订阅。<br/>
 <br/><br/><br/>
