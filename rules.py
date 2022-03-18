@@ -1,9 +1,9 @@
-# -*- coding:gbk -*-
+# -*- coding:utf-8 -*-
 import os
 
 result = []
-ffo = open("w.txt")
-fo = open("w-test.txt", "w")
+ffo = open("w.txt", encoding="utf8")
+fo = open("w-test.txt", "w", encoding="utf8")
 result=list(set(ffo.readlines()))
 result.sort()
 fo.writelines(result)
