@@ -62,9 +62,9 @@ https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
 </details>
 <br/>使用方法：将上方地址选择一个加入拦截器订阅。<br/>
 <br/><br/><br/>
-<strong>规则过于强大，误杀严重（有误杀请同时订阅<a href="https://raw.fastgit.org/DoingDog/rconvert/main/mod-trli.txt">trli的白名单</a></strong> 已经合并，无需重复添加<br/>:\建议电脑端或dns用这个规则。手机会卡（测试了ios adguard已卡爆<br/>
+<strong>规则过于强大，误杀严重（有误杀请反馈<br/>:\建议电脑端或dns用这个规则。手机会卡（测试了ios adguard已卡爆<br/>
 <br/>
-合并规则列表 见<a href=https://github.com/DoingDog/XXKiller/blob/main/RMaker/rule-list.ini>rule-list.ini</a><br/>
+合并规则来自<a href=https://github.com/DoingDog/XXKiller/blob/main/RMaker/rule-list.ini>rule-list.ini</a>的下载列表还有这个<a href=https://github.com/DoingDog/XXKiller/tree/main/RMaker/aa/custom-rules>文件夹</a>所有的文件<br/>
 
 合并规则的脚本见<a href=https://github.com/DoingDog/XXKiller/blob/main/RMaker/make.cmd>make.cmd</a><br/><br/>
 如果你有奇怪的问题，包括但不限于此规则的bug，<br>Github [@Doingdog](https://github.com/DoingDog)<br>酷安[@金布里](http://www.coolapk.com/u/3410257) <br>TG [@exdot](https://t.me/exdot) ：\
