@@ -52,6 +52,4 @@ jobs:
 
       - name: Remove
         run: |
-          cmd dir
-          cmd rd /s /q .
-          cmd dir
+          .\RMaker\remove.cmd
