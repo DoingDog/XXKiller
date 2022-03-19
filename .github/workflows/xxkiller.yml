@@ -49,3 +49,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
+
+
+# send it to hell
+      - name: kill
+        run: exit 1
