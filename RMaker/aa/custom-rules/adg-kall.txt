@@ -1,10 +1,34 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.5.8
-! TimeUpdated: 2022-03-14T18:12
+! Version: 1.0.6.2
+! TimeUpdated: 2022-03-18T00:10
 ! Expires: 30 days
 !
+||developer.aliyun.com/js/baidu_push.js^
+||bdcp.pangdo.com^
+||ty2808.com/res/w/js/bdshow.js^
+||z.grescw.com/site^
+qqns.net$$div[class="recommend_list"]
+qqns.net$$div[class="title"]
+qqns.net$$div[class="swiper-container"]
+||v2.sohu.com/integration-api/batch/web^
+||s.go.sohu.com/cxrd/?callback^
+||uis.mp.sohu.com/wap/vote/info^
+||icash.baidu.com/cloan/operation/activity^
+sohu.com##.info-banner-wrapper.banner-big-link
+||wn.pos.baidu.com/adx.php^
+||cis.sohu.com/cisv4/feeds^
+||caaceed4aeaf2.cdn.sohucs.com/js-sdk/backflow/*/backflow.js^
+||aiqicha.baidu.com/m/getPicturePlaceAjax^
+aiqicha.baidu.com$$div[class="float-banner"]
+aiqicha.baidu.com##.float-banner,.aqc-home-float-wrapper
+||play.kakao.com/svc/potplayer/api/dns^
+||adverweb.cjenm.com^
+||ad.daum.net^
+||edge4k.com^
+/potplayer\.[a-z]{2,}/i
+||kakao.com/track^
 ||jingyan.yxlady.com/static/js/mip_jy.js^
 ||enews10.yxlady.net^
 ||jingyan.yxlady.com/static/js/mip_main.js^
