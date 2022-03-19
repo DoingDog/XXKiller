@@ -4,6 +4,7 @@ chcp 65001
 cd %~dp0\aa
 cls
 if exist *.txt del /f /q .\*.txt
+python --version
 echo Init-OK!
 
 ::set date and time
@@ -158,8 +159,12 @@ echo Extract-OK!
 
 
 echo Sorting...
-set LC_ALL='C'
-s -u -i -o nordv.txt nord.txt
+
+::set LC_ALL='C'
+::s -u -i -o nordv.txt nord.txt
+
+python sort.py
+
 echo Sort-OK!
 
 ::count total rules

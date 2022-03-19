@@ -35,7 +35,6 @@ jobs:
         continue-on-error: true
         run: |
           .\RMaker\purge.cmd
-          python .\rules.py
           exit 0
           
 
