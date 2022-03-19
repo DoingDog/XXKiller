@@ -73,3 +73,8 @@ https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
 <br/>这个叫啥？<br/>
 ![](http://profile-counter.glitch.me/xxkiller-ads/count.svg)
 
+<br/>ps：所有规则的来源只有两个地方<br/>
+一个是RMaker的ini文件中指定的链接（注释掉的不算<br/>
+还有custom-rules文件夹的所有文件<br/>
+要是发现误杀，夹带私货，卡死，白屏请以任何形式反馈<br/>
+我会把那些东西删掉
