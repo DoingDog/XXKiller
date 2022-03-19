@@ -21,8 +21,8 @@
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/date'>
 </div>
 <strong><br><br>更新时间：每12小时更新一次</strong><br/><br/><br/>
-规则使用地址（点击复制）：<br/><br/>
-<details><summary><strong>规则地址已经藏起来啦~~ 点击展开 嘻嘻~</strong></summary>
+📃 规则使用地址（点击复制）：<br/><br/>
+<details><code><summary><strong>规则地址已经藏起来啦~~ 点击展开 嘻嘻~</strong></code></summary></code>
 <br>  
 
 Github 原版 raw（真的连得上吗）   
