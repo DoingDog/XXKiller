@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v1
         with:
           ref: main
           fetch-depth: 1
@@ -50,7 +50,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
 
-
-# send it to hell
-      - name: kill
-        run: exit 1
