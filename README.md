@@ -13,8 +13,8 @@
 全部由其他规则合并产生<br/>
 注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/></strong>
 <br/>
-</div>
-<strong>以下分别是规则数量，版本和更新日期： <br/> <br/></strong>
+
+<strong>以下分别是规则数量，版本和更新日期： <br/> <br/></strong></div>
 <div align="center">
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/num'>
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/ver'>
