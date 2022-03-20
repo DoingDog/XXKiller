@@ -11,7 +11,7 @@
 <div align="center">
 <br><strong>适用AdGuard,AG HOME,ADAWAY等等<br/>
 全部由其他规则合并产生<br/>
-注意啦!如果你觉得规则过多过少，请复制一份代码，然后根据需要改“rule-list.ini”文件(<br/><br/></strong>
+注意啦!如果你觉得规则过多过少，请Fork本项目或下载源代码，然后根据需要改“rule-list.ini”文件(<br/><br/></strong>
 <br/>
 
 <strong>以下分别是规则数量，版本和更新日期： <br/> <br/></strong></div>
