@@ -22,7 +22,7 @@
 </div>
 <strong><br><br>更新时间：每12小时更新一次</strong><br/><br/><br/>
 📃 规则使用地址（点击复制）：<br/><br/>
-<details><code><summary><strong>规则地址已经藏起来啦~~ 点击展开 嘻嘻~</strong></code></summary></code>
+<details><summary><strong><code>规则地址已经藏起来啦~~ 点击展开 嘻嘻~</code></strong></summary></code>
 <br>  
 
 Github 原版 raw（真的连得上吗）   
@@ -67,7 +67,7 @@ https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
 合并规则来自<a href=https://github.com/DoingDog/XXKiller/blob/main/RMaker/rule-list.ini>rule-list.ini</a>的下载列表还有这个<a href=https://github.com/DoingDog/XXKiller/tree/main/RMaker/aa/custom-rules>文件夹</a>所有的文件<br/>
 
 合并规则的脚本见<a href=https://github.com/DoingDog/XXKiller/blob/main/RMaker/make.cmd>make.cmd</a><br/><br/>
-如果你有奇怪的问题，包括但不限于此规则的bug，<br>Github [@Doingdog](https://github.com/DoingDog)<br>酷安[@金布里](http://www.coolapk.com/u/3410257) <br>TG [@exdot](https://t.me/exdot) ：\
+如果你有奇怪的问题，包括但不限于此规则的bug，<br>Github [@Doingdog](https://github.com/DoingDog) <br>在github上提出issue [Link](https://github.com/DoingDog/XXKiller/issues/new/choose)<br>酷安 [@金布里](http://www.coolapk.com/u/3410257) <br>TG [@exdot](https://t.me/exdot) ：\
 <br>
 
 <br/>这个叫啥？<br/>
@@ -76,5 +76,6 @@ https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
 <br/>ps：所有规则的来源只有两个地方<br/>
 一个是RMaker的ini文件中指定的链接（注释掉的不算<br/>
 还有custom-rules文件夹的所有文件<br/>
+
 要是发现误杀，夹带私货，卡死，白屏请以任何形式反馈<br/>
 我会把那些东西删掉
