@@ -9,31 +9,26 @@ env:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-latest
     steps:
-
-#perl
-      - uses: actions/setup-go@v2
-
-#checkout
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@main
         with:
           ref: main
-          fetch-depth: 1
+#          fetch-depth: 1
 
 #set time
       - name: set time
-        timeout-minutes: 5
+        timeout-minutes: 15
         run: |
           tzutil /s "China Standard Time"
           exit 0
-
 #main
       - name: run script
-        timeout-minutes: 10
+        timeout-minutes: 15
         run: |
           .\RMaker\make.cmd
           exit 0
+
 
 # purge jsdelivr cache(optional)
       - name: purge cache
@@ -42,7 +37,7 @@ jobs:
           .\RMaker\purge.cmd
           exit 0
           
-#commit push
+
       - name: commit
         run: |
           git config --global user.name "github-actions[bot]"
@@ -55,7 +50,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
 
-#del all files
       - name: Remove
         run: |
           .\RMaker\remove.cmd
