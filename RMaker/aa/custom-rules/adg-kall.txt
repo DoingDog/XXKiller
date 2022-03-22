@@ -1,10 +1,12 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.6.2
-! TimeUpdated: 2022-03-18T00:10
+! Version: 1.0.6.3
+! TimeUpdated: 2022-03-19T20:43
 ! Expires: 30 days
 !
+||sanme2.taisantech.com^
+||woozooo.com/img/*.js
 ||developer.aliyun.com/js/baidu_push.js^
 ||bdcp.pangdo.com^
 ||ty2808.com/res/w/js/bdshow.js^
