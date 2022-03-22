@@ -5,6 +5,7 @@ cd %~dp0\aa
 cls
 if exist *.txt del /f /q .\*.txt
 python --version
+perl -v
 echo Init-OK!
 
 ::set date and time
@@ -211,6 +212,11 @@ type tpdate.txt>>w.txt
 type nordv.txt>>w.txt
 type addition.dd>>w.txt
 echo Merge-OK!
+
+::test add checksum by o0HalfLife0o
+echo Checking...
+perl addChecksum.pl w.txt
+echo Check-OK!
 
 ::move file out
 copy /y .\w.txt ..\..\
