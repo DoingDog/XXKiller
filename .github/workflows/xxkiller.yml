@@ -13,9 +13,7 @@ jobs:
     steps:
 
 #perl
-      - uses: shogo82148/actions-setup-perl@v1
-        with:
-          distribution: strawberry
+      - uses: actions/setup-go@v2
 
 #checkout
       - uses: actions/checkout@v3

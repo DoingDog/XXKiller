@@ -5,7 +5,7 @@ cd %~dp0\aa
 cls
 if exist *.txt del /f /q .\*.txt
 python --version
-perl -v
+go version
 echo Init-OK!
 
 ::set date and time
