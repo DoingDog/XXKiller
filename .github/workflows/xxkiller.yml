@@ -29,7 +29,7 @@ jobs:
         continue-on-error: false
         timeout-minutes: 10
         run: |
-          cd .\RMaker\aa
+          cd .\RMaker
           make.cmd
           if not %errorlevel%==0 exit 114514
 
