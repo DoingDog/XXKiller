@@ -19,10 +19,11 @@ jobs:
 #set time
       - name: set time
         shell: cmd
+        continue-on-error: true
         timeout-minutes: 2
         run: |
           tzutil /s "China Standard Time"
-          exit 0
+          
 #main
       - name: run script
         shell: cmd
@@ -31,16 +32,17 @@ jobs:
         run: |
           cd .\RMaker
           make.cmd
-          if not %errorlevel%==0 exit 114514
+          if not %errorlevel%==0 exit 110
 
 
 # purge jsdelivr cache(optional)
       - name: purge cache
         shell: cmd
         continue-on-error: true
+        timeout-minutes: 1
         run: |
           .\RMaker\purge.cmd
-          exit 0
+          
           
 
       - name: commit
@@ -54,6 +56,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
+          
 
       - name: Remove
         shell: cmd
