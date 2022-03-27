@@ -216,9 +216,9 @@ echo Merge-OK!
 copy /y .\w.txt ..\..\
 
 ::end cleanup
-if not %rnum% gtr 100 (
+if not %rnum% gtr 1000 (
 echo FAILING...
-exit 1
+exit 114514
 )
 echo All-done!
 del /f /q .\*.txt&exit 0
