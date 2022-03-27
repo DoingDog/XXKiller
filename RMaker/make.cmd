@@ -169,7 +169,7 @@ echo Sort-OK!
 
 ::count total rules
 echo Counting...
-for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=1
+for /f "tokens=2 delims=:" %%a in ('find /c /v "" nordv.txt')do set/a rnum=%%a
 echo Count-OK!
 
 ::get and save version code
