@@ -26,8 +26,9 @@ jobs:
       - name: run script
         timeout-minutes: 10
         run: |
-          .\RMaker\make.cmd
-          exit 0
+          Cd .\RMaker\aa
+          .\make.cmd
+          if ($? -ne 0) {exit 1}
 
 
 # purge jsdelivr cache(optional)
