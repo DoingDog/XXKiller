@@ -18,18 +18,20 @@ jobs:
 
 #set time
       - name: set time
+        shell: cmd
         timeout-minutes: 2
         run: |
           tzutil /s "China Standard Time"
           exit 0
 #main
       - name: run script
+        shell: cmd
         continue-on-error: false
         timeout-minutes: 10
         run: |
-          Cd .\RMaker\aa
-          .\make.cmd
-          if ($? -ne 0) {exit 1}
+          cd .\RMaker\aa
+          make.cmd
+          if not %errorlevel%==0 exit 114514
 
 
 # purge jsdelivr cache(optional)
