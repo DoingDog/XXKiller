@@ -9,7 +9,7 @@ env:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-2016
     steps:
       - uses: actions/checkout@v3
         with:
@@ -24,6 +24,7 @@ jobs:
           exit 0
 #main
       - name: run script
+        continue-on-error: false
         timeout-minutes: 10
         run: |
           Cd .\RMaker\aa
@@ -33,6 +34,7 @@ jobs:
 
 # purge jsdelivr cache(optional)
       - name: purge cache
+        shell: cmd
         continue-on-error: true
         run: |
           .\RMaker\purge.cmd
@@ -52,5 +54,6 @@ jobs:
           branch: main
 
       - name: Remove
+        shell: cmd
         run: |
           .\RMaker\remove.cmd
