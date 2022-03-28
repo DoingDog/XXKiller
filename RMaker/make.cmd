@@ -86,6 +86,44 @@ sed -i -E --posix  "s/$/^/g" down.txt
 echo Auto-transformation-OK!
 )
 
+if %%i==h2wa (
+echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
+sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
+sed -i -E --posix  "s/^/@@|/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
+)
+
+if %%i==h2aa (
+echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
+sed -i -E --posix "s/^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+ +//g" down.txt
+sed -i -E --posix  "s/^/|/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
+)
+
+if %%i==d2wa (
+echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
+sed -i -E --posix  "s/^/@@|/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
+)
+
+if %%i==d2aa (
+echo Auto-transformation-%%i...
+sed -i -E --posix "/^\#/d" down.txt
+sed -i -E --posix "/^\!/d" down.txt
+sed -i -E --posix  "s/^/|/g" down.txt
+sed -i -E --posix  "s/$/^/g" down.txt
+echo Auto-transformation-OK!
+)
+
 if %%i==a2w (
 echo Auto-transformation-%%i...
 sed -i -E --posix  "s/^\|\|/@@||/g" down.txt
