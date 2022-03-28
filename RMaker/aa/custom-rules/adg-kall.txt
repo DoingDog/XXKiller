@@ -1,10 +1,11 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.6.3
-! TimeUpdated: 2022-03-19T20:43
+! Version: 1.0.6.5
+! TimeUpdated: 2022-03-27T21:50
 ! Expires: 30 days
 !
+||119.29.29.98/d^
 ||sanme2.taisantech.com^
 ||woozooo.com/img/*.js
 ||developer.aliyun.com/js/baidu_push.js^
@@ -1172,6 +1173,16 @@ imomoe.in$$script[tag-content="WRITE"]
 /search/topRecommendAd/topRecommendAd.js
 ||wkstatic.bdimg.com/static/wkcommon/widget/ui/lib/ad
 wenku.baidu.com$$script[tag-content="BaiduAdsDisplay"]
+wenku.baidu.com##.top-img,.head-img,.org-left,.org-right,.fix-top,.active-info,.end-recommand,.vip-wrapper,.vip-hint-footer,.vip-privilege.vip-privilege-card-wrap,.sider-edge.relative-search-wrap,.lazy-load > .sider-edge.relative-course-wrapper,.sider-edge.fix-block.relative-course-wrapper,.vip-activity-wrap-new
+||wkstatic.bdimg.com/static/wkview/widget/commerce/knowledge/zsFlowData*.js^
+||wkstatic.bdimg.com/static/wkview/widget/commerce/knowledge/getData*.js^
+||wkstatic.bdimg.com/static/wkview/widget/node_modules/dot/examples/express/lib/app*.js^
+||wkstatic.bdimg.com/static/wkview/widget/ad_smallflow/ad_smallflow*.js^
+||wkstatic.bdimg.com/static/wkview/widget/org_widget_2019/fix_top/fix_top*.js^
+||wkstatic.bdimg.com/static/wkview/widget/org_widget_2019/end_recommand/end_recommand*.js^
+||wkstatic.bdimg.com/static/wkview/widget/ui/tools/hao123common/hao123common*.js^
+||wkstatic.bdimg.com/static/wkview/widget/org_widget_2019/fix_right/fix_right*.js^
+||wenku.baidu.com/view^$replace=/(\"backgroundInfo\"|\"download_strategy\"|\"topbar_pic_url\"|\"view_strategy\")/\"null\"/
 baidu.com##.search-aside-adWrap
 baidu.com##.ad-vip-close-bottom
 baidu.com###fengchaoad
