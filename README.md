@@ -33,6 +33,11 @@ https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
 ```
 https://raw.iqiq.io/DoingDog/XXKiller/main/w.txt
 ```
+中国香港 FsoFso （快速）
+```
+https://ghproxy.fsofso.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.txt
+```
+
 中国附近1 jsdelivr（12小时更新延迟） （快速）  
 ```
 https://gcore.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
