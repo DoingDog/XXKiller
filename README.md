@@ -62,6 +62,18 @@ https://ghproxy.com/https://raw.githubusercontent.com/DoingDog/XXKiller/main/w.t
 ```
 https://cdn.staticaly.com/gh/DoingDog/XXKiller/main/w.txt
 ```
+未知通道  （？小时更新延迟）
+```
+https://raw.gitfast.tk/DoingDog/XXKiller/main/w.txt
+```
+未知通道  （？小时更新延迟）
+```
+https://raw.gitslow.tk/DoingDog/XXKiller/main/w.txt
+```
+未知通道  （？小时更新延迟）
+```
+https://raw.verge.tk/DoingDog/XXKiller/main/w.txt
+```
 
 
 </details>
