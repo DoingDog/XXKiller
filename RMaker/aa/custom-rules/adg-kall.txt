@@ -1,10 +1,38 @@
 ! Homepage: https://kbsml.com
 ! Title: adg-kall
 ! Description: Adg-kall collected on the network and I have written some rules
-! Version: 1.0.6.5
-! TimeUpdated: 2022-03-27T21:50
+! Version: 1.0.6.8
+! TimeUpdated: 2022-04-09T21:12
 ! Expires: 30 days
 !
+||yxhjt.com^
+||sc.zangyitang.wang
+||ttyyuuoo.com/xxgg/app.js^
+shangmayuan.com$$div[class="server-ad"]
+||hixc.zdhnayr.com^
+||tfs.xx123.top^
+||wer.qdwght.com^
+||oix.tencentbs.cn^
+||nt.xx123.top^
+||zouaw.com/wp-content/themes/dux/js/cctest.js^
+||zouaw.com/wp-content/themes/dux/js/cc.js^
+zouaw.com##.sidebar
+qlxiaozhan.com##.topgg.inner,.sidebar,#article-top
+qlxiaozhan.com##.entry > .article-hongbao
+qlxiaozhan.com###article-top2
+qlxiaozhan.com##p.diy-center:nth-of-type(1)
+qlxiaozhan.com##p.jiacu.pc18-wap16
+||qlxiaozhan.com/faxian/tt/dsarticletopbanner^
+||baidu.com/ndview/interface/hx/
+hao123.com##.title-wrap + .right-img
+hao123.com###topbeWrapper
+hao123.com###lefttip
+hao123.com###bottom-be
+hao123.com##.rightTip
+hao123.com##.wm
+||as1.m.hao123.com^
+||cpro.baidustatic.com^
+||ad.3.cn^
 ||119.29.29.98/d^
 ||sanme2.taisantech.com^
 ||woozooo.com/img/*.js
@@ -169,7 +197,7 @@ sm.cn$$div[ad_dot_url="adclick"]
 ||zhemaijs.net^
 ||player.alicdn.com/aliplayer/presentation/js/aliplayercomponents.min.js^
 ||pc.qq.com^$domain=pianku.li
-||users.51.la^
+||51.la^
 ayuancms.com$$ul[class="site-idea"]
 admincj.com$$ul[class="site-idea"]
 ||*cdn-tos.bytegoofy.com/goofy/ttzz/push.js^
@@ -376,7 +404,7 @@ h5.1234567.com.cn$$div[id="wapBanner"]
 ||5hz.org^
 ||uploads.luhu.co^
 luhu.co$$div[class="banner-service"]
-||sf*-scmcdn-tos.pstatp.com^$domain=luhu.co
+||sf*-scmcdn-tos.pstatp.com^
 ! 反诈骗
 ||config.3g.qq.com/qqsecure_config_update/cloudtestnew^
 ||avlyun.com^
@@ -1388,7 +1416,6 @@ ohmanhua.com##+js(aeld, /.?/, popMagic)
 ||api.brs.intl.miui.com/browser/sbox/*/ad^
 ||api.brs.intl.miui.com/browser/hp/*/banner^
 .com/get_domains^
-||sf*-ttcdn-tos.pstatp.com/obj/dump-v2-public/CJPay*.json
 ||unidesk.alicdn.com^$app=com.ss.android.ugc.aweme
 ||jsb.snssdk.com^$app=com.ss.android.ugc.aweme
 ||star.snssdk.com/star_promotion/mobile/ad^
@@ -2181,7 +2208,6 @@ www.matools.com###popAd
 easyzw.com##.on.fabu_img
 /toutiao-track-log.js
 ||s*.pstatp.com/bytecom/tetris/react_native/zip/ad_android^
-||sf*-ttcdn-tos.pstatp.com/obj/ad-site-adstyle-public/sdkconfig^
 ||tma.snssdk.com^
 /business_alliance/user_info
 .com/consult/external/business
@@ -2276,7 +2302,6 @@ m.aliyun.com###yq-bbs-tabs
 ||is.snssdk.com/*/article/information^
 ||iu.snssdk.com/*/article/information/
 ||policy.jd.com^$app=com.ss.android.article.news
-||sf1-ttcdn-tos.pstatp.com/obj/ttfe/ttf/article/highlight.min.js
 /snsvideodownload?m=
 .alicdn.com/develop/*.png?x-oss-process=image/resize,h_105,w_105/quality,q_90/format,webp
 ||106.11.250.6/amdc/mobileDispatch^
@@ -2870,7 +2895,6 @@ baidu.com##.se-page-copyright
 ftchinese.com##.subscription-promo-container
 ||liangcang-material.alicdn.com/feupload/*.jpg?x-oss-process=image/resize,h_280,w_498/quality,q_90/format,webp
 ||wbc.epro.sogou.com^
-||lf3-ttcdn-tos.pstatp.com/obj/appeye/plugin^
 ||iu.snssdk.com/service^$app=com.ss.android.article.news
 ||it.snssdk.com/api/msg/v1/unread/?iid=
 ||it.snssdk.com/location/suloin/?iid=
@@ -2879,7 +2903,6 @@ ftchinese.com##.subscription-promo-container
 ||is.snssdk.com/service/2/app_alert/?has_market=$app=com.ss.android.ugc.aweme
 @@||hm.baidu.com^$app=com.tencent.mm
 ||14.116.137.80^$network
-||sf*-ttcdn-tos.pstatp.com/img/mosaic-legacy/*noop.webp
 .com/obj/ad-tetris-site
 ||iu.snssdk.com/service/*/app_ad
 ||17173.com/ping.js
@@ -25404,6 +25427,7 @@ movie.youku.com$$div[class="ad-banner-wrapper"]
 zy.youku.com$$div[class="ad-banner-wrapper"]
 news.youku.com$$div[class="ad-banner-wrapper"]
 www.youku.com$$div[class="vipProfileContainer"]
+||acs.youku.com/h5/mtop.youku.favorite.query.isfavorite^
 ||appdownload.youku.com^
 ||umdc.aliapp.org^
 ||huichuan.sm.cn^
