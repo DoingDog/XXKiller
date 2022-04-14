@@ -1,0 +1,20 @@
+此为 运行文件夹，脚本在此处运行
+其中
+
+  custom-rules 本地规则文件，放入其中的文件被认为是需要处理的规则，被合并进主文件，地位等同 ini 的链接
+  
+  addChecksum.pl 暂时没用
+
+  addition.dd 存放附加规则，总是会被加在规则最后
+
+  blank.dd 空白文件
+
+  s.exe GNU sort
+
+  sed.exe GNU sed
+
+  sort.py @hacamer 的去重脚本
+
+  title.dd 规则标题，总是会被加在规则最前
+
+  wget.exe win 版本 wget 下载器
