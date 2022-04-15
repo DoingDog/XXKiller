@@ -1,0 +1,36 @@
+#by DD
+#仅适作业帮家长版，可跳身份证验证，去广告
+# ADGUARD
+
+@@||search.zybang.com^
+@@||paisou.zuoyebang.com^
+@@||bd-s.zuoyebang.cc^
+@@||n5.zuoyebang.cc^
+@@||n4.zuoyebang.cc^
+@@||n3.zuoyebang.cc^
+@@||n2.zuoyebang.cc^
+@@||n1.zuoyebang.cc^
+@@||img.zuoyebang.cc^
+@@||pluto.zuoyebang.com^
+@@||www.zuoyebang.com^
+@@||www.zuoyebang.cc^
+@@||app-search.cdnjtzy.com^
+@@||napi.zybang.com^
+@@||img10.zuoyebang.cc^
+@@||yy-s.zuoyebang.cc^
+@@||shumei-app-thirdpart.zuoyebang.com^
+@@||www.kuaiduizuoye.com^
+
+||www.daxuesoutijiang.com^
+||kw1-1253445850.image.myqcloud.com^
+||kd02-1253445850.image.myqcloud.com^
+||kuaiduizuoye.com^
+||netease.im^
+||httpdns.yunxindns.com^
+||qiyukf.com^
+||cdnjtzy.com^
+||statistic.live.126.net^
+||zuoyebang.com^
+||zuoyebang.cc^
+||zybang.com^
+||zybang.cc^
