@@ -1,0 +1,15 @@
+# zyb2 ads
+# @hacamer
+
+host-suffix, httpdns.zybang.com, reject
+# ||apm.zuoyebang.com/monitor_browser/collect
+host-suffix, wenda.zuoyebang.com, direct
+host-suffix, img.zuoyebang.cc, reject
+host-suffix, fmp-notice.zybang.com, reject
+# ||n*.zuoyebang.cc/*vip*^
+host-suffix, apm.zuoyebang.com, reject
+host-suffix, apivip.zybang.com, reject
+host-suffix, zyb-vip.cdnjtzy.com, reject
+host-suffix, syh.zybang.com, reject
+host-suffix, apiugc.zybang.com, reject
+host-suffix, apivip.zybang.com, reject
