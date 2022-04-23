@@ -4,17 +4,22 @@
 <img src='https://img.shields.io/github/stars/DoingDog/XXKiller?color=yellow'>
 <img src='https://img.shields.io/github/forks/DoingDog/XXKiller?color=orange'>
 <img src='https://img.shields.io/github/issues/DoingDog/XXKiller?color=green'>
-<img src='https://img.shields.io/github/license/DoingDog/XXKiller?color=bule'>
-<img src='https://img.shields.io/github/languages/code-size/DoingDog/XXKiller?color=blueviolet'>
-<img src='https://github.com/DoingDog/XXKiller/actions/workflows/xxkiller.yml/badge.svg'>
+<br>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DoingDog/XXKiller">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/DoingDog/XXKiller">  
+<img alt="GitHub commit activity" src="https://data.jsdelivr.com/v1/package/gh/DoingDog/XXKiller/badge?style=rounded">  
+<br>
+<img src="https://img.shields.io/github/license/DoingDog/XXKiller?color=bule">
+<img src="https://img.shields.io/github/languages/code-size/DoingDog/XXKiller?color=blueviolet">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/DoingDog/XXKiller/cron%20update">
 </div>
 <div align="center">
-<br><strong>适用AdGuard,AG HOME,ADAWAY等等<br/>
-全部由其他规则合并产生<br/>
-注意啦!如果你觉得规则过多过少，请Fork本项目或下载源代码，然后根据需要改“rule-list.ini”文件(<br/><br/></strong>
+<br>适用AdGuard,AG HOME,ADAWAY等等<br/><strong>
+全部由其他规则合并产生<br/></strong>
+注意啦!如果你觉得规则过多过少，请Fork本项目或下载源代码，然后根据需要改“rule-list.ini”文件(<br/><br/>
 <br/>
 
-<strong>以下分别是规则数量，版本和更新日期： <br/> <br/></strong></div>
+以下分别是规则数量，版本和更新日期： <br/> <br/></div>
 <div align="center">
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/num'>
 <img src='https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/DoingDog/XXKiller/main/changelog/ver'>
@@ -77,9 +82,9 @@ https://raw.verge.tk/DoingDog/XXKiller/main/w.txt
 
 
 </details>
-<br/>使用方法：将上方地址选择一个加入拦截器订阅。<br/>
+<br/>使用方法：将上方地址<strong>选择一个</strong>加入拦截器订阅。<br/>
 <br/><br/><br/>
-<strong>规则过于强大，误杀严重（有误杀请反馈<br/>:\建议电脑端或dns用这个规则。手机会卡（测试了ios adguard已卡爆<br/>
+规则过于强大（有误杀请反馈<br/>:\建议电脑端或dns用这个规则。手机会卡（测试了ios adguard已卡爆<br/>
 <br/>
 合并规则来自<a href=https://github.com/DoingDog/XXKiller/blob/main/RMaker/rule-list.ini>rule-list.ini</a>的下载列表还有这个<a href=https://github.com/DoingDog/XXKiller/tree/main/RMaker/aa/custom-rules>文件夹</a>所有的文件<br/>
 
@@ -87,12 +92,15 @@ https://raw.verge.tk/DoingDog/XXKiller/main/w.txt
 如果你有奇怪的问题，包括但不限于此规则的bug，<br>Github [@Doingdog](https://github.com/DoingDog) <br>在github上提出issue [Link](https://github.com/DoingDog/XXKiller/issues/new/choose)<br>酷安 [@金布里](http://www.coolapk.com/u/3410257) <br>TG [@exdot](https://t.me/exdot) ：\
 <br>
 
-<br/>这个叫啥？<br/>
+<br/>这个应该是计数器吧<br/>
 ![](http://profile-counter.glitch.me/xxkiller-ads/count.svg)
-
-<br/>ps：所有规则的来源只有两个地方<br/>
+  <br/><br/>说明:<br/>
+<strong>规则数量已经超过30万，因此这不再是一个适合大部分人的项目，仅为了那些追求极致去广告的朋友们建立<br/>
+  在使用之前你应该看看这个<a href=https://github.com/Cats-Team/AdRules>更实用的规则项目</a><br/></strong>
+<br/><strong>ps：所有规则的来源只有两个地方<br/></strong>
 一个是RMaker的ini文件中指定的链接（注释掉的不算<br/>
 还有custom-rules文件夹的所有文件<br/>
 
 要是发现误杀，夹带私货，卡死，白屏请以任何形式反馈<br/>
-我会把那些东西删掉
+<strong>我会把那些东西删掉<br/></strong><br/>
+至于现在有没有夹带私货？我怎么知道
