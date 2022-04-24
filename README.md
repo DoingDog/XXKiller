@@ -103,4 +103,6 @@ https://raw.verge.tk/DoingDog/XXKiller/main/w.txt
 
 要是发现误杀，夹带私货，卡死，白屏请以任何形式反馈<br/>
 <strong>我会把那些东西删掉<br/></strong><br/>
-至于现在有没有夹带私货？我怎么知道
+至于现在有没有夹带私货？我怎么知道<br/><br/>
+
+This work is marked with <a href="https://github.com/me-shaon/GLWTPL/blob/master/NSFW_LICENSE" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">GLWTS</a>
