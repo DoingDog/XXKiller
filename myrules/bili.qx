@@ -1,0 +1,12 @@
+# bilibili 分流 by dd
+# qx/clash/surge
+# 最小分流版，保证观看用港澳台区，同时使代理流量最少
+
+# 电脑网页版
+# 测试 win10 chrome103
+DOMAIN, www.bilibili.com, BiliBili
+DOMAIN, api.bilibili.com, BiliBili
+
+# 移动端
+# 测试 iphone/ipad ios15.5 bili 6.69 bili-hd 3.40
+DOMAIN, app.bilibili.com, BiliBili
