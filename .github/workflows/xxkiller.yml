@@ -12,34 +12,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: mae
-      - name: run script w
-        shell: cmd
+      - name: run script all
         continue-on-error: false
-        timeout-minutes: 10
+        timeout-minutes: 20
         run: |
-          cd .\RMaker
-          make w
-      - name: run script adguard
-        shell: cmd
-        continue-on-error: true
-        timeout-minutes: 10
-        run: |
-          cd .\RMaker
-          make g
-      - name: run script allow
-        shell: cmd
-        continue-on-error: true
-        timeout-minutes: 10
-        run: |
-          cd .\RMaker
-          make a
-      - name: run script full
-        shell: cmd
-        continue-on-error: true
-        timeout-minutes: 10
-        run: |
-          cd .\RMaker
-          make f
+          .\RMaker\make.cmd w
+          .\RMaker\make.cmd g
+          .\RMaker\make.cmd a
+          .\RMaker\make.cmd f
       - name: commit
         continue-on-error: false
         timeout-minutes: 10
