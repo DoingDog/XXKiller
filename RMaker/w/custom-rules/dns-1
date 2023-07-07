@@ -1,0 +1,4 @@
+||dnslab*^$dnsrewrite=SERVFAIL
+$dnstype=PTR
+/^.+\.(arpa|lan|wifi|dnscrypt)$/$dnsrewrite=NXDOMAIN
+/^[^.]+$/$dnsrewrite=NXDOMAIN

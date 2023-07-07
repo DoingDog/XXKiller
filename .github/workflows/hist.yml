@@ -1,0 +1,23 @@
+name: clear commits
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: mae
+      - name: commit
+        run: |
+          git init
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan clearhistory
+          git branch -D mae
+          git checkout --orphan mae
+          git branch -D clearhistory
+          git add .
+          git commit -m "Last Update at $(date +"%Y-%m-%d %H:%M")"
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f -u origin mae

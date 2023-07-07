@@ -1,0 +1,105 @@
+! Title: random
+! Description: (anti-adblocker, popup, tweak)
+! Version: V 1.2 add/update/remove/new rules 
+! TimeUpdated: 2022-08-07
+!
+!##############
+!ANTI-ADBLOCK
+!##############
+!
+##+js(nobab) 
+##+js(nofab) 
+##+js(popads)
+!
+##+js(aeld, DOMContentLoaded, AdBlock)
+!
+##+js(no-fetch-if, adsbygoogle.js)
+!
+##+js(aopr, anOptions)
+##+js(aopr, mdp_deblocker)
+##+js(aopr, dnetuiyx)
+##+js(aopr, app_vars.force_disable_adblock)
+##+js(aopr, mdpDeBlocker)
+##+js(aopr, absda)
+##+js(aopr, gothamBatAdblock)
+##+js(aopr, Object.prototype.getAdBlock)
+##+js(aopr, adsBlocked)
+##+js(aopr, mdpDeBlockerDestroyer)
+##+js(aopr, glxopen)
+##+js(aopr, AaDetector)
+##+js(aopr, isAdBlockActive)
+##+js(aopr, adblockDetector)
+##+js(aopr, adBlockDetected)
+##+js(aopr, fuckadblock)
+##+js(aopr, BlockAdBlock)
+##+js(aopr, FuckAdBlock)
+##+js(aopr, blockAdBlock)
+##+js(aopr, SniffAdBlock)
+!
+##+js(aopw, checkAdBlock)
+##+js(aopw, adBlockDetected)
+##+js(aopw, adBlockFunction)
+!
+##+js(acis, document.createElement, admiral)
+##+js(acis, disableItToContinue)
+##+js(acis, _GLOBALS.hasAdblock)
+##+js(acis, window.globalConfig.adblock)
+!
+##+js(set, is_adblocked, false)
+##+js(set, canRunAds, true)
+##+js(set, adsbygoogle, null)
+##+js(set, wIsAdBlocked, false)
+##+js(set, cRAds, true)
+##+js(set, canSeeAds, noopFunc)
+##+js(set, noAdBlock, true) 
+##+js(set, fabActive, false)
+##+js(set, adsRunning, 1)
+##+js(set, adsBlockerDetector, noopFunc)
+##+js(set, app_vars.force_disable_adblock, undefined)
+##+js(set, adsbygoogle.length, undefined)
+##+js(set, blured, false)
+##+js(set, admiral, noopFunc)
+##+js(set, adsbygoogle.loaded, true)
+##+js(set, absda, noopFunc)
+##+js(set, check_adblock, true)
+##+js(set, chk_ads_block, noopFunc)
+##+js(set, ads_is_loaded, 1) 
+##+js(set, adblock_user, 0)
+##+js(set, ads_blocked, noopFunc)
+##+js(set, flashvars.protect_block, undefined)
+##+js(set, blured, false)
+##+js(set, googleAd, noopFunc)
+!
+!##############
+!POP-UP
+!##############
+!
+##+js(aeld, , exoJsPop101)
+!
+##+js(aopw, _pop)
+##+js(aopw, PopAds)
+!
+##+js(aopr, jsPopunder)
+##+js(aopr, urlPopunder)
+##+js(aopr, popns)
+##+js(aopr, SmartPopunder)
+##+js(aopr, BetterJsPop)
+##+js(aopr, popjs)
+##+js(aopr, ads.pop_url)
+##+js(aopr, PopURL)
+##+js(aopr, smpop)
+##+js(aopr, LieDetector)
+##+js(aopr, dataPopUnder)
+##+js(aopr, ClickUnder)
+##+js(aopr, initPop)
+!
+##+js(set, puShown, true)
+!
+##+js(acis, pusShown , /doOen|popundr/)
+##+js(acis, $ , popunder)
+!
+!##############
+!EXPERIMENTAL
+!##############
+!
+##+js(acis, JSON.parse, break;case $.)

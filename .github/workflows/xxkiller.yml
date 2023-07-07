@@ -1,0 +1,47 @@
+name: cron update
+on:
+  schedule:
+    - cron: '50 21 * * *'
+  workflow_dispatch:
+env: 
+  TZ: Asia/Shanghai
+jobs:
+  build:
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: mae
+      - name: run script all
+        continue-on-error: false
+        timeout-minutes: 20
+        run: |
+          .\RMaker\make.cmd w
+          .\RMaker\make.cmd g
+          .\RMaker\make.cmd a
+          .\RMaker\make.cmd f
+      - name: commit
+        continue-on-error: false
+        timeout-minutes: 10
+        run: |
+          git init
+          git rm -rf RMaker
+          git rm -rf .github
+          git rm -f LICENSE
+          git rm -f README.md
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git branch -D main
+          git checkout --orphan main
+          git add *.txt
+          git add changelog
+          git commit -m  "Last Update at $(date +"%Y-%m-%d %H:%M")"
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f -u origin main
+      - name: purge
+        shell: cmd
+        continue-on-error: true
+        timeout-minutes: 1
+        run: |
+          curl -k -s -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4937.0 Safari/537.36" https://purge.jsdelivr.net/gh/DoingDog/XXKiller@main/w.txt
+          

@@ -1,0 +1,3 @@
+/adguard.$domain=~adguard-com.cdn.ampproject.org|~adguard.com|~adguard.mobi|~adguard.oneskyapp.com|~greinr.com,badfilter
+@@/adguard.$domain=~adguard.com|~adguard.mobi
+@@/adguard.$domain=adguard.com|adguard.mobi
