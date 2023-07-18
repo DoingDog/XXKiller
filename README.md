@@ -20,3 +20,4 @@ Cloudflare
 ```
 https://x.awsl.app/f.txt
 ```
+This repository hasn't been maintained for a long time. I will update it soon.
