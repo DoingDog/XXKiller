@@ -20,4 +20,6 @@ Cloudflare
 ```
 https://x.awsl.app/f.txt
 ```
-This repository hasn't been maintained for a long time. I will update it soon.
+~This repository hasn't been maintained for a long time. I will update it soon.~<br>
+All lists deprecated. Go to [adrules](https://github.com/Cats-Team/AdRules)<br>
+Requests on the x.awsl.app domain will be redirected to https://adrules.top/adblock_plus.txt

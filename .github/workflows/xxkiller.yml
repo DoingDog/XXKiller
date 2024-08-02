@@ -20,6 +20,7 @@ jobs:
           .\RMaker\make.cmd g
           .\RMaker\make.cmd a
           .\RMaker\make.cmd f
+          .\RMaker\make.cmd n
       - name: commit
         continue-on-error: false
         timeout-minutes: 10
