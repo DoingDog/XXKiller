@@ -1,7 +1,7 @@
 name: cron update
 on:
   schedule:
-    - cron: '50 21 * * *'
+    - cron: '50 21 */3 * *'
   workflow_dispatch:
 env: 
   TZ: Asia/Shanghai
@@ -16,10 +16,6 @@ jobs:
         continue-on-error: false
         timeout-minutes: 20
         run: |
-          .\RMaker\make.cmd w
-          .\RMaker\make.cmd g
-          .\RMaker\make.cmd a
-          .\RMaker\make.cmd f
           .\RMaker\make.cmd n
       - name: commit
         continue-on-error: false
