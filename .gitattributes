@@ -1,0 +1,5 @@
+[attr]adb linguist-language=AdBlock linguist-detectable
+
+ *.txt adb
+ /**/custom-rules/* adb
+ *.dd adb
